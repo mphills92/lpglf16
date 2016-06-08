@@ -27,7 +27,6 @@ class StartReservationContainerViewController: UITableViewController {
 
 //Choose date tableViewCell and dropdown outlet properties.
     @IBOutlet weak var chooseDateScrollView: UIScrollView!
-    @IBOutlet weak var scrollViewBackground: UIView!
     @IBOutlet weak var chooseDateDisclosureIndicator: UIImageView!
 
 //Choose time tableViewCell and dropdown outlet properties.
@@ -55,8 +54,7 @@ class StartReservationContainerViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.contentInset = UIEdgeInsetsMake(-35, 0, -35, 0)
-        chooseDateScrollView.contentSize.height = 800
-        //scrollViewBackground.frame = CGRectMake(0, 0, chooseDateScrollView.frame.width, chooseDateScrollView.frame.height)
+        chooseDateScrollView.contentSize.height = 690
         
         setLocationButtonProperties(location1Button)
         setLocationButtonProperties(location2Button)
