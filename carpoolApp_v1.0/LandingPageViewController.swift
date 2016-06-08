@@ -27,7 +27,6 @@ class LandingPageViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "LandingPageBackground")!)
         let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, screenSize.width, screenSize.height))
         imageViewBackground.image = UIImage(named: "LandingPageBackground")
         imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill

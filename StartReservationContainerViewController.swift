@@ -12,12 +12,14 @@ class StartReservationContainerViewController: UITableViewController {
     
     var cellTapped: Bool = true
     var viewJustLaunched = true
-    var currentRow = 0
+    var currentRow = Int()
     var selectedDate = NSDate()
     var dateFormatter = NSDateFormatter()
     var locationButtonForFormatting = UIButton()
     var selectedLocation = String()
-    
+    var morningButtonSelected = Bool()
+    var afternoonButtonSelected = Bool()
+
 //Choose location tableViewCell and dropdown outlet properties.
     @IBOutlet weak var chooseLocationLabel: UILabel!
     @IBOutlet weak var chooseLocationDisclosureIndicator: UIImageView!
@@ -32,6 +34,9 @@ class StartReservationContainerViewController: UITableViewController {
 //Choose time tableViewCell and dropdown outlet properties.
     @IBOutlet weak var chooseTimePicker: UIDatePicker!
     @IBOutlet weak var chooseTimeDisclosureIndicator: UIImageView!
+    @IBOutlet weak var timeSeparatorLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var morningAMButton: UIButton!
+    @IBOutlet weak var afternoonPMButton: UIButton!
     
 
     
@@ -50,17 +55,40 @@ class StartReservationContainerViewController: UITableViewController {
         updateChooseLocationLabel()
     }
     
+    @IBAction func morningAMButtonPressed(sender: AnyObject) {
+        morningButtonSelected = true
+        afternoonButtonSelected = false
+        setAMButtonProperties()
+        setPMButtonProperties()
+    }
+    
+    @IBAction func afternoonPMButtonPressed(sender: AnyObject) {
+        morningButtonSelected = false
+        afternoonButtonSelected = true
+        setAMButtonProperties()
+        setPMButtonProperties()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.contentInset = UIEdgeInsetsMake(-35, 0, -35, 0)
         chooseDateScrollView.contentSize.height = 690
         
+        morningButtonSelected = true
+        afternoonButtonSelected = false
+        setAMButtonProperties()
+        setPMButtonProperties()
+        
+        timeSeparatorLeadingConstraint.constant = ((((view.frame.width / 2) - 80) / 2) + 60)
+        
+        
+        
         setLocationButtonProperties(location1Button)
         setLocationButtonProperties(location2Button)
         setLocationButtonProperties(location3Button)
         
-        chooseTimePicker.addTarget(self, action: "dateChangedValue:", forControlEvents: UIControlEvents.ValueChanged)
+        //chooseTimePicker.addTarget(self, action: "dateChangedValue:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -73,6 +101,8 @@ class StartReservationContainerViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        
         if (indexPath.row == currentRow) {
             if cellTapped == false {
                 if (currentRow == 0) {
@@ -97,8 +127,10 @@ class StartReservationContainerViewController: UITableViewController {
             }
         }
     return 44
+        
+        
     }
-    
+
     func setLocationButtonProperties(locationButtonForFormatting: UIButton) {
         locationButtonForFormatting.layer.borderColor = UIColor.whiteColor().CGColor
         locationButtonForFormatting.layer.borderWidth = 1
@@ -110,10 +142,36 @@ class StartReservationContainerViewController: UITableViewController {
         chooseLocationLabel.textColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
     }
     
+    func setAMButtonProperties() {
+        if (morningButtonSelected == true) {
+            morningAMButton.layer.borderColor = UIColor.whiteColor().CGColor
+            morningAMButton.layer.borderWidth = 1
+            morningAMButton.layer.cornerRadius = 16
+        } else {
+            morningAMButton.layer.borderColor = UIColor.clearColor().CGColor
+        }
+    }
+    
+    func setPMButtonProperties() {
+        if (afternoonButtonSelected == true) {
+            afternoonPMButton.layer.borderColor = UIColor.whiteColor().CGColor
+            afternoonPMButton.layer.borderWidth = 1
+            afternoonPMButton.layer.cornerRadius = 16
+        } else {
+            afternoonPMButton.layer.borderColor = UIColor.clearColor().CGColor
+        }
+    }
+    
     func dateChangedValue(date: NSDate) {
         selectedDate = chooseTimePicker.date
         print(selectedDate)
     }
-    
+}
 
+extension NSLayoutConstraint {
+    
+    override public var description: String {
+        let id = identifier ?? ""
+        return "id: \(id), constant: \(constant)"
+    }
 }
