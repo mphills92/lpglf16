@@ -19,6 +19,8 @@
 		C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */; };
 		C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */; };
 		C9EE3F1C1D075F0B00F86EF2 /* StartReservationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */; };
+		C9EE3F1E1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */; };
+		C9EE3F201D090A5900F86EF2 /* CaddiesAvailableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SidebarMenuViewController.swift; path = ../SidebarMenuViewController.swift; sourceTree = "<group>"; };
 		C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationViewController.swift; path = ../StartReservationViewController.swift; sourceTree = "<group>"; };
 		C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationContainerViewController.swift; path = ../StartReservationContainerViewController.swift; sourceTree = "<group>"; };
+		C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseServiceLevelSegmentedControl.swift; path = ../ChooseServiceLevelSegmentedControl.swift; sourceTree = "<group>"; };
+		C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaddiesAvailableViewController.swift; path = ../CaddiesAvailableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +118,10 @@
 				C95A00B21CB5CB38008237B1 /* ViewController.swift */,
 				C95A00E71CB5F9D5008237B1 /* LandingPageViewController.swift */,
 				C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */,
-				C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */,
 				C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */,
+				C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */,
+				C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */,
+				C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */,
 				C95A00B41CB5CB38008237B1 /* Main.storyboard */,
 				C95A00B71CB5CB38008237B1 /* Assets.xcassets */,
 				C95A00B91CB5CB38008237B1 /* LaunchScreen.storyboard */,
@@ -285,11 +291,13 @@
 			files = (
 				C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */,
 				C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */,
+				C9EE3F1E1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift in Sources */,
 				C95A00B31CB5CB38008237B1 /* ViewController.swift in Sources */,
 				C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */,
 				C9EE3F1C1D075F0B00F86EF2 /* StartReservationContainerViewController.swift in Sources */,
 				C95A00E21CB5CBEB008237B1 /* SWRevealViewController.m in Sources */,
 				C95A00E81CB5F9D6008237B1 /* LandingPageViewController.swift in Sources */,
+				C9EE3F201D090A5900F86EF2 /* CaddiesAvailableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

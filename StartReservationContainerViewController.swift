@@ -11,6 +11,11 @@ import UIKit
 class StartReservationContainerViewController: UITableViewController {
     
     var cellTapped: Bool = true
+    var locationCellTapped = false
+    var dateCellTapped = false
+    var timeCellTapped = false
+    var aCellIsExpanded = false
+    
     var viewJustLaunched = true
     var currentRow = Int()
     var selectedDate = NSDate()
@@ -19,6 +24,7 @@ class StartReservationContainerViewController: UITableViewController {
     var selectedLocation = String()
     var morningButtonSelected = Bool()
     var afternoonButtonSelected = Bool()
+    var selectedIndex = Int()
 
 //Choose location tableViewCell and dropdown outlet properties.
     @IBOutlet weak var chooseLocationLabel: UILabel!
@@ -82,7 +88,11 @@ class StartReservationContainerViewController: UITableViewController {
         
         timeSeparatorLeadingConstraint.constant = ((((view.frame.width / 2) - 80) / 2) + 60)
         
-        
+        var imageView = UIImageView(frame: self.view.frame)
+        var image = UIImage(named: "LoopLogoWhite")!
+        imageView.image = image
+        self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
         
         setLocationButtonProperties(location1Button)
         setLocationButtonProperties(location2Button)
@@ -92,34 +102,25 @@ class StartReservationContainerViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var selectedRowIndex = indexPath
-        currentRow = selectedRowIndex.row
-        print(currentRow)
-        
+        currentRow = indexPath.row
+        selectedCellIndex()
         tableView.beginUpdates()
         tableView.endUpdates()
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
-        
         if (indexPath.row == currentRow) {
-            if cellTapped == false {
-                if (currentRow == 0) {
-                    cellTapped = true
-                    chooseLocationDisclosureIndicator.transform = CGAffineTransformMakeScale(1, -1)
-                    return (view.frame.height - 44)
-                } else if (currentRow == 1) {
-                    cellTapped = true
-                    chooseDateDisclosureIndicator.transform = CGAffineTransformMakeScale(1, -1)
-                    return (view.frame.height - 88)
-                } else if (currentRow == 2) {
-                    cellTapped = true
-                    chooseTimeDisclosureIndicator.transform = CGAffineTransformMakeScale(1, -1)
-                    return (view.frame.height - 88)
-                }
+            if (locationCellTapped == true) {
+                chooseLocationDisclosureIndicator.transform = CGAffineTransformMakeScale(1, -1)
+                return (view.frame.height) //- 44)
+            } else if (dateCellTapped == true) {
+                chooseDateDisclosureIndicator.transform = CGAffineTransformMakeScale(1, -1)
+                return (view.frame.height) - 44 // - 88)
+            } else if (timeCellTapped == true) {
+                chooseTimeDisclosureIndicator.transform = CGAffineTransformMakeScale(1, -1)
+                return (view.frame.height) - 88
             } else {
-                cellTapped = false
                 chooseLocationDisclosureIndicator.transform = CGAffineTransformMakeScale(1, 1)
                 chooseDateDisclosureIndicator.transform = CGAffineTransformMakeScale(1, 1)
                 chooseTimeDisclosureIndicator.transform = CGAffineTransformMakeScale(1, 1)
@@ -127,7 +128,6 @@ class StartReservationContainerViewController: UITableViewController {
             }
         }
     return 44
-        
         
     }
 
@@ -142,6 +142,44 @@ class StartReservationContainerViewController: UITableViewController {
         chooseLocationLabel.textColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
     }
     
+    func selectedCellIndex() {
+        if (aCellIsExpanded == false) {
+            if (currentRow == 0) {
+                locationCellTapped = true
+                dateCellTapped = false
+                timeCellTapped = false
+                aCellIsExpanded = true
+            } else if (currentRow == 1) {
+                locationCellTapped = false
+                dateCellTapped = true
+                timeCellTapped = false
+                aCellIsExpanded = true
+            } else if (currentRow == 2) {
+                locationCellTapped = false
+                dateCellTapped = false
+                timeCellTapped = true
+                aCellIsExpanded = true
+            }
+        } else {
+            if (currentRow == 0) {
+                locationCellTapped = false
+                dateCellTapped = false
+                timeCellTapped = false
+                aCellIsExpanded = false
+            } else if (currentRow == 1) {
+                locationCellTapped = false
+                dateCellTapped = false
+                timeCellTapped = false
+                aCellIsExpanded = false
+            } else if (currentRow == 2) {
+                locationCellTapped = false
+                dateCellTapped = false
+                timeCellTapped = false
+                aCellIsExpanded = false
+            }
+        }
+    }
+
     func setAMButtonProperties() {
         if (morningButtonSelected == true) {
             morningAMButton.layer.borderColor = UIColor.whiteColor().CGColor
