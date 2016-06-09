@@ -18,7 +18,7 @@ class StartReservationViewController: UIViewController {
     
     
     @IBAction func cancelReservationButtonPressed(sender: AnyObject) {
-        UIView.animateWithDuration(0.15, delay: 0, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.1, delay: 0, options: .CurveEaseOut, animations: {
                 self.blackFadedBackground.alpha = 0
             }, completion: {
                 (value: Bool) in
@@ -27,7 +27,7 @@ class StartReservationViewController: UIViewController {
     }
     
     @IBAction func blackFadedBackgroundButtonPressed(sender: AnyObject) {
-        UIView.animateWithDuration(0.15, delay: 0, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(0.1, delay: 0, options: .CurveEaseOut, animations: {
             self.blackFadedBackground.alpha = 0
             }, completion: {
                 (value: Bool) in
