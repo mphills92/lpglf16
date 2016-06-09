@@ -10,18 +10,20 @@ import UIKit
 
 class StartReservationContainerViewController: UITableViewController {
     
+    var viewJustLaunched = true
     var cellTapped: Bool = true
     var locationCellTapped = false
     var dateCellTapped = false
     var timeCellTapped = false
     var aCellIsExpanded = false
-    
-    var viewJustLaunched = true
     var currentRow = Int()
-    var selectedDate = NSDate()
-    var dateFormatter = NSDateFormatter()
+    
     var locationButtonForFormatting = UIButton()
     var selectedLocation = String()
+    
+    var selectedDate = NSDate()
+    var dateFormatter = NSDateFormatter()
+
     var morningButtonSelected = Bool()
     var afternoonButtonSelected = Bool()
     var selectedIndex = Int()
@@ -38,14 +40,10 @@ class StartReservationContainerViewController: UITableViewController {
     @IBOutlet weak var chooseDateDisclosureIndicator: UIImageView!
 
 //Choose time tableViewCell and dropdown outlet properties.
+    @IBOutlet weak var chooseTimeLabel: UILabel!
     @IBOutlet weak var chooseTimePicker: UIDatePicker!
     @IBOutlet weak var chooseTimeDisclosureIndicator: UIImageView!
-    @IBOutlet weak var timeSeparatorLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var morningAMButton: UIButton!
-    @IBOutlet weak var afternoonPMButton: UIButton!
-    
 
-    
     @IBAction func location1ButtonPressed(sender: AnyObject) {
         selectedLocation = (location1Button.titleLabel?.text)!
         updateChooseLocationLabel()
@@ -61,20 +59,6 @@ class StartReservationContainerViewController: UITableViewController {
         updateChooseLocationLabel()
     }
     
-    @IBAction func morningAMButtonPressed(sender: AnyObject) {
-        morningButtonSelected = true
-        afternoonButtonSelected = false
-        setAMButtonProperties()
-        setPMButtonProperties()
-    }
-    
-    @IBAction func afternoonPMButtonPressed(sender: AnyObject) {
-        morningButtonSelected = false
-        afternoonButtonSelected = true
-        setAMButtonProperties()
-        setPMButtonProperties()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,11 +67,7 @@ class StartReservationContainerViewController: UITableViewController {
         
         morningButtonSelected = true
         afternoonButtonSelected = false
-        setAMButtonProperties()
-        setPMButtonProperties()
-        
-        timeSeparatorLeadingConstraint.constant = ((((view.frame.width / 2) - 80) / 2) + 60)
-        
+
         var imageView = UIImageView(frame: self.view.frame)
         var image = UIImage(named: "LoopLogoWhite")!
         imageView.image = image
@@ -98,7 +78,8 @@ class StartReservationContainerViewController: UITableViewController {
         setLocationButtonProperties(location2Button)
         setLocationButtonProperties(location3Button)
         
-        //chooseTimePicker.addTarget(self, action: "dateChangedValue:", forControlEvents: UIControlEvents.ValueChanged)
+        self.chooseTimePicker.setValue(UIColor.whiteColor(), forKey: "textColor")
+        chooseTimePicker.addTarget(self, action: "timeChangedValue:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -180,30 +161,16 @@ class StartReservationContainerViewController: UITableViewController {
         }
     }
 
-    func setAMButtonProperties() {
-        if (morningButtonSelected == true) {
-            morningAMButton.layer.borderColor = UIColor.whiteColor().CGColor
-            morningAMButton.layer.borderWidth = 1
-            morningAMButton.layer.cornerRadius = 16
-        } else {
-            morningAMButton.layer.borderColor = UIColor.clearColor().CGColor
-        }
-    }
-    
-    func setPMButtonProperties() {
-        if (afternoonButtonSelected == true) {
-            afternoonPMButton.layer.borderColor = UIColor.whiteColor().CGColor
-            afternoonPMButton.layer.borderWidth = 1
-            afternoonPMButton.layer.cornerRadius = 16
-        } else {
-            afternoonPMButton.layer.borderColor = UIColor.clearColor().CGColor
-        }
-    }
-    
-    func dateChangedValue(date: NSDate) {
+    func timeChangedValue(date: NSDate) {
         selectedDate = chooseTimePicker.date
-        print(selectedDate)
+        dateFormatter.dateFormat = "HH:mm a"
+        var convertedTime = dateFormatter.stringFromDate(selectedDate)
+        print(convertedTime)
+        chooseTimeLabel.text = "\(convertedTime)"
+        chooseTimeLabel.textColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+
     }
+    
 }
 
 extension NSLayoutConstraint {
