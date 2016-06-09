@@ -165,7 +165,6 @@ class StartReservationContainerViewController: UITableViewController {
         selectedDate = chooseTimePicker.date
         dateFormatter.dateFormat = "HH:mm a"
         var convertedTime = dateFormatter.stringFromDate(selectedDate)
-        print(convertedTime)
         chooseTimeLabel.text = "\(convertedTime)"
         chooseTimeLabel.textColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
 

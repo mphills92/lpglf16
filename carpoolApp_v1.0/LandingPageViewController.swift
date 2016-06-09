@@ -72,6 +72,12 @@ class LandingPageViewController: UIViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "toStartReservationSegue") {
+            //menuButton.enabled = false
+        }
+    }
+    
 }
 
 

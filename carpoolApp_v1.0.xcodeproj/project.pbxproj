@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A00B01CB5CB38008237B1 /* AppDelegate.swift */; };
-		C95A00B31CB5CB38008237B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A00B21CB5CB38008237B1 /* ViewController.swift */; };
 		C95A00B61CB5CB38008237B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B41CB5CB38008237B1 /* Main.storyboard */; };
 		C95A00B81CB5CB38008237B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B71CB5CB38008237B1 /* Assets.xcassets */; };
 		C95A00BB1CB5CB38008237B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B91CB5CB38008237B1 /* LaunchScreen.storyboard */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		C95A00AD1CB5CB38008237B1 /* carpoolApp_v1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpoolApp_v1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95A00B01CB5CB38008237B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C95A00B21CB5CB38008237B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C95A00B51CB5CB38008237B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C95A00B71CB5CB38008237B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C95A00BA1CB5CB38008237B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,17 +113,12 @@
 			children = (
 				C95A00DE1CB5CB4D008237B1 /* SWRevealViewController */,
 				C95A00B01CB5CB38008237B1 /* AppDelegate.swift */,
-				C95A00B21CB5CB38008237B1 /* ViewController.swift */,
-				C95A00E71CB5F9D5008237B1 /* LandingPageViewController.swift */,
-				C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */,
 				C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */,
-				C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */,
-				C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */,
-				C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */,
 				C95A00B41CB5CB38008237B1 /* Main.storyboard */,
 				C95A00B71CB5CB38008237B1 /* Assets.xcassets */,
 				C95A00B91CB5CB38008237B1 /* LaunchScreen.storyboard */,
 				C95A00BC1CB5CB38008237B1 /* Info.plist */,
+				C9EE3F241D09D11000F86EF2 /* View Controllers */,
 			);
 			path = carpoolApp_v1.0;
 			sourceTree = "<group>";
@@ -156,6 +149,42 @@
 				C95A00DF1CB5CBEB008237B1 /* carpoolApp_v1.0-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		C9EE3F211D09D0C400F86EF2 /* Start Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */,
+				C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */,
+				C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */,
+			);
+			name = "Start Reservation";
+			sourceTree = "<group>";
+		};
+		C9EE3F221D09D0D900F86EF2 /* Available Caddies */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */,
+			);
+			name = "Available Caddies";
+			sourceTree = "<group>";
+		};
+		C9EE3F231D09D0E600F86EF2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C95A00E71CB5F9D5008237B1 /* LandingPageViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		C9EE3F241D09D11000F86EF2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE3F231D09D0E600F86EF2 /* Home */,
+				C9EE3F211D09D0C400F86EF2 /* Start Reservation */,
+				C9EE3F221D09D0D900F86EF2 /* Available Caddies */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +321,6 @@
 				C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */,
 				C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */,
 				C9EE3F1E1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift in Sources */,
-				C95A00B31CB5CB38008237B1 /* ViewController.swift in Sources */,
 				C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */,
 				C9EE3F1C1D075F0B00F86EF2 /* StartReservationContainerViewController.swift in Sources */,
 				C95A00E21CB5CBEB008237B1 /* SWRevealViewController.m in Sources */,
