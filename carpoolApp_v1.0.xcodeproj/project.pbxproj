@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91D13DE1D0E7DEE00D177B4 /* CaddiesAvailableContainerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D13DD1D0E7DEE00D177B4 /* CaddiesAvailableContainerTableViewController.swift */; };
+		C95385BC1D0F3F73007BCA15 /* AvailableCaddiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385BB1D0F3F73007BCA15 /* AvailableCaddiesModel.swift */; };
+		C95385BF1D0F4056007BCA15 /* AvailableCaddiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385BE1D0F4056007BCA15 /* AvailableCaddiesCell.swift */; };
 		C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A00B01CB5CB38008237B1 /* AppDelegate.swift */; };
 		C95A00B61CB5CB38008237B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B41CB5CB38008237B1 /* Main.storyboard */; };
 		C95A00B81CB5CB38008237B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B71CB5CB38008237B1 /* Assets.xcassets */; };
@@ -20,7 +23,7 @@
 		C9EE3F1C1D075F0B00F86EF2 /* StartReservationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */; };
 		C9EE3F1E1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */; };
 		C9EE3F201D090A5900F86EF2 /* CaddiesAvailableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */; };
-		C9EE3F261D09EF0000F86EF2 /* ContainerCaddiesAvailableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F251D09EF0000F86EF2 /* ContainerCaddiesAvailableViewController.swift */; };
+		C9EE3F261D09EF0000F86EF2 /* ContainerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F251D09EF0000F86EF2 /* ContainerCollectionViewController.swift */; };
 		C9EE3F281D09EFE800F86EF2 /* CaddiesAvailableCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F271D09EFE800F86EF2 /* CaddiesAvailableCollectionTableViewCell.swift */; };
 		C9EE3F2A1D0A196C00F86EF2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F291D0A196C00F86EF2 /* ProfileViewController.swift */; };
 		C9EE3F2D1D0A1C5900F86EF2 /* OurStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F2C1D0A1C5900F86EF2 /* OurStoryViewController.swift */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91D13DD1D0E7DEE00D177B4 /* CaddiesAvailableContainerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaddiesAvailableContainerTableViewController.swift; path = ../CaddiesAvailableContainerTableViewController.swift; sourceTree = "<group>"; };
+		C95385BB1D0F3F73007BCA15 /* AvailableCaddiesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableCaddiesModel.swift; sourceTree = "<group>"; };
+		C95385BE1D0F4056007BCA15 /* AvailableCaddiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableCaddiesCell.swift; sourceTree = "<group>"; };
 		C95A00AD1CB5CB38008237B1 /* carpoolApp_v1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpoolApp_v1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95A00B01CB5CB38008237B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C95A00B51CB5CB38008237B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +74,7 @@
 		C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationContainerViewController.swift; path = ../StartReservationContainerViewController.swift; sourceTree = "<group>"; };
 		C9EE3F1D1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseServiceLevelSegmentedControl.swift; path = ../ChooseServiceLevelSegmentedControl.swift; sourceTree = "<group>"; };
 		C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaddiesAvailableViewController.swift; path = ../CaddiesAvailableViewController.swift; sourceTree = "<group>"; };
-		C9EE3F251D09EF0000F86EF2 /* ContainerCaddiesAvailableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerCaddiesAvailableViewController.swift; path = ../ContainerCaddiesAvailableViewController.swift; sourceTree = "<group>"; };
+		C9EE3F251D09EF0000F86EF2 /* ContainerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerCollectionViewController.swift; path = ../ContainerCollectionViewController.swift; sourceTree = "<group>"; };
 		C9EE3F271D09EFE800F86EF2 /* CaddiesAvailableCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaddiesAvailableCollectionTableViewCell.swift; path = ../CaddiesAvailableCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		C9EE3F291D0A196C00F86EF2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		C9EE3F2C1D0A1C5900F86EF2 /* OurStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OurStoryViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +108,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91D13DC1D0E7DAE00D177B4 /* Other (Reference Material) */ = {
+			isa = PBXGroup;
+			children = (
+				C9EE3F251D09EF0000F86EF2 /* ContainerCollectionViewController.swift */,
+				C9EE3F271D09EFE800F86EF2 /* CaddiesAvailableCollectionTableViewCell.swift */,
+			);
+			name = "Other (Reference Material)";
+			sourceTree = "<group>";
+		};
+		C95385BD1D0F402D007BCA15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C95385BB1D0F3F73007BCA15 /* AvailableCaddiesModel.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C95385C01D0F406B007BCA15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C95385BE1D0F4056007BCA15 /* AvailableCaddiesCell.swift */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		C95A00A41CB5CB38008237B1 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +165,9 @@
 				C95A00B71CB5CB38008237B1 /* Assets.xcassets */,
 				C95A00B91CB5CB38008237B1 /* LaunchScreen.storyboard */,
 				C95A00BC1CB5CB38008237B1 /* Info.plist */,
-				C9EE3F241D09D11000F86EF2 /* View Controllers */,
+				C95385BD1D0F402D007BCA15 /* Models */,
+				C95385C01D0F406B007BCA15 /* Views */,
+				C9EE3F241D09D11000F86EF2 /* Controllers */,
 			);
 			path = carpoolApp_v1.0;
 			sourceTree = "<group>";
@@ -179,8 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EE3F1F1D090A5900F86EF2 /* CaddiesAvailableViewController.swift */,
-				C9EE3F251D09EF0000F86EF2 /* ContainerCaddiesAvailableViewController.swift */,
-				C9EE3F271D09EFE800F86EF2 /* CaddiesAvailableCollectionTableViewCell.swift */,
+				C91D13DD1D0E7DEE00D177B4 /* CaddiesAvailableContainerTableViewController.swift */,
 			);
 			name = "Available Caddies";
 			sourceTree = "<group>";
@@ -193,7 +227,7 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
-		C9EE3F241D09D11000F86EF2 /* View Controllers */ = {
+		C9EE3F241D09D11000F86EF2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				C9EE3F231D09D0E600F86EF2 /* Home */,
@@ -204,8 +238,9 @@
 				C9EE3F311D0A1F1E00F86EF2 /* Invite Others */,
 				C9EE3F361D0A20EC00F86EF2 /* Become Caddy */,
 				C9EE3F391D0A21DC00F86EF2 /* Settings */,
+				C91D13DC1D0E7DAE00D177B4 /* Other (Reference Material) */,
 			);
-			name = "View Controllers";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		C9EE3F2B1D0A1A2000F86EF2 /* My Profile */ = {
@@ -383,10 +418,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */,
+				C95385BC1D0F3F73007BCA15 /* AvailableCaddiesModel.swift in Sources */,
 				C9EE3F331D0A1FBC00F86EF2 /* BecomeCaddyViewController.swift in Sources */,
+				C95385BF1D0F4056007BCA15 /* AvailableCaddiesCell.swift in Sources */,
 				C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */,
 				C9EE3F301D0A1EBC00F86EF2 /* InviteViewController.swift in Sources */,
-				C9EE3F261D09EF0000F86EF2 /* ContainerCaddiesAvailableViewController.swift in Sources */,
+				C9EE3F261D09EF0000F86EF2 /* ContainerCollectionViewController.swift in Sources */,
+				C91D13DE1D0E7DEE00D177B4 /* CaddiesAvailableContainerTableViewController.swift in Sources */,
 				C9EE3F1E1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift in Sources */,
 				C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */,
 				C9EE3F2D1D0A1C5900F86EF2 /* OurStoryViewController.swift in Sources */,

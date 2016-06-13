@@ -10,7 +10,7 @@ import UIKit
 
 // raywenderlich.com/99087/swift-expanding-cells-ios-collection-views
 
-class ContainerCaddiesAvailableViewController: UICollectionViewController {
+class ContainerCollectionViewController: UICollectionViewController {
     
     let reuseIdentifier = "cell"
     var items = [ "Caddy 1",
