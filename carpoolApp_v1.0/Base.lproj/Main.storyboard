@@ -435,15 +435,15 @@ deserves a caddy.</string>
                                 <exclude reference="QRC-7C-tTc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="W2W-38-XyY"/>
                                 <exclude reference="0tJ-Qe-nz5"/>
                                 <exclude reference="4ae-tA-ysw"/>
                                 <exclude reference="lSx-mc-3Cv"/>
                                 <exclude reference="uvW-KY-4cX"/>
                                 <exclude reference="xQY-tk-g0D"/>
+                                <exclude reference="orn-Vp-MXz"/>
                                 <exclude reference="3nG-eg-eFp"/>
                                 <exclude reference="O5W-ZI-sNL"/>
-                                <exclude reference="orn-Vp-MXz"/>
-                                <exclude reference="W2W-38-XyY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -452,15 +452,15 @@ deserves a caddy.</string>
                                 <include reference="QRC-7C-tTc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="W2W-38-XyY"/>
                                 <include reference="0tJ-Qe-nz5"/>
                                 <include reference="4ae-tA-ysw"/>
                                 <exclude reference="lSx-mc-3Cv"/>
                                 <exclude reference="uvW-KY-4cX"/>
                                 <include reference="xQY-tk-g0D"/>
+                                <exclude reference="orn-Vp-MXz"/>
                                 <include reference="3nG-eg-eFp"/>
                                 <include reference="O5W-ZI-sNL"/>
-                                <exclude reference="orn-Vp-MXz"/>
-                                <include reference="W2W-38-XyY"/>
                             </mask>
                         </variation>
                     </view>
@@ -611,17 +611,18 @@ deserves a caddy.</string>
             <objects>
                 <collectionViewController id="slt-Vq-raa" customClass="ContainerCaddiesAvailableViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="4Gb-2s-c9v">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="n69-L3-nto">
                             <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="5" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="aiH-mX-3WG" customClass="CaddiesAvailableCollectionTableViewCell" customModule="carpoolApp_v1_0" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -1478,6 +1479,7 @@ deserves a caddy.</string>
                         <viewControllerLayoutGuide type="bottom" id="Maq-NS-DCZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nsU-ZG-X1o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wti-hc-LX1">
@@ -1515,10 +1517,10 @@ deserves a caddy.</string>
                                 <exclude reference="pTc-5v-YR7"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="MDe-YX-F4L"/>
-                                <exclude reference="jGy-8q-Zvk"/>
                                 <exclude reference="DkE-qI-2aX"/>
                                 <exclude reference="USU-3H-HPu"/>
+                                <exclude reference="MDe-YX-F4L"/>
+                                <exclude reference="jGy-8q-Zvk"/>
                                 <exclude reference="5dD-Ap-hS4"/>
                                 <exclude reference="kth-UT-raa"/>
                             </mask>
@@ -1530,10 +1532,10 @@ deserves a caddy.</string>
                                 <include reference="pTc-5v-YR7"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="MDe-YX-F4L"/>
-                                <include reference="jGy-8q-Zvk"/>
                                 <include reference="DkE-qI-2aX"/>
                                 <include reference="USU-3H-HPu"/>
+                                <include reference="MDe-YX-F4L"/>
+                                <include reference="jGy-8q-Zvk"/>
                                 <include reference="5dD-Ap-hS4"/>
                                 <include reference="kth-UT-raa"/>
                             </mask>
@@ -1617,8 +1619,7 @@ deserves a caddy.</string>
                                         <exclude reference="xOV-id-Flh"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="105" y="246" width="91" height="32"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="xOV-id-Flh"/>
                                     </mask>
@@ -1755,17 +1756,17 @@ deserves a caddy.</string>
                                 <exclude reference="o0E-Qk-Fzn"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="NFD-up-ngB"/>
-                                <exclude reference="H40-Md-TIo"/>
-                                <exclude reference="JDa-qy-XGy"/>
                                 <exclude reference="1Tt-g0-ixT"/>
                                 <exclude reference="DCv-mc-Yev"/>
+                                <exclude reference="H40-Md-TIo"/>
+                                <exclude reference="JDa-qy-XGy"/>
                                 <exclude reference="9UM-5y-D2l"/>
                                 <exclude reference="aGE-qh-6SP"/>
-                                <exclude reference="Zer-fY-b5J"/>
-                                <exclude reference="dJq-qG-ZZR"/>
                                 <exclude reference="oUV-Nq-UGC"/>
                                 <exclude reference="ypg-Iv-GCs"/>
+                                <exclude reference="Zer-fY-b5J"/>
+                                <exclude reference="dJq-qG-ZZR"/>
+                                <exclude reference="NFD-up-ngB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1778,17 +1779,17 @@ deserves a caddy.</string>
                                 <include reference="o0E-Qk-Fzn"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="NFD-up-ngB"/>
-                                <include reference="H40-Md-TIo"/>
-                                <include reference="JDa-qy-XGy"/>
                                 <include reference="1Tt-g0-ixT"/>
                                 <include reference="DCv-mc-Yev"/>
+                                <include reference="H40-Md-TIo"/>
+                                <include reference="JDa-qy-XGy"/>
                                 <include reference="9UM-5y-D2l"/>
                                 <include reference="aGE-qh-6SP"/>
-                                <include reference="Zer-fY-b5J"/>
-                                <include reference="dJq-qG-ZZR"/>
                                 <include reference="oUV-Nq-UGC"/>
                                 <include reference="ypg-Iv-GCs"/>
+                                <include reference="Zer-fY-b5J"/>
+                                <include reference="dJq-qG-ZZR"/>
+                                <include reference="NFD-up-ngB"/>
                             </mask>
                         </variation>
                     </view>
@@ -1838,6 +1839,7 @@ deserves a caddy.</string>
                         <viewControllerLayoutGuide type="bottom" id="R80-e2-FF3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ntl-2E-aap">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcC-Ed-eXK">
@@ -1866,10 +1868,10 @@ deserves a caddy.</string>
                                 <exclude reference="bhe-Ww-v6L"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Bzn-vx-Frz"/>
-                                <exclude reference="xEf-mo-I5a"/>
                                 <exclude reference="7yT-li-7cg"/>
                                 <exclude reference="PTU-8C-xfA"/>
+                                <exclude reference="Bzn-vx-Frz"/>
+                                <exclude reference="xEf-mo-I5a"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1878,10 +1880,10 @@ deserves a caddy.</string>
                                 <include reference="bhe-Ww-v6L"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Bzn-vx-Frz"/>
-                                <include reference="xEf-mo-I5a"/>
                                 <include reference="7yT-li-7cg"/>
                                 <include reference="PTU-8C-xfA"/>
+                                <include reference="Bzn-vx-Frz"/>
+                                <include reference="xEf-mo-I5a"/>
                             </mask>
                         </variation>
                     </view>
@@ -1925,6 +1927,7 @@ deserves a caddy.</string>
                         <viewControllerLayoutGuide type="bottom" id="Czb-6k-Akq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xmv-Je-jdG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPC-VP-KVC">
@@ -1953,10 +1956,10 @@ deserves a caddy.</string>
                                 <exclude reference="NiE-Jd-PQc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="G8H-ix-9Tw"/>
+                                <exclude reference="Zuz-YM-IYg"/>
                                 <exclude reference="Efe-oU-HHf"/>
                                 <exclude reference="qbY-mH-m1c"/>
-                                <exclude reference="Zuz-YM-IYg"/>
-                                <exclude reference="G8H-ix-9Tw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1965,10 +1968,10 @@ deserves a caddy.</string>
                                 <include reference="NiE-Jd-PQc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="G8H-ix-9Tw"/>
+                                <include reference="Zuz-YM-IYg"/>
                                 <include reference="Efe-oU-HHf"/>
                                 <include reference="qbY-mH-m1c"/>
-                                <include reference="Zuz-YM-IYg"/>
-                                <include reference="G8H-ix-9Tw"/>
                             </mask>
                         </variation>
                     </view>
@@ -2010,6 +2013,7 @@ deserves a caddy.</string>
                         <viewControllerLayoutGuide type="bottom" id="H9Z-2b-Y6U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ofA-Wh-tPq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srL-44-977">
@@ -2017,9 +2021,6 @@ deserves a caddy.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="136" y="290" width="98" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2032,8 +2033,8 @@ deserves a caddy.</string>
                                 <exclude reference="srL-44-977"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="diP-fs-e3w"/>
                                 <exclude reference="LUV-R9-4Dm"/>
+                                <exclude reference="diP-fs-e3w"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -2041,8 +2042,8 @@ deserves a caddy.</string>
                                 <include reference="srL-44-977"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="diP-fs-e3w"/>
                                 <include reference="LUV-R9-4Dm"/>
+                                <include reference="diP-fs-e3w"/>
                             </mask>
                         </variation>
                     </view>
@@ -2068,6 +2069,7 @@ deserves a caddy.</string>
                         <viewControllerLayoutGuide type="bottom" id="Eec-aZ-aJo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FKb-hZ-g9P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
