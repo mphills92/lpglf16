@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Caddy #1</string>
+		<key>Location</key>
+		<string>Houston, Texas</string>
+		<key>Rating</key>
+		<string>4.9 stars</string>
+		<key>Background</key>
+		<string>Inspiration-01</string>
+		<key>Handicap</key>
+		<real>3.5</real>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Caddy #2</string>
+		<key>Location</key>
+		<string>Bellaire, Texas</string>
+		<key>Rating</key>
+		<string>4.7 stars</string>
+		<key>Background</key>
+		<string>Inspiration-02</string>
+		<key>Handicap</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Caddy #3</string>
+		<key>Location</key>
+		<string>Katy, Texas</string>
+		<key>Rating</key>
+		<string>4.4 stars</string>
+		<key>Background</key>
+		<string>Inspiration-03</string>
+		<key>Handicap</key>
+		<integer>6</integer>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Caddy #4</string>
+		<key>Location</key>
+		<string>Sugar Land, Texas</string>
+		<key>Rating</key>
+		<string>4.1 stars</string>
+		<key>Background</key>
+		<string>Inspiration-04</string>
+		<key>Handicap</key>
+		<real>2.4</real>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Caddy #5</string>
+		<key>Location</key>
+		<string>Houston, Texas</string>
+		<key>Rating</key>
+		<string>3.6 stars</string>
+		<key>Background</key>
+		<string>Inspiration-05</string>
+		<key>Handicap</key>
+		<real>12.8</real>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Caddy #6</string>
+		<key>Location</key>
+		<string>Spring, Texas</string>
+		<key>Rating</key>
+		<string>3.2 stars</string>
+		<key>Background</key>
+		<string>Inspriation-06</string>
+		<key>Handicap</key>
+		<real>7.9</real>
+	</dict>
+</array>
+</plist>
