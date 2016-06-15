@@ -51,7 +51,7 @@ class StartReservationViewController: UIViewController {
         bottomWhiteView.layer.cornerRadius = 8
         bottomWhiteView.layer.masksToBounds = true
         
-        findAvailableCaddiesButton.layer.cornerRadius = 15
+        findAvailableCaddiesButton.layer.cornerRadius = findAvailableCaddiesButton.bounds.height / 2
         
     }
     

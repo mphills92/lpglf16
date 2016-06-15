@@ -25,7 +25,7 @@ class AvailableCaddiesCell: UICollectionViewCell {
                 imageView.image = UIImage(named: "DefaultUserBannerProfileImage")
                 nameLabel.text = caddiesAvailable.name
                 locationLabel.text = caddiesAvailable.location
-                reserveCaddyButton.layer.cornerRadius = 15
+                reserveCaddyButton.layer.cornerRadius = reserveCaddyButton.bounds.height / 2
                 caddyHandicapLabel.text = "Handicap: \(caddiesAvailable.handicap)"
                 
                 //imageView.image = caddiesAvailable.backgroundImage
@@ -41,8 +41,8 @@ class AvailableCaddiesCell: UICollectionViewCell {
         
         let delta = 1 - ((featuredHeight - CGRectGetHeight(frame)) / (featuredHeight - standardHeight))
         
-        let minAlpha: CGFloat = 0.2
-        let maxAlpha: CGFloat = 0.75
+        let minAlpha: CGFloat = 0.25
+        let maxAlpha: CGFloat = 0.8
         imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
         
         let scale = max(delta, 0.65)

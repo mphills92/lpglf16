@@ -36,7 +36,7 @@ class LandingPageViewController: UIViewController {
         
         findCaddyButton.layer.borderColor = UIColor.whiteColor().CGColor
         findCaddyButton.layer.borderWidth = 1
-        findCaddyButton.layer.cornerRadius = 15
+        findCaddyButton.layer.cornerRadius = findCaddyButton.bounds.height / 2
         findCaddyButton.layer.backgroundColor = UIColor.darkGrayColor().colorWithAlphaComponent(0.2).CGColor
     
         navigationController?.navigationBar.barTintColor = UIColor.whiteColor()

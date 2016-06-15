@@ -27,7 +27,8 @@ class CaddiesAvailableViewController: UIViewController {
         popoverView.layer.shadowRadius = 5
         popoverView.layer.shouldRasterize = true
         
-        navigationBar.layer.cornerRadius = 8
+        navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        navigationBar.shadowImage = UIImage()
         
     }
 }

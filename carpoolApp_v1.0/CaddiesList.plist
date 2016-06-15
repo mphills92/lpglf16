@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>Name</key>
-		<string>Caddy #1</string>
+		<string>Luke Dixon</string>
 		<key>Location</key>
 		<string>Houston, Texas</string>
 		<key>Rating</key>
@@ -16,7 +16,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Caddy #2</string>
+		<string>Cedric Nelson</string>
 		<key>Location</key>
 		<string>Bellaire, Texas</string>
 		<key>Rating</key>
@@ -28,7 +28,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Caddy #3</string>
+		<string>Shannon Daniels</string>
 		<key>Location</key>
 		<string>Katy, Texas</string>
 		<key>Rating</key>
@@ -40,7 +40,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Caddy #4</string>
+		<string>Jorge Fox</string>
 		<key>Location</key>
 		<string>Sugar Land, Texas</string>
 		<key>Rating</key>
@@ -52,7 +52,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Caddy #5</string>
+		<string>Rex Moreno</string>
 		<key>Location</key>
 		<string>Houston, Texas</string>
 		<key>Rating</key>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>Name</key>
-		<string>Caddy #6</string>
+		<string>Doug Wright</string>
 		<key>Location</key>
 		<string>Spring, Texas</string>
 		<key>Rating</key>
