@@ -16,6 +16,7 @@
 		C95385CE1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385CD1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift */; };
 		C95385D01D10B8EE007BCA15 /* ConfirmReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385CF1D10B8EE007BCA15 /* ConfirmReservationViewController.swift */; };
 		C95385D31D11D96D007BCA15 /* ContainerConfirmReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385D21D11D96D007BCA15 /* ContainerConfirmReservationViewController.swift */; };
+		C95385D51D120CC5007BCA15 /* ProfileSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385D41D120CC5007BCA15 /* ProfileSegmentedControl.swift */; };
 		C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A00B01CB5CB38008237B1 /* AppDelegate.swift */; };
 		C95A00B61CB5CB38008237B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B41CB5CB38008237B1 /* Main.storyboard */; };
 		C95A00B81CB5CB38008237B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A00B71CB5CB38008237B1 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		C95385CD1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableCaddiesCell.swift; path = carpoolApp_v1.0/AvailableCaddiesCell.swift; sourceTree = "<group>"; };
 		C95385CF1D10B8EE007BCA15 /* ConfirmReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfirmReservationViewController.swift; path = ../ConfirmReservationViewController.swift; sourceTree = "<group>"; };
 		C95385D21D11D96D007BCA15 /* ContainerConfirmReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerConfirmReservationViewController.swift; path = ../ContainerConfirmReservationViewController.swift; sourceTree = "<group>"; };
+		C95385D41D120CC5007BCA15 /* ProfileSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileSegmentedControl.swift; path = ../ProfileSegmentedControl.swift; sourceTree = "<group>"; };
 		C95A00AD1CB5CB38008237B1 /* carpoolApp_v1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpoolApp_v1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95A00B01CB5CB38008237B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C95A00B51CB5CB38008237B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EE3F291D0A196C00F86EF2 /* ProfileViewController.swift */,
+				C95385D41D120CC5007BCA15 /* ProfileSegmentedControl.swift */,
 			);
 			name = "My Profile";
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				C95A00B11CB5CB38008237B1 /* AppDelegate.swift in Sources */,
 				C9EE3F2D1D0A1C5900F86EF2 /* OurStoryViewController.swift in Sources */,
 				C95385CE1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift in Sources */,
+				C95385D51D120CC5007BCA15 /* ProfileSegmentedControl.swift in Sources */,
 				C95385C21D0F5A41007BCA15 /* UltravisualLayout.swift in Sources */,
 				C9EE3F381D0A217F00F86EF2 /* SettingsViewController.swift in Sources */,
 				C95385C61D0F5B86007BCA15 /* ContainerCaddiesAvailableViewController.swift in Sources */,
