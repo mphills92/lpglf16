@@ -1828,41 +1828,7 @@ deserves a caddy.</string>
                                         </imageView>
                                         <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="696-OD-emc">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## of Rounds Caddied" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ji-Rl-06s">
-                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="ZTV-lV-Y0y">
-                                                            <variation key="widthClass=compact" constant="24"/>
-                                                        </constraint>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="ZTV-lV-Y0y"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="150" width="350" height="24"/>
-                                                        <mask key="constraints">
-                                                            <include reference="ZTV-lV-Y0y"/>
-                                                        </mask>
-                                                    </variation>
-                                                </label>
-                                            </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="0ji-Rl-06s"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="subviews">
-                                                    <include reference="0ji-Rl-06s"/>
-                                                </mask>
-                                            </variation>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Knowledge" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihX-LH-4dO">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -2023,6 +1989,27 @@ deserves a caddy.</string>
                                                 </mask>
                                             </variation>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## of Rounds Caddied" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ji-Rl-06s">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="ZTV-lV-Y0y">
+                                                    <variation key="widthClass=compact" constant="24"/>
+                                                </constraint>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="ZTV-lV-Y0y"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="ZTV-lV-Y0y"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Handicap: ##" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSN-9z-On0">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <constraints>
@@ -2038,8 +2025,7 @@ deserves a caddy.</string>
                                                     <exclude reference="XO5-uG-7Tb"/>
                                                 </mask>
                                             </variation>
-                                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                <rect key="frame" x="0.0" y="174" width="350" height="18"/>
+                                            <variation key="widthClass=compact">
                                                 <mask key="constraints">
                                                     <include reference="XO5-uG-7Tb"/>
                                                 </mask>
@@ -2103,13 +2089,18 @@ deserves a caddy.</string>
                                     </constraint>
                                     <constraint firstAttribute="trailingMargin" secondItem="sFd-UN-C5s" secondAttribute="trailing" constant="-8" id="KH2-UQ-uye"/>
                                     <constraint firstItem="gbC-fc-2Lf" firstAttribute="top" secondItem="7m5-gT-vTZ" secondAttribute="bottom" constant="5" id="LKg-oQ-58o"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="0ji-Rl-06s" secondAttribute="trailing" constant="-8" id="MXb-Zt-gFJ"/>
                                     <constraint firstItem="soA-Cx-oYd" firstAttribute="top" secondItem="7m5-gT-vTZ" secondAttribute="bottom" constant="1" id="MgG-8K-E1l">
                                         <variation key="widthClass=compact" constant="5"/>
                                     </constraint>
+                                    <constraint firstItem="fSN-9z-On0" firstAttribute="top" secondItem="0ji-Rl-06s" secondAttribute="bottom" id="RLb-Zt-gEt"/>
                                     <constraint firstItem="mV2-UZ-9bp" firstAttribute="centerY" secondItem="wDQ-kp-SxD" secondAttribute="centerY" id="RoG-lG-pDg">
                                         <variation key="widthClass=compact" constant="-122"/>
                                     </constraint>
                                     <constraint firstItem="pEp-3u-K3h" firstAttribute="centerY" secondItem="wDQ-kp-SxD" secondAttribute="centerY" id="XlD-NU-nfo"/>
+                                    <constraint firstItem="0ji-Rl-06s" firstAttribute="centerY" secondItem="wDQ-kp-SxD" secondAttribute="centerY" id="ZgJ-PU-ntf">
+                                        <variation key="widthClass=compact" constant="12"/>
+                                    </constraint>
                                     <constraint firstItem="b84-wD-omQ" firstAttribute="leading" secondItem="mV2-UZ-9bp" secondAttribute="trailing" constant="24" id="aTM-cH-Is6">
                                         <variation key="widthClass=compact" constant="20"/>
                                     </constraint>
@@ -2124,6 +2115,7 @@ deserves a caddy.</string>
                                         <variation key="widthClass=compact" constant="0.0"/>
                                     </constraint>
                                     <constraint firstAttribute="trailingMargin" secondItem="fSN-9z-On0" secondAttribute="trailing" constant="-8" id="iZg-0x-CDq"/>
+                                    <constraint firstItem="0ji-Rl-06s" firstAttribute="leading" secondItem="wDQ-kp-SxD" secondAttribute="leadingMargin" constant="-8" id="jUX-mh-drm"/>
                                     <constraint firstItem="696-OD-emc" firstAttribute="top" secondItem="wDQ-kp-SxD" secondAttribute="top" id="jh5-lp-5DV"/>
                                     <constraint firstAttribute="trailing" secondItem="696-OD-emc" secondAttribute="trailing" id="lGd-8m-uCf"/>
                                     <constraint firstItem="b84-wD-omQ" firstAttribute="centerY" secondItem="wDQ-kp-SxD" secondAttribute="centerY" id="r0I-LO-KJG">
@@ -2148,6 +2140,7 @@ deserves a caddy.</string>
                                         <exclude reference="WZx-wY-1dP"/>
                                         <exclude reference="gbC-fc-2Lf"/>
                                         <exclude reference="sFd-UN-C5s"/>
+                                        <exclude reference="0ji-Rl-06s"/>
                                         <exclude reference="fSN-9z-On0"/>
                                         <exclude reference="LC4-ka-Sxn"/>
                                     </mask>
@@ -2174,6 +2167,10 @@ deserves a caddy.</string>
                                         <exclude reference="c2g-Us-AeR"/>
                                         <exclude reference="02s-Ia-4HD"/>
                                         <exclude reference="I4C-ik-K2R"/>
+                                        <exclude reference="MXb-Zt-gFJ"/>
+                                        <exclude reference="ZgJ-PU-ntf"/>
+                                        <exclude reference="jUX-mh-drm"/>
+                                        <exclude reference="RLb-Zt-gEt"/>
                                         <exclude reference="iZg-0x-CDq"/>
                                         <exclude reference="zMm-AA-BLK"/>
                                         <exclude reference="aTM-cH-Is6"/>
@@ -2197,6 +2194,7 @@ deserves a caddy.</string>
                                         <include reference="WZx-wY-1dP"/>
                                         <include reference="gbC-fc-2Lf"/>
                                         <include reference="sFd-UN-C5s"/>
+                                        <include reference="0ji-Rl-06s"/>
                                         <include reference="fSN-9z-On0"/>
                                         <include reference="LC4-ka-Sxn"/>
                                     </mask>
@@ -2223,6 +2221,10 @@ deserves a caddy.</string>
                                         <include reference="c2g-Us-AeR"/>
                                         <include reference="02s-Ia-4HD"/>
                                         <include reference="I4C-ik-K2R"/>
+                                        <include reference="MXb-Zt-gFJ"/>
+                                        <include reference="ZgJ-PU-ntf"/>
+                                        <include reference="jUX-mh-drm"/>
+                                        <include reference="RLb-Zt-gEt"/>
                                         <include reference="iZg-0x-CDq"/>
                                         <include reference="zMm-AA-BLK"/>
                                         <include reference="aTM-cH-Is6"/>
@@ -2238,9 +2240,9 @@ deserves a caddy.</string>
                                     <outlet property="caddyHandicapLabel" destination="fSN-9z-On0" id="mUZ-MN-ueR"/>
                                     <outlet property="imageCoverView" destination="696-OD-emc" id="Yen-L9-V4H"/>
                                     <outlet property="imageView" destination="pEp-3u-K3h" id="ARV-RR-DTj"/>
-                                    <outlet property="locationLabel" destination="0ji-Rl-06s" id="KcT-Rf-lB2"/>
                                     <outlet property="nameLabel" destination="sFd-UN-C5s" id="b7e-Pb-JEm"/>
                                     <outlet property="reserveCaddyButton" destination="LC4-ka-Sxn" id="hAs-C8-Q79"/>
+                                    <outlet property="roundsCaddiedLabel" destination="0ji-Rl-06s" id="RqC-jl-b2g"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -2281,6 +2283,23 @@ deserves a caddy.</string>
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wt8-8O-e6m">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="XtY-QK-5e3"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XtY-QK-5e3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="XtY-QK-5e3"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqq-2f-nuU">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2311,11 +2330,11 @@ deserves a caddy.</string>
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="N6d-E9-MNp">
-                                                <variation key="widthClass=compact" constant="22"/>
+                                                <variation key="widthClass=compact" constant="30"/>
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -2332,11 +2351,11 @@ deserves a caddy.</string>
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="4he-e3-zfI">
-                                                <variation key="widthClass=compact" constant="22"/>
+                                                <variation key="widthClass=compact" constant="30"/>
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -2430,11 +2449,12 @@ deserves a caddy.</string>
                                     <constraint firstItem="SDS-OL-l0x" firstAttribute="top" secondItem="K63-Sq-rIZ" secondAttribute="top" constant="8" id="GHi-hY-12f"/>
                                     <constraint firstItem="SDS-OL-l0x" firstAttribute="leading" secondItem="K63-Sq-rIZ" secondAttribute="leading" id="K2f-cC-FxS"/>
                                     <constraint firstItem="V2J-u7-ccC" firstAttribute="top" secondItem="K63-Sq-rIZ" secondAttribute="top" constant="52" id="Lnp-L7-SUm">
-                                        <variation key="widthClass=compact" constant="45"/>
+                                        <variation key="widthClass=compact" constant="52"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="XzG-CU-XH0" secondAttribute="trailing" constant="120" id="PXY-gd-gdO">
                                         <variation key="widthClass=compact" constant="50"/>
                                     </constraint>
+                                    <constraint firstItem="ULA-3v-rPd" firstAttribute="top" secondItem="wt8-8O-e6m" secondAttribute="bottom" id="TgM-2n-nN9"/>
                                     <constraint firstAttribute="trailing" secondItem="L7d-gl-bE3" secondAttribute="trailing" constant="20" id="Tvz-vg-HAB">
                                         <variation key="widthClass=compact" constant="30"/>
                                     </constraint>
@@ -2448,6 +2468,8 @@ deserves a caddy.</string>
                                     <constraint firstItem="XzG-CU-XH0" firstAttribute="leading" secondItem="K63-Sq-rIZ" secondAttribute="leading" constant="34" id="buN-Rt-54q">
                                         <variation key="widthClass=compact" constant="20"/>
                                     </constraint>
+                                    <constraint firstItem="wt8-8O-e6m" firstAttribute="top" secondItem="V2J-u7-ccC" secondAttribute="top" constant="-5" id="cCj-7d-oWs"/>
+                                    <constraint firstItem="wt8-8O-e6m" firstAttribute="top" secondItem="V2J-u7-ccC" secondAttribute="bottom" constant="-30" id="cyN-QO-E5O"/>
                                     <constraint firstItem="ULA-3v-rPd" firstAttribute="top" secondItem="2t5-UC-kJu" secondAttribute="bottom" constant="8" id="e8B-kX-uda">
                                         <variation key="widthClass=compact" constant="15"/>
                                     </constraint>
@@ -2455,11 +2477,15 @@ deserves a caddy.</string>
                                         <variation key="widthClass=compact" constant="0.0"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="2t5-UC-kJu" secondAttribute="trailing" constant="20" id="fYP-wN-xfm"/>
+                                    <constraint firstItem="wt8-8O-e6m" firstAttribute="leading" secondItem="K63-Sq-rIZ" secondAttribute="leading" id="fe2-PN-8aV"/>
                                     <constraint firstAttribute="trailing" secondItem="XzG-CU-XH0" secondAttribute="trailing" constant="34" id="gsI-Oc-0eJ">
                                         <variation key="widthClass=compact" constant="50"/>
                                     </constraint>
                                     <constraint firstItem="2t5-UC-kJu" firstAttribute="top" secondItem="V2J-u7-ccC" secondAttribute="bottom" constant="-4" id="jLG-9P-KDP">
                                         <variation key="widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="2t5-UC-kJu" firstAttribute="bottom" secondItem="wt8-8O-e6m" secondAttribute="bottom" constant="-30" id="jsd-ih-Nkk">
+                                        <variation key="widthClass=compact" constant="-5"/>
                                     </constraint>
                                     <constraint firstItem="L7d-gl-bE3" firstAttribute="leading" secondItem="XzG-CU-XH0" secondAttribute="trailing" constant="-26" id="kmg-TR-LL2">
                                         <variation key="widthClass=compact" constant="5"/>
@@ -2468,6 +2494,9 @@ deserves a caddy.</string>
                                         <variation key="widthClass=compact" constant="20"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="SDS-OL-l0x" secondAttribute="trailing" id="nuu-ou-6R7"/>
+                                    <constraint firstItem="wt8-8O-e6m" firstAttribute="top" secondItem="SDS-OL-l0x" secondAttribute="bottom" id="pRS-gj-Qq5"/>
+                                    <constraint firstAttribute="trailing" secondItem="wt8-8O-e6m" secondAttribute="trailing" id="uVr-i2-hCC"/>
+                                    <constraint firstItem="V2J-u7-ccC" firstAttribute="top" secondItem="SDS-OL-l0x" secondAttribute="bottom" id="uad-7W-gvV"/>
                                     <constraint firstItem="XzG-CU-XH0" firstAttribute="top" secondItem="ULA-3v-rPd" secondAttribute="bottom" constant="3" id="vyn-Cv-SDd">
                                         <variation key="widthClass=compact" constant="15"/>
                                     </constraint>
@@ -2481,6 +2510,7 @@ deserves a caddy.</string>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="SDS-OL-l0x"/>
+                                        <exclude reference="wt8-8O-e6m"/>
                                         <exclude reference="Lqq-2f-nuU"/>
                                         <exclude reference="V2J-u7-ccC"/>
                                         <exclude reference="2t5-UC-kJu"/>
@@ -2492,14 +2522,22 @@ deserves a caddy.</string>
                                         <exclude reference="GHi-hY-12f"/>
                                         <exclude reference="K2f-cC-FxS"/>
                                         <exclude reference="nuu-ou-6R7"/>
+                                        <exclude reference="cCj-7d-oWs"/>
+                                        <exclude reference="cyN-QO-E5O"/>
+                                        <exclude reference="fe2-PN-8aV"/>
+                                        <exclude reference="pRS-gj-Qq5"/>
+                                        <exclude reference="uVr-i2-hCC"/>
                                         <exclude reference="4y1-gf-foS"/>
                                         <exclude reference="Lnp-L7-SUm"/>
                                         <exclude reference="XML-Pv-ku2"/>
                                         <exclude reference="eUr-8p-QLZ"/>
+                                        <exclude reference="uad-7W-gvV"/>
                                         <exclude reference="bqf-s9-ECM"/>
                                         <exclude reference="fYP-wN-xfm"/>
                                         <exclude reference="jLG-9P-KDP"/>
+                                        <exclude reference="jsd-ih-Nkk"/>
                                         <exclude reference="FA0-ya-V6Y"/>
+                                        <exclude reference="TgM-2n-nN9"/>
                                         <exclude reference="e8B-kX-uda"/>
                                         <exclude reference="ziD-eS-apa"/>
                                         <exclude reference="PXY-gd-gdO"/>
@@ -2520,6 +2558,7 @@ deserves a caddy.</string>
                                 <variation key="widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="SDS-OL-l0x"/>
+                                        <include reference="wt8-8O-e6m"/>
                                         <include reference="Lqq-2f-nuU"/>
                                         <include reference="V2J-u7-ccC"/>
                                         <include reference="2t5-UC-kJu"/>
@@ -2531,15 +2570,23 @@ deserves a caddy.</string>
                                         <include reference="GHi-hY-12f"/>
                                         <include reference="K2f-cC-FxS"/>
                                         <include reference="nuu-ou-6R7"/>
+                                        <include reference="cCj-7d-oWs"/>
+                                        <exclude reference="cyN-QO-E5O"/>
+                                        <include reference="fe2-PN-8aV"/>
+                                        <include reference="pRS-gj-Qq5"/>
+                                        <include reference="uVr-i2-hCC"/>
                                         <include reference="4y1-gf-foS"/>
-                                        <include reference="Lnp-L7-SUm"/>
+                                        <exclude reference="Lnp-L7-SUm"/>
                                         <include reference="XML-Pv-ku2"/>
                                         <exclude reference="eUr-8p-QLZ"/>
+                                        <exclude reference="uad-7W-gvV"/>
                                         <include reference="bqf-s9-ECM"/>
                                         <include reference="fYP-wN-xfm"/>
-                                        <include reference="jLG-9P-KDP"/>
+                                        <exclude reference="jLG-9P-KDP"/>
+                                        <include reference="jsd-ih-Nkk"/>
                                         <include reference="FA0-ya-V6Y"/>
-                                        <include reference="e8B-kX-uda"/>
+                                        <include reference="TgM-2n-nN9"/>
+                                        <exclude reference="e8B-kX-uda"/>
                                         <include reference="ziD-eS-apa"/>
                                         <exclude reference="PXY-gd-gdO"/>
                                         <include reference="buN-Rt-54q"/>

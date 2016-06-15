@@ -14,7 +14,7 @@ class AvailableCaddiesCell: UICollectionViewCell {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var imageCoverView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var roundsCaddiedLabel: UILabel!
     @IBOutlet weak var reserveCaddyButton: UIButton!
     @IBOutlet weak var caddyHandicapLabel: UILabel!
  
@@ -24,9 +24,9 @@ class AvailableCaddiesCell: UICollectionViewCell {
             if let caddiesAvailable = caddiesAvailable {
                 imageView.image = UIImage(named: "DefaultUserBannerProfileImage")
                 nameLabel.text = caddiesAvailable.name
-                locationLabel.text = caddiesAvailable.location
+                roundsCaddiedLabel.text = "\(caddiesAvailable.rounds) Rounds Caddied"
                 reserveCaddyButton.layer.cornerRadius = reserveCaddyButton.bounds.height / 2
-                caddyHandicapLabel.text = "Handicap: \(caddiesAvailable.handicap)"
+                caddyHandicapLabel.text = "\(caddiesAvailable.handicap) Handicap"
                 
                 //imageView.image = caddiesAvailable.backgroundImage
             }
@@ -48,7 +48,7 @@ class AvailableCaddiesCell: UICollectionViewCell {
         let scale = max(delta, 0.65)
         //titleLabel.transform = CGAffineTransformMakeScale(scale, scale)
         nameLabel.transform = CGAffineTransformMakeScale(scale, scale)
-        locationLabel.transform = CGAffineTransformMakeScale(scale, scale)
+        roundsCaddiedLabel.transform = CGAffineTransformMakeScale(scale, scale)
         
         caddyHandicapLabel.transform = CGAffineTransformMakeScale(scale, scale)
         caddyHandicapLabel.alpha = delta

@@ -19,7 +19,7 @@ class Session {
  */
     
     var name: String
-    var location: String
+    var rounds: Int
     var rating: String
     var handicap: Float
     //var backgroundImage: UIImage
@@ -32,9 +32,9 @@ class Session {
   }
  */
   
-    init(name: String, location: String, rating: String, handicap: Float) {
+    init(name: String, rounds: Int, rating: String, handicap: Float) {
         self.name = name
-        self.location = location
+        self.rounds = rounds
         self.rating = rating
         self.handicap = handicap
         //self.backgroundImage = backgroundImage
@@ -61,12 +61,12 @@ class Session {
     
     convenience init(dictionary: NSDictionary) {
         let name = dictionary["Name"] as? String
-        let location = dictionary["Location"] as? String
+        let rounds = dictionary["Rounds"] as? Int
         let rating = dictionary["Rating"] as? String
         let handicap = dictionary["Handicap"] as? Float
         //let backgroundName = dictionary["Background"] as? String
         //let backgroundImage = UIImage(named: backgroundName!)
-        self.init(name: name!, location: location!, rating: rating!, handicap: handicap!)
+        self.init(name: name!, rounds: rounds!, rating: rating!, handicap: handicap!)
     }
 
 }
