@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
     let screenSize: CGRect = UIScreen.mainScreen().bounds
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var userProfileImage: UIImageView!
     @IBOutlet weak var stickySegmentedTab: UIView!
     @IBOutlet weak var constrainedStickyTabToNavBar: NSLayoutConstraint!
     
@@ -29,6 +30,8 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
         navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HelveticaNeue-Light", size: 20)!]
+        
+        self.userProfileImage.layer.cornerRadius = 8
         
         self.stickySegmentedTab.layer.shadowOpacity = 0.25
         self.stickySegmentedTab.layer.shadowOffset = CGSizeMake(0.0, 0.0)

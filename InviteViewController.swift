@@ -10,6 +10,10 @@ import UIKit
 
 class InviteViewController: UIViewController {
     
+    @IBOutlet weak var viaTextButton: UIButton!
+    @IBOutlet weak var viaEmailButton: UIButton!
+    @IBOutlet weak var viaFacebookButton: UIButton!
+    @IBOutlet weak var viaTwitterButton: UIButton!
     
     @IBAction func closeViewButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
@@ -22,5 +26,10 @@ class InviteViewController: UIViewController {
         navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HelveticaNeue-Light", size: 20)!]
+        
+        viaTextButton.layer.cornerRadius = viaTextButton.bounds.height / 2
+        viaEmailButton.layer.cornerRadius = viaEmailButton.bounds.height / 2
+        viaFacebookButton.layer.cornerRadius = viaFacebookButton.bounds.height / 2
+        viaTwitterButton.layer.cornerRadius = viaTwitterButton.bounds.height / 2
     }
 }
