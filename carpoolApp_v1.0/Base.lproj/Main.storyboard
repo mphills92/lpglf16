@@ -4627,7 +4627,7 @@ deserves a caddy.</string>
         <scene sceneID="9po-3z-DT6">
             <objects>
                 <tableViewController id="dHA-Dk-4bs" customClass="SettingsViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="1pD-Ks-XpF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="1pD-Ks-XpF">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -5016,7 +5016,7 @@ deserves a caddy.</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="1My-2M-hIh">
+                            <tableViewSection footerTitle="Loop Golf (Version 0.1) - We're just getting started" id="1My-2M-hIh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FvT-Gz-O0V">
                                         <rect key="frame" x="0.0" y="648" width="400" height="44"/>
@@ -5073,7 +5073,7 @@ deserves a caddy.</string>
                         </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="400" height="700"/>
+                    <size key="freeformSize" width="400" height="720"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdS-c7-Nfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

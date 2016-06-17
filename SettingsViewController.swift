@@ -41,4 +41,12 @@ extension SettingsViewController {
             return 12
         }
     }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if (section == 3) {
+            return 65
+        } else {
+            return 0
+        }
+    }
 }
