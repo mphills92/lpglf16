@@ -22,7 +22,7 @@ extension ContainerConfirmReservationViewController {
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if (section == 0) {
-            return 30
+            return 32
         } else {
             return 12
         }
