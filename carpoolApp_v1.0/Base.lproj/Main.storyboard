@@ -204,7 +204,7 @@ deserves a caddy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FC4-Ug-FiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2619" y="337"/>
+            <point key="canvasLocation" x="3021" y="337"/>
         </scene>
         <!--Start Reservation View Controller-->
         <scene sceneID="ZgB-jU-dNX">
@@ -474,7 +474,7 @@ deserves a caddy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6l-0z-09w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358.5" y="337"/>
+            <point key="canvasLocation" x="4093.5" y="337"/>
         </scene>
         <!--Caddies Available View Controller-->
         <scene sceneID="dSI-kw-cPe">
@@ -607,7 +607,7 @@ deserves a caddy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="54U-qE-EbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358.5" y="1108"/>
+            <point key="canvasLocation" x="4093.5" y="1072"/>
         </scene>
         <!--Start Reservation Container View Controller-->
         <scene sceneID="AQT-va-lKJ">
@@ -1344,7 +1344,7 @@ deserves a caddy.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9N-Og-Dat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4132.5" y="337"/>
+            <point key="canvasLocation" x="4828.5" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RvY-14-IaS">
@@ -1528,7 +1528,109 @@ deserves a caddy.</string>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbY-Us-Zq1">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZv-Fj-nZn">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <connections>
+                                                    <segue destination="nWs-yA-e4z" kind="embed" id="Sqd-E3-X9i"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngK-FP-ypp">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <connections>
+                                                    <segue destination="uDp-AN-Awo" kind="embed" id="1Wp-zk-uU0"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDJ-d3-MSn">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <connections>
+                                                    <segue destination="JKN-s2-Xql" kind="embed" id="7NZ-Jb-qdo"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ngK-FP-ypp" firstAttribute="width" secondItem="RbY-Us-Zq1" secondAttribute="width" id="4v0-Ze-OF6"/>
+                                            <constraint firstItem="sDJ-d3-MSn" firstAttribute="width" secondItem="RbY-Us-Zq1" secondAttribute="width" id="6e6-fJ-Elu"/>
+                                            <constraint firstItem="ngK-FP-ypp" firstAttribute="centerY" secondItem="RbY-Us-Zq1" secondAttribute="centerY" id="Arm-3C-rp2"/>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="width" secondItem="RbY-Us-Zq1" secondAttribute="width" id="CVM-Mz-Dfb"/>
+                                            <constraint firstAttribute="bottom" secondItem="LZv-Fj-nZn" secondAttribute="bottom" constant="311" id="Eqd-6S-8PS">
+                                                <variation key="widthClass=compact" constant="0.0"/>
+                                            </constraint>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="leading" secondItem="RbY-Us-Zq1" secondAttribute="leading" constant="24" id="H9Y-ju-u0u"/>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="height" secondItem="RbY-Us-Zq1" secondAttribute="height" id="Lk6-E5-HQ7"/>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="centerY" secondItem="RbY-Us-Zq1" secondAttribute="centerY" id="Ras-Cn-nSj"/>
+                                            <constraint firstItem="sDJ-d3-MSn" firstAttribute="centerX" secondItem="RbY-Us-Zq1" secondAttribute="centerX" id="Rbx-Uc-klx"/>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="centerX" secondItem="RbY-Us-Zq1" secondAttribute="centerX" id="RkC-oa-9sD"/>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="leading" secondItem="RbY-Us-Zq1" secondAttribute="leading" constant="24" id="T23-6I-Cdb">
+                                                <variation key="widthClass=compact" constant="0.0"/>
+                                            </constraint>
+                                            <constraint firstItem="ngK-FP-ypp" firstAttribute="height" secondItem="RbY-Us-Zq1" secondAttribute="height" id="XAW-q1-1Kq"/>
+                                            <constraint firstItem="ngK-FP-ypp" firstAttribute="centerX" secondItem="RbY-Us-Zq1" secondAttribute="centerX" id="cOO-tB-Jpt"/>
+                                            <constraint firstItem="sDJ-d3-MSn" firstAttribute="height" secondItem="RbY-Us-Zq1" secondAttribute="height" id="l8l-P2-kJE"/>
+                                            <constraint firstItem="sDJ-d3-MSn" firstAttribute="centerY" secondItem="RbY-Us-Zq1" secondAttribute="centerY" id="mpw-UD-6uS"/>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="leading" secondItem="RbY-Us-Zq1" secondAttribute="leading" constant="24" id="qpJ-W6-KKJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="LZv-Fj-nZn" secondAttribute="trailing" constant="24" id="tXS-jO-gxZ">
+                                                <variation key="widthClass=compact" constant="0.0"/>
+                                            </constraint>
+                                            <constraint firstItem="LZv-Fj-nZn" firstAttribute="top" secondItem="RbY-Us-Zq1" secondAttribute="top" constant="22" id="xDM-Ji-cct">
+                                                <variation key="widthClass=compact" constant="0.0"/>
+                                            </constraint>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="LZv-Fj-nZn"/>
+                                                <exclude reference="ngK-FP-ypp"/>
+                                                <exclude reference="sDJ-d3-MSn"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <exclude reference="CVM-Mz-Dfb"/>
+                                                <exclude reference="Eqd-6S-8PS"/>
+                                                <exclude reference="H9Y-ju-u0u"/>
+                                                <exclude reference="Lk6-E5-HQ7"/>
+                                                <exclude reference="Ras-Cn-nSj"/>
+                                                <exclude reference="RkC-oa-9sD"/>
+                                                <exclude reference="T23-6I-Cdb"/>
+                                                <exclude reference="qpJ-W6-KKJ"/>
+                                                <exclude reference="tXS-jO-gxZ"/>
+                                                <exclude reference="xDM-Ji-cct"/>
+                                                <exclude reference="4v0-Ze-OF6"/>
+                                                <exclude reference="Arm-3C-rp2"/>
+                                                <exclude reference="XAW-q1-1Kq"/>
+                                                <exclude reference="cOO-tB-Jpt"/>
+                                                <exclude reference="6e6-fJ-Elu"/>
+                                                <exclude reference="Rbx-Uc-klx"/>
+                                                <exclude reference="l8l-P2-kJE"/>
+                                                <exclude reference="mpw-UD-6uS"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="LZv-Fj-nZn"/>
+                                                <include reference="ngK-FP-ypp"/>
+                                                <include reference="sDJ-d3-MSn"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="CVM-Mz-Dfb"/>
+                                                <exclude reference="Eqd-6S-8PS"/>
+                                                <exclude reference="H9Y-ju-u0u"/>
+                                                <include reference="Lk6-E5-HQ7"/>
+                                                <include reference="Ras-Cn-nSj"/>
+                                                <include reference="RkC-oa-9sD"/>
+                                                <exclude reference="T23-6I-Cdb"/>
+                                                <exclude reference="qpJ-W6-KKJ"/>
+                                                <exclude reference="tXS-jO-gxZ"/>
+                                                <exclude reference="xDM-Ji-cct"/>
+                                                <include reference="4v0-Ze-OF6"/>
+                                                <include reference="Arm-3C-rp2"/>
+                                                <include reference="XAW-q1-1Kq"/>
+                                                <include reference="cOO-tB-Jpt"/>
+                                                <include reference="6e6-fJ-Elu"/>
+                                                <include reference="Rbx-Uc-klx"/>
+                                                <include reference="l8l-P2-kJE"/>
+                                                <include reference="mpw-UD-6uS"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nG-4i-uGE">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -1693,14 +1795,179 @@ deserves a caddy.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="constrainedStickyTabToNavBar" destination="5cR-W6-CLM" id="app-kU-gJv"/>
+                        <outlet property="notificationsContainer" destination="sDJ-d3-MSn" id="dyv-lK-GLL"/>
+                        <outlet property="pastCaddiesContainer" destination="ngK-FP-ypp" id="szZ-C3-Nsn"/>
                         <outlet property="scrollView" destination="jds-no-cJX" id="me5-lC-OIx"/>
                         <outlet property="stickySegmentedTab" destination="0nG-4i-uGE" id="Cea-KO-VEV"/>
+                        <outlet property="upcomingReservationsContainer" destination="LZv-Fj-nZn" id="duN-1U-TkU"/>
                         <outlet property="userProfileImage" destination="1hh-UV-vad" id="rpO-xw-KFZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qH7-1b-sOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649" y="1137"/>
+            <point key="canvasLocation" x="3021" y="1137"/>
+        </scene>
+        <!--Upcoming Reservations View Controller-->
+        <scene sceneID="dht-xG-BRy">
+            <objects>
+                <tableViewController id="nWs-yA-e4z" customClass="UpcomingReservationsViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rf2-3A-OeT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zZL-4e-59F">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zZL-4e-59F" id="IIi-nA-rAk">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nWs-yA-e4z" id="6aV-2q-3l3"/>
+                            <outlet property="delegate" destination="nWs-yA-e4z" id="Md0-UZ-E04"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhC-VW-PFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2490" y="1883"/>
+        </scene>
+        <!--Caddy History View Controller-->
+        <scene sceneID="hgY-ZR-Atg">
+            <objects>
+                <tableViewController id="uDp-AN-Awo" customClass="CaddyHistoryViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="HIv-KR-Upk">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7WO-vu-F52">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7WO-vu-F52" id="HoD-QW-g9n">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caddy Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-1w-Eb9">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="zgH-pd-KYY">
+                                                    <variation key="widthClass=compact" constant="30"/>
+                                                </constraint>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="zgH-pd-KYY"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="zgH-pd-KYY"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## Rating &amp; ## Rounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdB-kD-Fr4">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="Xhf-jO-DCF">
+                                                    <variation key="widthClass=compact" constant="25"/>
+                                                </constraint>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Xhf-jO-DCF"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="Xhf-jO-DCF"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KQ1-1w-Eb9" secondAttribute="trailing" constant="290" id="f68-wo-XIh"/>
+                                        <constraint firstItem="KQ1-1w-Eb9" firstAttribute="leading" secondItem="HoD-QW-g9n" secondAttribute="leadingMargin" constant="10" id="ug6-EH-ObI"/>
+                                        <constraint firstItem="QdB-kD-Fr4" firstAttribute="top" secondItem="KQ1-1w-Eb9" secondAttribute="bottom" constant="-11" id="x9j-EV-hez"/>
+                                        <constraint firstItem="QdB-kD-Fr4" firstAttribute="leading" secondItem="KQ1-1w-Eb9" secondAttribute="leading" id="ycn-Ei-T05"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="KQ1-1w-Eb9"/>
+                                            <exclude reference="QdB-kD-Fr4"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="f68-wo-XIh"/>
+                                            <exclude reference="ug6-EH-ObI"/>
+                                            <exclude reference="x9j-EV-hez"/>
+                                            <exclude reference="ycn-Ei-T05"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="KQ1-1w-Eb9"/>
+                                            <include reference="QdB-kD-Fr4"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="f68-wo-XIh"/>
+                                            <include reference="ug6-EH-ObI"/>
+                                            <include reference="x9j-EV-hez"/>
+                                            <include reference="ycn-Ei-T05"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="KQ1-1w-Eb9" firstAttribute="top" secondItem="7WO-vu-F52" secondAttribute="top" id="W73-Yr-TGg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="W73-Yr-TGg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="W73-Yr-TGg"/>
+                                    </mask>
+                                </variation>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uDp-AN-Awo" id="4vs-nb-d4g"/>
+                            <outlet property="delegate" destination="uDp-AN-Awo" id="avs-6c-sxA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xV-15-QjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100.5" y="1883"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="ZmH-Zg-ue2">
+            <objects>
+                <tableViewController id="JKN-s2-Xql" customClass="NotificationsViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aha-Je-OaF">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Moj-GD-tuY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Moj-GD-tuY" id="1Vg-dj-Q1V">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JKN-s2-Xql" id="chA-kx-7wf"/>
+                            <outlet property="delegate" destination="JKN-s2-Xql" id="EDg-ck-OgH"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkY-Qx-8C7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3721.5" y="1883"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m8c-sE-KEF">
@@ -1980,7 +2247,7 @@ deserves a caddy.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr6-s2-I9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="1915"/>
+            <point key="canvasLocation" x="1848" y="1915"/>
         </scene>
         <!--Our Story-->
         <scene sceneID="Avr-KO-ZdL">
@@ -2050,7 +2317,7 @@ deserves a caddy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Br-1s-fX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649" y="1915"/>
+            <point key="canvasLocation" x="1848" y="2657"/>
         </scene>
         <!--Container Caddies Available View Controller-->
         <scene sceneID="RUC-Ll-gJJ">
@@ -2515,7 +2782,7 @@ deserves a caddy.</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afw-u2-mSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358.5" y="1733"/>
+            <point key="canvasLocation" x="4093.5" y="2549"/>
         </scene>
         <!--Confirm Reservation View Controller-->
         <scene sceneID="8yo-bm-6PU">
@@ -2925,7 +3192,7 @@ deserves a caddy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9P-OA-FSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4143" y="1733"/>
+            <point key="canvasLocation" x="4846.5" y="2549"/>
         </scene>
         <!--Container Confirm Reservation View Controller-->
         <scene sceneID="Ljw-cf-4Ah">
@@ -3147,27 +3414,6 @@ deserves a caddy.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="380" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caddy Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7H-Np-OLU">
-                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="vHy-qT-j9h">
-                                                            <variation key="widthClass=compact" constant="30"/>
-                                                        </constraint>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="vHy-qT-j9h"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="vHy-qT-j9h"/>
-                                                        </mask>
-                                                    </variation>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## Rating &amp; ## Rounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjM-KI-flo">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <constraints>
@@ -3189,6 +3435,27 @@ deserves a caddy.</string>
                                                         </mask>
                                                     </variation>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caddy Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7H-Np-OLU">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="vHy-qT-j9h">
+                                                            <variation key="widthClass=compact" constant="30"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="vHy-qT-j9h"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="vHy-qT-j9h"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="u7H-Np-OLU" firstAttribute="leading" secondItem="j8O-rn-jI1" secondAttribute="leadingMargin" constant="10" id="g7T-zz-3Mo"/>
@@ -3197,24 +3464,24 @@ deserves a caddy.</string>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="u7H-Np-OLU"/>
                                                     <exclude reference="YjM-KI-flo"/>
+                                                    <exclude reference="u7H-Np-OLU"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="g7T-zz-3Mo"/>
                                                     <exclude reference="lJ0-E8-uUP"/>
                                                     <exclude reference="p8g-sJ-OGU"/>
-                                                    <exclude reference="g7T-zz-3Mo"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="u7H-Np-OLU"/>
                                                     <include reference="YjM-KI-flo"/>
+                                                    <include reference="u7H-Np-OLU"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="g7T-zz-3Mo"/>
                                                     <include reference="lJ0-E8-uUP"/>
                                                     <include reference="p8g-sJ-OGU"/>
-                                                    <include reference="g7T-zz-3Mo"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -3343,7 +3610,7 @@ deserves a caddy.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16N-pp-RfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4143" y="2402.5"/>
+            <point key="canvasLocation" x="4861.5" y="3252"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yhb-ga-Ytc">
@@ -3787,7 +4054,7 @@ deserves a caddy.</string>
                         <sections>
                             <tableViewSection headerTitle="Push Notifications" id="E6S-Jh-PWq">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7cj-va-3Pz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="7cj-va-3Pz">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7cj-va-3Pz" id="uts-ff-zQO">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -3839,7 +4106,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="o37-xw-VgV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="o37-xw-VgV">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o37-xw-VgV" id="eLN-XH-wDV">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -3891,7 +4158,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sxQ-CO-iuv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="sxQ-CO-iuv">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sxQ-CO-iuv" id="vvA-D5-Q9N">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -3947,7 +4214,7 @@ deserves a caddy.</string>
                             </tableViewSection>
                             <tableViewSection headerTitle="Email" id="LMo-aY-rHX">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KNY-gr-ONH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KNY-gr-ONH">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNY-gr-ONH" id="eTm-Ka-k0X">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -3999,7 +4266,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pgB-aq-4bC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="pgB-aq-4bC">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pgB-aq-4bC" id="hIU-JD-oii">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4051,7 +4318,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Dy4-h7-aHj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Dy4-h7-aHj">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dy4-h7-aHj" id="Juq-pf-qbv">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4103,7 +4370,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zjW-S0-Y3w">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="zjW-S0-Y3w">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zjW-S0-Y3w" id="b3a-3a-zNb">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4159,7 +4426,7 @@ deserves a caddy.</string>
                             </tableViewSection>
                             <tableViewSection headerTitle="Text" id="BgO-GG-yp8">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xdE-iC-puf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="xdE-iC-puf">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xdE-iC-puf" id="dIs-01-aPM">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4211,7 +4478,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8f4-mY-FiA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="8f4-mY-FiA">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8f4-mY-FiA" id="4xi-XT-Bxz">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4263,7 +4530,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aqM-Bf-bhN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="aqM-Bf-bhN">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aqM-Bf-bhN" id="RFH-b2-vZZ">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4326,7 +4593,7 @@ deserves a caddy.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77S-nj-65O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1698" y="3562"/>
+            <point key="canvasLocation" x="-1702.5" y="3571"/>
         </scene>
         <!--Privacy Settings View Controller-->
         <scene sceneID="IaN-2p-bCO">
@@ -4339,7 +4606,7 @@ deserves a caddy.</string>
                             <tableViewSection headerTitle="Location Services" id="cYj-fg-QWs">
                                 <string key="footerTitle">We need to determine your location in relation to your caddy throughout all reservations. You will not be able to reserve caddies unless you allow location services.</string>
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="szC-ea-pxj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="szC-ea-pxj">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="szC-ea-pxj" id="8Kq-V2-WNB">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4395,7 +4662,7 @@ deserves a caddy.</string>
                             </tableViewSection>
                             <tableViewSection headerTitle="Sharing" footerTitle="Get 2.5% of your reservation cost credited back to you for sharing your completed round via social media." id="Vlt-Id-7Fz">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Oua-fN-aNm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Oua-fN-aNm">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oua-fN-aNm" id="47F-9B-fwq">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4447,7 +4714,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OLM-xz-lTx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="OLM-xz-lTx">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OLM-xz-lTx" id="Ygo-86-tEP">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -4510,7 +4777,7 @@ deserves a caddy.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VL-yu-alS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-961.5" y="3562"/>
+            <point key="canvasLocation" x="-957" y="3576"/>
         </scene>
         <!--Help And Support View Controller-->
         <scene sceneID="II7-c3-1dI">

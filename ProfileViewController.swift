@@ -10,13 +10,17 @@ import UIKit
 
 class ProfileViewController: UIViewController, UIScrollViewDelegate {
     
-    // Reservations, notifications, past caddies
+// Reservations, notifications, past caddies
     let screenSize: CGRect = UIScreen.mainScreen().bounds
+    var selectedIndex = Int()
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var userProfileImage: UIImageView!
     @IBOutlet weak var stickySegmentedTab: UIView!
     @IBOutlet weak var constrainedStickyTabToNavBar: NSLayoutConstraint!
+    @IBOutlet weak var upcomingReservationsContainer: UIView!
+    @IBOutlet weak var pastCaddiesContainer: UIView!
+    @IBOutlet weak var notificationsContainer: UIView!
     
     @IBAction func closeViewButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
@@ -40,6 +44,27 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
         let screenSizeAdjustment = 1 + (distBetweenScrollSectionAndNavBar / screenSize.height)
         self.scrollView.contentSize.height = screenSize.height * screenSizeAdjustment
         self.scrollView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0)
+        
+        // Sets up observer to receive notifications from segmented control when new index has been selected.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "notifyWithSelectedIndex:", name: "selectedIndexNotification", object: nil)
+    }
+    
+    func notifyWithSelectedIndex (notification: NSNotification) {
+        selectedIndex = notification.object! as! Int
+        
+        if (selectedIndex == 0) {
+            self.upcomingReservationsContainer.hidden = false
+            self.pastCaddiesContainer.hidden = true
+            self.notificationsContainer.hidden = true
+        } else if (selectedIndex == 1) {
+            self.upcomingReservationsContainer.hidden = true
+            self.pastCaddiesContainer.hidden = false
+            self.notificationsContainer.hidden = true
+        } else {
+            self.upcomingReservationsContainer.hidden = true
+            self.pastCaddiesContainer.hidden = true
+            self.notificationsContainer.hidden = false
+        }
     }
 }
 

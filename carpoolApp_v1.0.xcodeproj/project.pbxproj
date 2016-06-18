@@ -29,6 +29,9 @@
 		C994B4C21D143CC9009848F2 /* NotificationsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */; };
 		C994B4C41D144417009848F2 /* PrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */; };
 		C994B4C61D144A90009848F2 /* HelpAndSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */; };
+		C994B4C81D145BDB009848F2 /* UpcomingReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C71D145BDB009848F2 /* UpcomingReservationsViewController.swift */; };
+		C994B4CB1D145D24009848F2 /* CaddyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4CA1D145D24009848F2 /* CaddyHistoryViewController.swift */; };
+		C994B4CD1D145E23009848F2 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4CC1D145E23009848F2 /* NotificationsViewController.swift */; };
 		C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */; };
 		C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */; };
 		C9EE3F1C1D075F0B00F86EF2 /* StartReservationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */; };
@@ -89,6 +92,9 @@
 		C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsViewController.swift; sourceTree = "<group>"; };
 		C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewController.swift; sourceTree = "<group>"; };
 		C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpAndSupportViewController.swift; sourceTree = "<group>"; };
+		C994B4C71D145BDB009848F2 /* UpcomingReservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpcomingReservationsViewController.swift; path = ../UpcomingReservationsViewController.swift; sourceTree = "<group>"; };
+		C994B4CA1D145D24009848F2 /* CaddyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaddyHistoryViewController.swift; path = ../CaddyHistoryViewController.swift; sourceTree = "<group>"; };
+		C994B4CC1D145E23009848F2 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsViewController.swift; path = ../NotificationsViewController.swift; sourceTree = "<group>"; };
 		C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SidebarMenuViewController.swift; path = ../SidebarMenuViewController.swift; sourceTree = "<group>"; };
 		C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationViewController.swift; path = ../StartReservationViewController.swift; sourceTree = "<group>"; };
 		C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationContainerViewController.swift; path = ../StartReservationContainerViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +246,16 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		C994B4C91D145BFA009848F2 /* Profile Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				C994B4C71D145BDB009848F2 /* UpcomingReservationsViewController.swift */,
+				C994B4CA1D145D24009848F2 /* CaddyHistoryViewController.swift */,
+				C994B4CC1D145E23009848F2 /* NotificationsViewController.swift */,
+			);
+			name = "Profile Subviews";
+			sourceTree = "<group>";
+		};
 		C9EE3F211D09D0C400F86EF2 /* Start Reservation */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +305,7 @@
 			children = (
 				C9EE3F291D0A196C00F86EF2 /* ProfileViewController.swift */,
 				C95385D41D120CC5007BCA15 /* ProfileSegmentedControl.swift */,
+				C994B4C91D145BFA009848F2 /* Profile Subviews */,
 			);
 			name = "My Profile";
 			sourceTree = "<group>";
@@ -464,6 +481,7 @@
 				C95385D01D10B8EE007BCA15 /* ConfirmReservationViewController.swift in Sources */,
 				C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */,
 				C9EE3F331D0A1FBC00F86EF2 /* BecomeCaddyViewController.swift in Sources */,
+				C994B4C81D145BDB009848F2 /* UpcomingReservationsViewController.swift in Sources */,
 				C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */,
 				C9EE3F301D0A1EBC00F86EF2 /* InviteViewController.swift in Sources */,
 				C95385D31D11D96D007BCA15 /* ContainerConfirmReservationViewController.swift in Sources */,
@@ -474,6 +492,7 @@
 				C95385CE1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift in Sources */,
 				C95385DB1D133DE9007BCA15 /* EditProfileViewController.swift in Sources */,
 				C95385D51D120CC5007BCA15 /* ProfileSegmentedControl.swift in Sources */,
+				C994B4CB1D145D24009848F2 /* CaddyHistoryViewController.swift in Sources */,
 				C95385C21D0F5A41007BCA15 /* UltravisualLayout.swift in Sources */,
 				C9EE3F381D0A217F00F86EF2 /* SettingsViewController.swift in Sources */,
 				C95385C61D0F5B86007BCA15 /* ContainerCaddiesAvailableViewController.swift in Sources */,
@@ -485,6 +504,7 @@
 				C95A00E21CB5CBEB008237B1 /* SWRevealViewController.m in Sources */,
 				C95385CA1D0F5B93007BCA15 /* Caddies.swift in Sources */,
 				C95385C81D0F5B8C007BCA15 /* UIImage+Decompression.swift in Sources */,
+				C994B4CD1D145E23009848F2 /* NotificationsViewController.swift in Sources */,
 				C95A00E81CB5F9D6008237B1 /* LandingPageViewController.swift in Sources */,
 				C9EE3F201D090A5900F86EF2 /* CaddiesAvailableViewController.swift in Sources */,
 			);
