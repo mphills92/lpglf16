@@ -2854,6 +2854,9 @@ deserves a caddy.</string>
                                                 <exclude reference="PZ4-e0-9V8"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="confirmReservationButtonPressed:" destination="zgf-cb-m1j" eventType="touchUpInside" id="OZv-Ha-fY5"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're almost ready for some golf." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2J-u7-ccC">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -3192,7 +3195,7 @@ deserves a caddy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9P-OA-FSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4846.5" y="2549"/>
+            <point key="canvasLocation" x="4780.5" y="2549"/>
         </scene>
         <!--Container Confirm Reservation View Controller-->
         <scene sceneID="Ljw-cf-4Ah">
@@ -3610,7 +3613,7 @@ deserves a caddy.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16N-pp-RfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4861.5" y="3252"/>
+            <point key="canvasLocation" x="5581.5" y="2549"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yhb-ga-Ytc">
@@ -5824,10 +5827,10 @@ deserves a caddy.</string>
             </objects>
             <point key="canvasLocation" x="504" y="2681"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Change Email View Controller-->
         <scene sceneID="tDe-73-SMC">
             <objects>
-                <tableViewController id="ewr-2U-64i" sceneMemberID="viewController">
+                <tableViewController id="ewr-2U-64i" customClass="ChangeEmailViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2Ay-1I-RTi">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5842,7 +5845,7 @@ deserves a caddy.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pIW-Hb-EzH">
+                                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pIW-Hb-EzH">
                                                     <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="hgP-Jy-cjh">
@@ -5959,7 +5962,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pGm-S2-dm6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="pGm-S2-dm6">
                                         <rect key="frame" x="0.0" y="223" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pGm-S2-dm6" id="rk5-Ai-cnp">
@@ -6026,33 +6029,40 @@ deserves a caddy.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k02-Zn-4Jk">
-                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6O-Qg-a47">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <state key="normal" title="Save">
+                                                        <color key="titleColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="k02-Zn-4Jk" firstAttribute="centerY" secondItem="Jz7-g4-YEF" secondAttribute="centerY" id="7Fz-7e-Vu2"/>
-                                                <constraint firstItem="k02-Zn-4Jk" firstAttribute="centerX" secondItem="Jz7-g4-YEF" secondAttribute="centerX" id="eCR-U4-3Kk"/>
+                                                <constraint firstItem="r6O-Qg-a47" firstAttribute="width" secondItem="Jz7-g4-YEF" secondAttribute="width" id="EN9-l5-OGZ"/>
+                                                <constraint firstItem="r6O-Qg-a47" firstAttribute="centerX" secondItem="Jz7-g4-YEF" secondAttribute="centerX" id="Exi-O4-hWJ"/>
+                                                <constraint firstItem="r6O-Qg-a47" firstAttribute="height" secondItem="Jz7-g4-YEF" secondAttribute="height" id="YWk-xm-pqV"/>
+                                                <constraint firstItem="r6O-Qg-a47" firstAttribute="centerY" secondItem="Jz7-g4-YEF" secondAttribute="centerY" id="aQE-dv-o4l"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="k02-Zn-4Jk"/>
+                                                    <exclude reference="r6O-Qg-a47"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="7Fz-7e-Vu2"/>
-                                                    <exclude reference="eCR-U4-3Kk"/>
+                                                    <exclude reference="EN9-l5-OGZ"/>
+                                                    <exclude reference="Exi-O4-hWJ"/>
+                                                    <exclude reference="YWk-xm-pqV"/>
+                                                    <exclude reference="aQE-dv-o4l"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="k02-Zn-4Jk"/>
+                                                    <include reference="r6O-Qg-a47"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="7Fz-7e-Vu2"/>
-                                                    <include reference="eCR-U4-3Kk"/>
+                                                    <include reference="EN9-l5-OGZ"/>
+                                                    <include reference="Exi-O4-hWJ"/>
+                                                    <include reference="YWk-xm-pqV"/>
+                                                    <include reference="aQE-dv-o4l"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -6065,6 +6075,11 @@ deserves a caddy.</string>
                             <outlet property="delegate" destination="ewr-2U-64i" id="tCq-Of-vYH"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="confirmNewEmailTextField" destination="1w7-iT-kHd" id="Odg-Wg-q28"/>
+                        <outlet property="currentEmailTextField" destination="pIW-Hb-EzH" id="fHg-6C-zJx"/>
+                        <outlet property="newEmailTextField" destination="6up-Q2-tAR" id="bu3-e5-aha"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXX-vt-Gak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

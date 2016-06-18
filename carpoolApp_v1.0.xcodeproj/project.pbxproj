@@ -32,6 +32,8 @@
 		C994B4C81D145BDB009848F2 /* UpcomingReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C71D145BDB009848F2 /* UpcomingReservationsViewController.swift */; };
 		C994B4CB1D145D24009848F2 /* CaddyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4CA1D145D24009848F2 /* CaddyHistoryViewController.swift */; };
 		C994B4CD1D145E23009848F2 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4CC1D145E23009848F2 /* NotificationsViewController.swift */; };
+		C994B4CF1D15A67F009848F2 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4CE1D15A67F009848F2 /* ChangeEmailViewController.swift */; };
+		C994B4D31D15A83E009848F2 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4D21D15A83E009848F2 /* UserInformation.swift */; };
 		C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */; };
 		C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */; };
 		C9EE3F1C1D075F0B00F86EF2 /* StartReservationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */; };
@@ -95,6 +97,8 @@
 		C994B4C71D145BDB009848F2 /* UpcomingReservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpcomingReservationsViewController.swift; path = ../UpcomingReservationsViewController.swift; sourceTree = "<group>"; };
 		C994B4CA1D145D24009848F2 /* CaddyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaddyHistoryViewController.swift; path = ../CaddyHistoryViewController.swift; sourceTree = "<group>"; };
 		C994B4CC1D145E23009848F2 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsViewController.swift; path = ../NotificationsViewController.swift; sourceTree = "<group>"; };
+		C994B4CE1D15A67F009848F2 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		C994B4D21D15A83E009848F2 /* UserInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		C9EE3ED71D06643800F86EF2 /* SidebarMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SidebarMenuViewController.swift; path = ../SidebarMenuViewController.swift; sourceTree = "<group>"; };
 		C9EE3F191D07383200F86EF2 /* StartReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationViewController.swift; path = ../StartReservationViewController.swift; sourceTree = "<group>"; };
 		C9EE3F1B1D075F0B00F86EF2 /* StartReservationContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartReservationContainerViewController.swift; path = ../StartReservationContainerViewController.swift; sourceTree = "<group>"; };
@@ -144,8 +148,8 @@
 		C95385BD1D0F402D007BCA15 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C95385C91D0F5B93007BCA15 /* Caddies.swift */,
-				C95385CB1D0F5B98007BCA15 /* Session.swift */,
+				C994B4D41D15A853009848F2 /* User Information */,
+				C994B4D11D15A7E6009848F2 /* Available Caddies */,
 			);
 			name = Models;
 			path = ..;
@@ -173,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				C95385DA1D133DE7007BCA15 /* EditProfileViewController.swift */,
+				C994B4D01D15A6C5009848F2 /* Edit Profile Subviews */,
 				C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */,
 				C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */,
 				C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */,
@@ -254,6 +259,31 @@
 				C994B4CC1D145E23009848F2 /* NotificationsViewController.swift */,
 			);
 			name = "Profile Subviews";
+			sourceTree = "<group>";
+		};
+		C994B4D01D15A6C5009848F2 /* Edit Profile Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				C994B4CE1D15A67F009848F2 /* ChangeEmailViewController.swift */,
+			);
+			name = "Edit Profile Subviews";
+			sourceTree = "<group>";
+		};
+		C994B4D11D15A7E6009848F2 /* Available Caddies */ = {
+			isa = PBXGroup;
+			children = (
+				C95385C91D0F5B93007BCA15 /* Caddies.swift */,
+				C95385CB1D0F5B98007BCA15 /* Session.swift */,
+			);
+			name = "Available Caddies";
+			sourceTree = "<group>";
+		};
+		C994B4D41D15A853009848F2 /* User Information */ = {
+			isa = PBXGroup;
+			children = (
+				C994B4D21D15A83E009848F2 /* UserInformation.swift */,
+			);
+			name = "User Information";
 			sourceTree = "<group>";
 		};
 		C9EE3F211D09D0C400F86EF2 /* Start Reservation */ = {
@@ -479,10 +509,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C95385D01D10B8EE007BCA15 /* ConfirmReservationViewController.swift in Sources */,
+				C994B4D31D15A83E009848F2 /* UserInformation.swift in Sources */,
 				C9EE3F1A1D07383200F86EF2 /* StartReservationViewController.swift in Sources */,
 				C9EE3F331D0A1FBC00F86EF2 /* BecomeCaddyViewController.swift in Sources */,
 				C994B4C81D145BDB009848F2 /* UpcomingReservationsViewController.swift in Sources */,
 				C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */,
+				C994B4CF1D15A67F009848F2 /* ChangeEmailViewController.swift in Sources */,
 				C9EE3F301D0A1EBC00F86EF2 /* InviteViewController.swift in Sources */,
 				C95385D31D11D96D007BCA15 /* ContainerConfirmReservationViewController.swift in Sources */,
 				C9EE3F1E1D08D3DB00F86EF2 /* ChooseServiceLevelSegmentedControl.swift in Sources */,
