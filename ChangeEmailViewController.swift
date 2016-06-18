@@ -13,6 +13,7 @@ class ChangeEmailViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var currentEmailTextField: UITextField!
     @IBOutlet weak var newEmailTextField: UITextField!
     @IBOutlet weak var confirmNewEmailTextField: UITextField!
+    @IBOutlet weak var saveChangesButton: UIButton!
     
     
     
@@ -33,6 +34,8 @@ class ChangeEmailViewController: UITableViewController, UITextFieldDelegate {
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HelveticaNeue-Light", size: 20)!]
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         
+        saveChangesButtonDisabledState()
+        
         currentEmailTextField.text = userEmail.email
         
         newEmailTextField.tag = 1
@@ -44,6 +47,10 @@ class ChangeEmailViewController: UITableViewController, UITextFieldDelegate {
 }
 
 extension ChangeEmailViewController {
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        saveChangesButtonDisabledState()
+    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         switch (textField.tag) {
@@ -69,6 +76,7 @@ extension ChangeEmailViewController {
             
             if (confirmedEmailToValidateMatch == userEmail.newEmail) {
                 self.userEmail.confirmedNewEmail = confirmedEmailToValidateMatch
+                saveChangesButtonEnabledState()
                 self.confirmNewEmailTextField.resignFirstResponder()
             } else {
                 let alertController = UIAlertController(title: "Oops, emails don't match.", message:  "\n Your confirmed email must match the one you entered above.", preferredStyle: .Alert)
@@ -95,6 +103,22 @@ extension ChangeEmailViewController {
         return newEmailIsValid
     }
     
+    func saveChangesButtonEnabledState() {
+        self.saveChangesButton.enabled = true
+        self.saveChangesButton.setTitleColor(UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0), forState: .Normal)
+    }
+    
+    func saveChangesButtonDisabledState() {
+        self.saveChangesButton.enabled = false
+        self.saveChangesButton.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+    }
+    
+    @IBAction func saveChangesButtonPressed(sender: AnyObject) {
+        // Save confirmed email as user's primary email in database.
+        self.userEmail.email = confirmedEmailToValidateMatch
+    
+        navigationController?.popViewControllerAnimated(true)
+    }
     
 
 }
