@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C94259E71D174E4600EEE328 /* ChangePhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94259E61D174E4600EEE328 /* ChangePhoneViewController.swift */; };
 		C95385C21D0F5A41007BCA15 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385C11D0F5A41007BCA15 /* UltravisualLayout.swift */; };
 		C95385C41D0F5B80007BCA15 /* CaddiesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C95385C31D0F5B80007BCA15 /* CaddiesList.plist */; };
 		C95385C61D0F5B86007BCA15 /* ContainerCaddiesAvailableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95385C51D0F5B86007BCA15 /* ContainerCaddiesAvailableViewController.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C94259E61D174E4600EEE328 /* ChangePhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePhoneViewController.swift; sourceTree = "<group>"; };
 		C95385C11D0F5A41007BCA15 /* UltravisualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UltravisualLayout.swift; path = ../UltravisualLayout.swift; sourceTree = "<group>"; };
 		C95385C31D0F5B80007BCA15 /* CaddiesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CaddiesList.plist; sourceTree = "<group>"; };
 		C95385C51D0F5B86007BCA15 /* ContainerCaddiesAvailableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerCaddiesAvailableViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				C994B4CE1D15A67F009848F2 /* ChangeEmailViewController.swift */,
 				C98784871D15CE6600EED776 /* ChangePasswordViewController.swift */,
+				C94259E61D174E4600EEE328 /* ChangePhoneViewController.swift */,
 			);
 			name = "Edit Profile Subviews";
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				C9EE3F2D1D0A1C5900F86EF2 /* OurStoryViewController.swift in Sources */,
 				C994B4C41D144417009848F2 /* PrivacySettingsViewController.swift in Sources */,
 				C95385CE1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift in Sources */,
+				C94259E71D174E4600EEE328 /* ChangePhoneViewController.swift in Sources */,
 				C95385DB1D133DE9007BCA15 /* EditProfileViewController.swift in Sources */,
 				C95385D51D120CC5007BCA15 /* ProfileSegmentedControl.swift in Sources */,
 				C994B4CB1D145D24009848F2 /* CaddyHistoryViewController.swift in Sources */,

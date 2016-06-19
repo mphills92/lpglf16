@@ -9,12 +9,12 @@
 import UIKit
 
 class UserName {
-    var firstName = "Test"
-    var lastName = "Name"
+    var firstName = "John"
+    var lastName = "Doe"
 }
 
 class UserPassword {
-    var password = "tp"
+    var password = "test"
     var newPassword = String()
     var confirmedNewPassword = String()
 }

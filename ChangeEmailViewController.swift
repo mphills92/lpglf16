@@ -40,9 +40,6 @@ class ChangeEmailViewController: UITableViewController, UITextFieldDelegate {
         
         newEmailTextField.tag = 1
         confirmNewEmailTextField.tag = 2
-        
-        
-        
     }
 }
 
