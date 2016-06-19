@@ -75,13 +75,13 @@ deserves a caddy.</string>
                                     <segue destination="2rc-lF-EFK" kind="presentation" identifier="toStartReservationSegue" id="06K-I5-hjh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Sponsor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf7-cY-RY9">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Sponsor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf7-cY-RY9">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OfficialSponsor" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-ee-omD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3nB-ee-omD">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mdF-Wb-Xsw">
@@ -5892,7 +5892,7 @@ deserves a caddy.</string>
                                                     </constraints>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="hgP-Jy-cjh"/>
@@ -5956,7 +5956,7 @@ deserves a caddy.</string>
                                                     </constraints>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="Mbo-gK-eOD"/>
@@ -6016,7 +6016,7 @@ deserves a caddy.</string>
                                                     </constraints>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="KSb-QB-Rr7"/>
@@ -6127,10 +6127,10 @@ deserves a caddy.</string>
             </objects>
             <point key="canvasLocation" x="1191" y="3475"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Change Password View Controller-->
         <scene sceneID="1Gn-TR-pBc">
             <objects>
-                <tableViewController id="J4C-BW-0pU" sceneMemberID="viewController">
+                <tableViewController id="J4C-BW-0pU" customClass="ChangePasswordViewController" customModule="carpoolApp_v1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="k62-Yl-AOm">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="720"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6154,7 +6154,7 @@ deserves a caddy.</string>
                                                     </constraints>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="1cv-Ob-gPD"/>
@@ -6218,7 +6218,7 @@ deserves a caddy.</string>
                                                     </constraints>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="JMk-Jn-XyF"/>
@@ -6262,7 +6262,7 @@ deserves a caddy.</string>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yDE-Vr-ORd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="yDE-Vr-ORd">
                                         <rect key="frame" x="0.0" y="223" width="400" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yDE-Vr-ORd" id="JNf-uA-3us">
@@ -6278,7 +6278,7 @@ deserves a caddy.</string>
                                                     </constraints>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="07h-da-6kt"/>
@@ -6329,33 +6329,43 @@ deserves a caddy.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUF-mJ-K02">
-                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bne-cU-gPj">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" title="Save"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="1" width="400" height="43"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="saveChangesButtonPressed:" destination="J4C-BW-0pU" eventType="touchUpInside" id="iH3-VS-HwV"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tUF-mJ-K02" firstAttribute="centerY" secondItem="rhy-1x-eHU" secondAttribute="centerY" id="XBA-Qa-6ez"/>
-                                                <constraint firstItem="tUF-mJ-K02" firstAttribute="centerX" secondItem="rhy-1x-eHU" secondAttribute="centerX" id="m6v-xx-sd7"/>
+                                                <constraint firstItem="bne-cU-gPj" firstAttribute="width" secondItem="rhy-1x-eHU" secondAttribute="width" id="163-cP-ieY"/>
+                                                <constraint firstItem="bne-cU-gPj" firstAttribute="height" secondItem="rhy-1x-eHU" secondAttribute="height" id="2D4-Lr-bSU"/>
+                                                <constraint firstItem="bne-cU-gPj" firstAttribute="centerX" secondItem="rhy-1x-eHU" secondAttribute="centerX" id="2mZ-Eh-o3d"/>
+                                                <constraint firstItem="bne-cU-gPj" firstAttribute="centerY" secondItem="rhy-1x-eHU" secondAttribute="centerY" id="DT4-h0-Szt"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="tUF-mJ-K02"/>
+                                                    <exclude reference="bne-cU-gPj"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="XBA-Qa-6ez"/>
-                                                    <exclude reference="m6v-xx-sd7"/>
+                                                    <exclude reference="163-cP-ieY"/>
+                                                    <exclude reference="2D4-Lr-bSU"/>
+                                                    <exclude reference="2mZ-Eh-o3d"/>
+                                                    <exclude reference="DT4-h0-Szt"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="tUF-mJ-K02"/>
+                                                    <include reference="bne-cU-gPj"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="XBA-Qa-6ez"/>
-                                                    <include reference="m6v-xx-sd7"/>
+                                                    <include reference="163-cP-ieY"/>
+                                                    <include reference="2D4-Lr-bSU"/>
+                                                    <include reference="2mZ-Eh-o3d"/>
+                                                    <include reference="DT4-h0-Szt"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -6368,6 +6378,12 @@ deserves a caddy.</string>
                             <outlet property="delegate" destination="J4C-BW-0pU" id="5vK-tP-TLK"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="confirmNewPasswordTextField" destination="Cdh-qL-eyI" id="YAZ-NI-f4b"/>
+                        <outlet property="currentPasswordTextField" destination="qjP-yW-2m4" id="e5O-bs-zwT"/>
+                        <outlet property="newPasswordTextField" destination="wg2-dJ-eea" id="SEt-aY-Mvc"/>
+                        <outlet property="saveChangesButton" destination="bne-cU-gPj" id="zwg-Ba-Rie"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXS-f1-0ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6380,7 +6396,6 @@ deserves a caddy.</string>
         <image name="DisclosureIndicatorRevealDown" width="35" height="25"/>
         <image name="LoopLogoLarge" width="135" height="135"/>
         <image name="MenuIcon" width="29" height="29"/>
-        <image name="OfficialSponsor" width="50" height="50"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

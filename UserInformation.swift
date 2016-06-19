@@ -14,17 +14,15 @@ class UserName {
 }
 
 class UserPassword {
-    var password = "TestPassword"
+    var password = "tp"
     var newPassword = String()
     var confirmedNewPassword = String()
-    var newAndConfirmedPasswordMatch = Bool()
 }
 
 class UserEmail {
     var email = "test@email.com"
     var newEmail = String()
     var confirmedNewEmail = String()
-    var newAndConfirmedEmailMatch = Bool()
 }
 
 class UserPhone {
