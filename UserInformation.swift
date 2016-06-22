@@ -9,8 +9,8 @@
 import UIKit
 
 class UserName {
-    var firstName = "John"
-    var lastName = "Doe"
+    var firstName = "Test"
+    var lastName = "Name"
 }
 
 class UserPassword {
@@ -27,6 +27,15 @@ class UserEmail {
 
 class UserPhone {
     var phoneNumber = "7778889999"
+}
+
+class UserAccount {
+    var lifetimeRounds = 22
+    var currentCredit = 4
+}
+
+class UserReferralCode {
+    var referralCode = "A1B2C3D4"
 }
 
 

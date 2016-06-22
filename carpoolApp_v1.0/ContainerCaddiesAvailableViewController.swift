@@ -17,7 +17,7 @@ class ContainerCaddiesAvailableViewController: UICollectionViewController {
 
         collectionView!.backgroundColor = UIColor.clearColor()
         collectionView!.layoutIfNeeded()
-        collectionView!.decelerationRate = UIScrollViewDecelerationRateNormal //UIScrollViewDecelerationRateFast
+        collectionView!.decelerationRate = UIScrollViewDecelerationRateFast //UIScrollViewDecelerationRateNormal //UIScrollViewDecelerationRateFast
     }
 }
 

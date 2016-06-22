@@ -1,5 +1,5 @@
 //
-//  OurStoryViewController.swift
+//  AboutUsViewController.swift
 //  carpoolApp_v1.0
 //
 //  Created by Matt Hills on 6/9/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OurStoryViewController: UIViewController {
+class AboutUsViewController: UIViewController {
     
     @IBAction func closeViewButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})

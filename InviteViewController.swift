@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import MessageUI
+import Social
 
-class InviteViewController: UIViewController {
+class InviteViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     
+    @IBOutlet weak var referralCodeLabel: UILabel!
     @IBOutlet weak var viaTextButton: UIButton!
     @IBOutlet weak var viaEmailButton: UIButton!
     @IBOutlet weak var viaFacebookButton: UIButton!
     @IBOutlet weak var viaTwitterButton: UIButton!
+    
+    var userReferralCode = UserReferralCode()
     
     @IBAction func closeViewButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
@@ -27,9 +32,47 @@ class InviteViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HelveticaNeue-Light", size: 20)!]
         
+        referralCodeLabel.text = "\(userReferralCode.referralCode)"
+        
         viaTextButton.layer.cornerRadius = viaTextButton.bounds.height / 2
         viaEmailButton.layer.cornerRadius = viaEmailButton.bounds.height / 2
         viaFacebookButton.layer.cornerRadius = viaFacebookButton.bounds.height / 2
         viaTwitterButton.layer.cornerRadius = viaTwitterButton.bounds.height / 2
+    }
+}
+
+extension InviteViewController {
+    
+    @IBAction func sendSMSTextMessage(sender: AnyObject) {
+        let textAlertController = UIAlertController(title: "Sorry, something's wrong.", message: "Our system detects that you can't send a text message right now. Please try again later.", preferredStyle: .Alert)
+        textAlertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+        
+        if (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            controller.body = "Start golfing with Loop to see how great having a caddy can be! Because ever golfer deserves a caddy. User my referral code to receive $10 credit toward your first round of golf."
+            controller.recipients = ["Enter tel-nr"]
+            controller.messageComposeDelegate = self
+            self.presentViewController(controller, animated: true, completion: {})
+        } else {
+            let closeAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in }
+            textAlertController.addAction(closeAction)
+            
+            presentViewController(textAlertController, animated: true) {
+                textAlertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+            }
+        }
+    }
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        switch (result.rawValue) {
+        case MessageComposeResultCancelled.rawValue:
+            self.dismissViewControllerAnimated(true, completion: {})
+        case MessageComposeResultFailed.rawValue:
+            self.dismissViewControllerAnimated(true, completion: {})
+        case MessageComposeResultSent.rawValue:
+            self.dismissViewControllerAnimated(true, completion: {})
+        default:
+            break
+        }
     }
 }

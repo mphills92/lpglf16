@@ -21,6 +21,12 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var upcomingReservationsContainer: UIView!
     @IBOutlet weak var pastCaddiesContainer: UIView!
     @IBOutlet weak var notificationsContainer: UIView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var lifetimeRoundsLabel: UILabel!
+    @IBOutlet weak var currentCreditLabel: UILabel!
+    
+    let userName = UserName()
+    let userAccount = UserAccount()
     
     @IBAction func closeViewButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
@@ -36,6 +42,10 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HelveticaNeue-Light", size: 20)!]
         
         self.userProfileImage.layer.cornerRadius = 8
+        userNameLabel.text = "\(userName.firstName)" + " " + "\(userName.lastName)"
+        lifetimeRoundsLabel.text = "\(userAccount.lifetimeRounds) Lifetime Rounds"
+        currentCreditLabel.text = "$\(userAccount.currentCredit) Loop Credit"
+        
         
         self.stickySegmentedTab.layer.shadowOpacity = 0.25
         self.stickySegmentedTab.layer.shadowOffset = CGSizeMake(0.0, 0.0)
@@ -69,7 +79,6 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
 }
 
 extension ProfileViewController {
-    
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let scrollOffset = scrollView.contentOffset.y
