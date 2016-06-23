@@ -34,17 +34,6 @@ class ConfirmReservationViewController: UIViewController {
         confirmReservationButton.layer.cornerRadius = confirmReservationButton.bounds.height / 2
     }
     
-    @IBAction func infoButtonPressed(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Why am I charged 10% of my reservation total?", message:  "\n Our caddies need assurance in return for blocking off a 5 hour time window within their schedules. \n \n Between now and your reservation date, the 10% reservation cost that you are charged remains securely held by Loop. If you choose to cancel your reservation prior to 48 hours before your reservation, the amount will be fully refunded to your payment method. If you choose to cancel your reservation within 48 hours of the reservation or if you decide not show up to your reservation, you forfeit the amount and it is paid to the caddy you had reserved.", preferredStyle: .Alert)
-        alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
-        let doneAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in }
-        alertController.addAction(doneAction)
-        
-        self.presentViewController(alertController, animated: true) {
-            alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
-        }
-        
-    }
     
     @IBAction func confirmReservationButtonPressed(sender: AnyObject) {
         let alertController = UIAlertController(title: "See you on the course!", message:  "\n Your reservation has been received. You can now find it listed in the Reservations section of your profile, where you can also edit or cancel it. \n \n We'll send you future reminders as the date and time of your reservation approaches.", preferredStyle: .Alert)

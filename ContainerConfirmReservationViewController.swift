@@ -13,6 +13,7 @@ class ContainerConfirmReservationViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.contentInset = UIEdgeInsetsMake(-32, 0, -32, 0)
 
     }
     
@@ -27,4 +28,17 @@ extension ContainerConfirmReservationViewController {
             return 12
         }
     }
+    
+    @IBAction func infoButtonPressed(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Why am I charged 10% of my reservation total?", message:  "\n Our caddies need assurance in return for blocking off a 5 hour time window within their schedules. \n \n Between now and your reservation date, the 10% reservation cost that you are charged remains securely held by Loop. If you choose to cancel your reservation prior to 48 hours before your reservation, the amount will be fully refunded to your payment method. If you choose to cancel your reservation within 48 hours of the reservation or if you decide not show up to your reservation, you forfeit the amount and it is paid to the caddy you had reserved.", preferredStyle: .Alert)
+        alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+        let doneAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in }
+        alertController.addAction(doneAction)
+        
+        self.presentViewController(alertController, animated: true) {
+            alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+        }
+        
+    }
+
 }
