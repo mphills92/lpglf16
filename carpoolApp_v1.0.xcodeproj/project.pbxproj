@@ -30,6 +30,7 @@
 		C95A00E81CB5F9D6008237B1 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A00E71CB5F9D5008237B1 /* LandingPageViewController.swift */; };
 		C98784881D15CE6600EED776 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98784871D15CE6600EED776 /* ChangePasswordViewController.swift */; };
 		C990CF961D1B8F56005E05F2 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990CF951D1B8F56005E05F2 /* HelpViewController.swift */; };
+		C990CF991D1F3FBA005E05F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990CF981D1F3FBA005E05F2 /* LoginViewController.swift */; };
 		C994B4C21D143CC9009848F2 /* NotificationsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */; };
 		C994B4C41D144417009848F2 /* PrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */; };
 		C994B4C61D144A90009848F2 /* HelpAndSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */; };
@@ -99,6 +100,7 @@
 		C95A00E71CB5F9D5008237B1 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		C98784871D15CE6600EED776 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		C990CF951D1B8F56005E05F2 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = ../HelpViewController.swift; sourceTree = "<group>"; };
+		C990CF981D1F3FBA005E05F2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsViewController.swift; sourceTree = "<group>"; };
 		C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewController.swift; sourceTree = "<group>"; };
 		C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpAndSupportViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,14 @@
 			name = "Help Center";
 			sourceTree = "<group>";
 		};
+		C990CF9A1D1F3FEB005E05F2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C990CF981D1F3FBA005E05F2 /* LoginViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
 		C994B4C91D145BFA009848F2 /* Profile Subviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +344,7 @@
 		C9EE3F241D09D11000F86EF2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C990CF9A1D1F3FEB005E05F2 /* Authentication */,
 				C9EE3F231D09D0E600F86EF2 /* Home */,
 				C9EE3F211D09D0C400F86EF2 /* Start Reservation */,
 				C9EE3F221D09D0D900F86EF2 /* Available Caddies */,
@@ -528,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C990CF991D1F3FBA005E05F2 /* LoginViewController.swift in Sources */,
 				C95385D01D10B8EE007BCA15 /* ConfirmReservationViewController.swift in Sources */,
 				C94259E91D1771CC00EEE328 /* ContainerAboutUsViewController.swift in Sources */,
 				C994B4D31D15A83E009848F2 /* UserInformation.swift in Sources */,
