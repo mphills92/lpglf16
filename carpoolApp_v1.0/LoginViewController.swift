@@ -69,7 +69,6 @@ extension LoginViewController {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         switch (textField.tag) {
         case 1:
-            print("Email return")
             emailToValidate = emailTextField.text!
             // TO DO: We'll want to validate the email input here. Search DB for email address matching input. Display alert if no match. Move to password text field if email is found.
             passwordTextField.userInteractionEnabled = true
@@ -77,7 +76,6 @@ extension LoginViewController {
         case 2:
             // TO DO: We'll want to validate the password input here. Search DB for password that matches input AND matches email entered prior. Display login button.
             passwordToValidate = passwordTextField.text!
-            print("Password return")
             loginButtonInView()
         default:
             break

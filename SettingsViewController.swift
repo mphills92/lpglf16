@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UITableViewController {
     
+    @IBOutlet weak var signOutCell: UITableViewCell!
+    
     @IBAction func closeViewButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
     }
@@ -47,6 +49,14 @@ extension SettingsViewController {
             return 65
         } else {
             return 0
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cellClicked: UITableViewCell = self.tableView.cellForRowAtIndexPath(indexPath)!
+        if cellClicked == signOutCell {
+            print("TO DO: Sign out user from Loop and release credentials. Pop view back to login page.")
+            // TO DO: Sign out user from Loop and release credentials. Pop view back to login page.
         }
     }
 }
