@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099905065C07DF6F3A2EA359776F7139 /* Pods-carpoolApp_v1.0Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC5A22012C51840734B3504B4F92F36 /* Pods-carpoolApp_v1.0Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D2F1477ACB57CC69F68D06110DA16A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1F2625770E0564ADA1B9DF182CB5F623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4EFA028577D1539298A1D106DA3231CC /* Pods-carpoolApp_v1.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0216159043579CEB4368D46BB79EB5E5 /* Pods-carpoolApp_v1.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A51F3FBFA3CBDD2A2872C810C1492A4 /* Pods-carpoolApp_v1.0Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EF39BCF45BF85E7D1FE677E630BC7E /* Pods-carpoolApp_v1.0Tests-dummy.m */; };
+		7C6DCFD53A093A5C52E7F511C7E6F8E6 /* Pods-carpoolApp_v1.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8337AB0055F6971A9C6701803B91ADAF /* Pods-carpoolApp_v1.0-dummy.m */; };
+		9E038E03CF480B8A42D76506AAC62280 /* Pods-carpoolApp_v1.0UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3224009FD67379CF210E84510F8B4D /* Pods-carpoolApp_v1.0UITests-dummy.m */; };
+		B5B86BEF78C26DD8F1C22C294F835919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C493D7866F36723735EF7CD1F69E2796 /* Pods-carpoolApp_v1.0UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AB1DD9A021F02ED31DD1B95F6543829 /* Pods-carpoolApp_v1.0UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0216159043579CEB4368D46BB79EB5E5 /* Pods-carpoolApp_v1.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-carpoolApp_v1.0-umbrella.h"; sourceTree = "<group>"; };
+		03E0106265A217ACC218EA2235104FBF /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		0852C993BC0762D58009BCB0B6F57F59 /* Pods-carpoolApp_v1.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-carpoolApp_v1.0.modulemap"; sourceTree = "<group>"; };
+		09EF39BCF45BF85E7D1FE677E630BC7E /* Pods-carpoolApp_v1.0Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-carpoolApp_v1.0Tests-dummy.m"; sourceTree = "<group>"; };
+		208891F3DF04B545019A44D6411DCDDA /* Pods-carpoolApp_v1.0Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-carpoolApp_v1.0Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		226569FBE142BB49655B6D502DAE33AB /* Pods_carpoolApp_v1_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carpoolApp_v1_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A960ADFCA3A02DB68B9130A7BB489EA /* Pods-carpoolApp_v1.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-carpoolApp_v1.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C47D8BC54E79FE5CC4F05A26A156B22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC5A22012C51840734B3504B4F92F36 /* Pods-carpoolApp_v1.0Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-carpoolApp_v1.0Tests-umbrella.h"; sourceTree = "<group>"; };
+		3BF28167BCF4B7BD06DACA4AEB508223 /* Pods-carpoolApp_v1.0UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-carpoolApp_v1.0UITests-resources.sh"; sourceTree = "<group>"; };
+		3E1318C2E365C8A1ABAEA28300067D8F /* Pods-carpoolApp_v1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-carpoolApp_v1.0.release.xcconfig"; sourceTree = "<group>"; };
+		452405C82F8A0076FA037F9AC0719782 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		4761F87CFBF739E2A4D75031E7F2BDB7 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		488DE80D15C6E1716EB07B210B2CA8A6 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		4ECA221EA626AF0D593945D53D7A4C58 /* Pods-carpoolApp_v1.0UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-carpoolApp_v1.0UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5114FC6BE60CB9A932FECB600E40BAC5 /* Pods_carpoolApp_v1_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carpoolApp_v1_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55D3EB9CC2466094DD973029676A2472 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		57ED0E13555921F8369A213F2C5AD655 /* Pods-carpoolApp_v1.0Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-carpoolApp_v1.0Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		67BAE9A776C3F88B932EF65D29360537 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		704B0BF75B2D73EADF6E72662B59EB01 /* Pods-carpoolApp_v1.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-carpoolApp_v1.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		743FB7BDABA537152D12261530324A55 /* Pods-carpoolApp_v1.0UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-carpoolApp_v1.0UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		789CC823EA9D4F0478B6B312D7874F20 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		7AB1DD9A021F02ED31DD1B95F6543829 /* Pods-carpoolApp_v1.0UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-carpoolApp_v1.0UITests-umbrella.h"; sourceTree = "<group>"; };
+		8337AB0055F6971A9C6701803B91ADAF /* Pods-carpoolApp_v1.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-carpoolApp_v1.0-dummy.m"; sourceTree = "<group>"; };
+		8719CD15920FA4F5AAD3883C0D61150D /* Pods-carpoolApp_v1.0-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-carpoolApp_v1.0-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C6E239C9B3A3DBEF4E46EB1B04CE34E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC2C852A226908FCD16DAD080CC2C7C /* Pods-carpoolApp_v1.0-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-carpoolApp_v1.0-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F3224009FD67379CF210E84510F8B4D /* Pods-carpoolApp_v1.0UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-carpoolApp_v1.0UITests-dummy.m"; sourceTree = "<group>"; };
+		9284675470B4D7574A13CCA4F1340666 /* Pods-carpoolApp_v1.0-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-carpoolApp_v1.0-resources.sh"; sourceTree = "<group>"; };
+		92EC637568030902B676DF38A3C5431D /* Pods-carpoolApp_v1.0UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-carpoolApp_v1.0UITests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9486DFC39B2108EABD49A9B327D660C9 /* Pods_carpoolApp_v1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carpoolApp_v1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A180BC014D366540D5B968C6AA1C4FFA /* Pods-carpoolApp_v1.0UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-carpoolApp_v1.0UITests.modulemap"; sourceTree = "<group>"; };
+		BB55B315DC37FD6EC480CF113EFDBE3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03C3D4EA3380CB0C1CA5F4688A482C2 /* Pods-carpoolApp_v1.0Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-carpoolApp_v1.0Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CC4F5F8842737698055138A105B6FECE /* Pods-carpoolApp_v1.0Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-carpoolApp_v1.0Tests-resources.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D02F2211ECE498EBE00571E09776A70D /* Pods-carpoolApp_v1.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-carpoolApp_v1.0UITests.release.xcconfig"; sourceTree = "<group>"; };
+		D54286903D736BAD05EF4535B62B483B /* Pods-carpoolApp_v1.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-carpoolApp_v1.0Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DDBA824730D206B873FEAC6C5E768590 /* Pods-carpoolApp_v1.0Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-carpoolApp_v1.0Tests.modulemap"; sourceTree = "<group>"; };
+		E3E116E374CFF4017AEEFE6E8EBC3026 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		EB50F0B3F54D0B23D7F3EEDA577F217D /* Pods-carpoolApp_v1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-carpoolApp_v1.0.debug.xcconfig"; sourceTree = "<group>"; };
+		EB7A564D36A7D9E62CD7CDA67B579F51 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		F2D995BA2B2F6F9CC1912E9A7871ECAF /* Pods-carpoolApp_v1.0-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-carpoolApp_v1.0-frameworks.sh"; sourceTree = "<group>"; };
+		F847ABE6512B2018E8ED69364605DE26 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75570421E40CC493C34ADB892014F050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2625770E0564ADA1B9DF182CB5F623 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788A63E2379C246212EF550B0F8F6CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2F1477ACB57CC69F68D06110DA16A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A9571D6AA7A67B37B7BB25F6DB0370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B86BEF78C26DD8F1C22C294F835919 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C31E0233017FB1BFBCB33F7354A2D22 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				D281E91283F793E8CA75412349F48963 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		3CD7E1E23ECF34FDF931C0381F479D8C /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				46A8763392E22D8E8B274B0E2D7D1550 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46A8763392E22D8E8B274B0E2D7D1550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4761F87CFBF739E2A4D75031E7F2BDB7 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C70F7225A55D654CC45856840D1C7EA /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CF52A66801ACB66144CBA1E6EBEE70D9 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		62390C058AA9839F57F3F84F001CCC85 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1FCEC2818A93CFFD108D4C2400AFE /* Pods-carpoolApp_v1.0 */,
+				F1DA38BF9BC32363B26675F60EC3DC4A /* Pods-carpoolApp_v1.0Tests */,
+				93050133F727673D67C01E90067FE9E9 /* Pods-carpoolApp_v1.0UITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6926ECF7C779A470DCBC96D030CC6A83 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				B003E44AF39A073FF0DCBF62A6DB2BF0 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		6A7093A972E338FDCB1503327A5A108F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67BAE9A776C3F88B932EF65D29360537 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DDD0181EC31EBBDC09435AF0A624F8D /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				03E0106265A217ACC218EA2235104FBF /* FIRInstanceID.h */,
+				7928D8E4AF7DDB04EA7796A15D1A1F95 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		6E9F397AE79C26FBE9C8767EB7C6BF89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C70F7225A55D654CC45856840D1C7EA /* Firebase */,
+				6926ECF7C779A470DCBC96D030CC6A83 /* FirebaseAnalytics */,
+				B975A4AA5B5C2F4A8E3D75B69E5E97DB /* FirebaseAuth */,
+				72FF4AA34B51053F6345C9700A854DCB /* FirebaseDatabase */,
+				6DDD0181EC31EBBDC09435AF0A624F8D /* FirebaseInstanceID */,
+				DBFFACE7C9ED8EC5C7CC42F190190BC4 /* GoogleInterchangeUtilities */,
+				A14C6E4BB4CB955E28A2A2AA42AF62F7 /* GoogleNetworkingUtilities */,
+				3CD7E1E23ECF34FDF931C0381F479D8C /* GoogleSymbolUtilities */,
+				2C31E0233017FB1BFBCB33F7354A2D22 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72FF4AA34B51053F6345C9700A854DCB /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				6A7093A972E338FDCB1503327A5A108F /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		7928D8E4AF7DDB04EA7796A15D1A1F95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				452405C82F8A0076FA037F9AC0719782 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6E9F397AE79C26FBE9C8767EB7C6BF89 /* Pods */,
+				B9F9CF67E659E30EA319D550EA60A644 /* Products */,
+				62390C058AA9839F57F3F84F001CCC85 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		93050133F727673D67C01E90067FE9E9 /* Pods-carpoolApp_v1.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C47D8BC54E79FE5CC4F05A26A156B22 /* Info.plist */,
+				A180BC014D366540D5B968C6AA1C4FFA /* Pods-carpoolApp_v1.0UITests.modulemap */,
+				4ECA221EA626AF0D593945D53D7A4C58 /* Pods-carpoolApp_v1.0UITests-acknowledgements.markdown */,
+				743FB7BDABA537152D12261530324A55 /* Pods-carpoolApp_v1.0UITests-acknowledgements.plist */,
+				8F3224009FD67379CF210E84510F8B4D /* Pods-carpoolApp_v1.0UITests-dummy.m */,
+				92EC637568030902B676DF38A3C5431D /* Pods-carpoolApp_v1.0UITests-frameworks.sh */,
+				3BF28167BCF4B7BD06DACA4AEB508223 /* Pods-carpoolApp_v1.0UITests-resources.sh */,
+				7AB1DD9A021F02ED31DD1B95F6543829 /* Pods-carpoolApp_v1.0UITests-umbrella.h */,
+				2A960ADFCA3A02DB68B9130A7BB489EA /* Pods-carpoolApp_v1.0UITests.debug.xcconfig */,
+				D02F2211ECE498EBE00571E09776A70D /* Pods-carpoolApp_v1.0UITests.release.xcconfig */,
+			);
+			name = "Pods-carpoolApp_v1.0UITests";
+			path = "Target Support Files/Pods-carpoolApp_v1.0UITests";
+			sourceTree = "<group>";
+		};
+		A14C6E4BB4CB955E28A2A2AA42AF62F7 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				A81D21B5302AB8375EEFBF24421919DF /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		A4C1FCEC2818A93CFFD108D4C2400AFE /* Pods-carpoolApp_v1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				8C6E239C9B3A3DBEF4E46EB1B04CE34E /* Info.plist */,
+				0852C993BC0762D58009BCB0B6F57F59 /* Pods-carpoolApp_v1.0.modulemap */,
+				8EC2C852A226908FCD16DAD080CC2C7C /* Pods-carpoolApp_v1.0-acknowledgements.markdown */,
+				8719CD15920FA4F5AAD3883C0D61150D /* Pods-carpoolApp_v1.0-acknowledgements.plist */,
+				8337AB0055F6971A9C6701803B91ADAF /* Pods-carpoolApp_v1.0-dummy.m */,
+				F2D995BA2B2F6F9CC1912E9A7871ECAF /* Pods-carpoolApp_v1.0-frameworks.sh */,
+				9284675470B4D7574A13CCA4F1340666 /* Pods-carpoolApp_v1.0-resources.sh */,
+				0216159043579CEB4368D46BB79EB5E5 /* Pods-carpoolApp_v1.0-umbrella.h */,
+				EB50F0B3F54D0B23D7F3EEDA577F217D /* Pods-carpoolApp_v1.0.debug.xcconfig */,
+				3E1318C2E365C8A1ABAEA28300067D8F /* Pods-carpoolApp_v1.0.release.xcconfig */,
+			);
+			name = "Pods-carpoolApp_v1.0";
+			path = "Target Support Files/Pods-carpoolApp_v1.0";
+			sourceTree = "<group>";
+		};
+		A6E49B499546589686E163EECC8085DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A564D36A7D9E62CD7CDA67B579F51 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A81D21B5302AB8375EEFBF24421919DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55D3EB9CC2466094DD973029676A2472 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B003E44AF39A073FF0DCBF62A6DB2BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				789CC823EA9D4F0478B6B312D7874F20 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B54925C679C8221ED7BC98F242741EE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				488DE80D15C6E1716EB07B210B2CA8A6 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B975A4AA5B5C2F4A8E3D75B69E5E97DB /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B54925C679C8221ED7BC98F242741EE4 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		B9F9CF67E659E30EA319D550EA60A644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9486DFC39B2108EABD49A9B327D660C9 /* Pods_carpoolApp_v1_0.framework */,
+				226569FBE142BB49655B6D502DAE33AB /* Pods_carpoolApp_v1_0Tests.framework */,
+				5114FC6BE60CB9A932FECB600E40BAC5 /* Pods_carpoolApp_v1_0UITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF52A66801ACB66144CBA1E6EBEE70D9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				E3E116E374CFF4017AEEFE6E8EBC3026 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		D281E91283F793E8CA75412349F48963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F847ABE6512B2018E8ED69364605DE26 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBFFACE7C9ED8EC5C7CC42F190190BC4 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				A6E49B499546589686E163EECC8085DF /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		F1DA38BF9BC32363B26675F60EC3DC4A /* Pods-carpoolApp_v1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB55B315DC37FD6EC480CF113EFDBE3F /* Info.plist */,
+				DDBA824730D206B873FEAC6C5E768590 /* Pods-carpoolApp_v1.0Tests.modulemap */,
+				208891F3DF04B545019A44D6411DCDDA /* Pods-carpoolApp_v1.0Tests-acknowledgements.markdown */,
+				57ED0E13555921F8369A213F2C5AD655 /* Pods-carpoolApp_v1.0Tests-acknowledgements.plist */,
+				09EF39BCF45BF85E7D1FE677E630BC7E /* Pods-carpoolApp_v1.0Tests-dummy.m */,
+				C03C3D4EA3380CB0C1CA5F4688A482C2 /* Pods-carpoolApp_v1.0Tests-frameworks.sh */,
+				CC4F5F8842737698055138A105B6FECE /* Pods-carpoolApp_v1.0Tests-resources.sh */,
+				2DC5A22012C51840734B3504B4F92F36 /* Pods-carpoolApp_v1.0Tests-umbrella.h */,
+				704B0BF75B2D73EADF6E72662B59EB01 /* Pods-carpoolApp_v1.0Tests.debug.xcconfig */,
+				D54286903D736BAD05EF4535B62B483B /* Pods-carpoolApp_v1.0Tests.release.xcconfig */,
+			);
+			name = "Pods-carpoolApp_v1.0Tests";
+			path = "Target Support Files/Pods-carpoolApp_v1.0Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		147617EDF5DB977752981954D9F1D8C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099905065C07DF6F3A2EA359776F7139 /* Pods-carpoolApp_v1.0Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D17056FB38A8E86EDF705C529916D33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C493D7866F36723735EF7CD1F69E2796 /* Pods-carpoolApp_v1.0UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F2012BD792CCCB66CB55F77F967084E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFA028577D1539298A1D106DA3231CC /* Pods-carpoolApp_v1.0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		201901964F3000F2761CB38D2DF72C8A /* Pods-carpoolApp_v1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757F6B7779EDE4412F4B0551881F9420 /* Build configuration list for PBXNativeTarget "Pods-carpoolApp_v1.0" */;
+			buildPhases = (
+				E134F332FE66EE7D220A107A1A0ABD6F /* Sources */,
+				788A63E2379C246212EF550B0F8F6CAA /* Frameworks */,
+				6F2012BD792CCCB66CB55F77F967084E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-carpoolApp_v1.0";
+			productName = "Pods-carpoolApp_v1.0";
+			productReference = 9486DFC39B2108EABD49A9B327D660C9 /* Pods_carpoolApp_v1_0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F9CA11EF557BDEEC4E313A1F5A71919 /* Pods-carpoolApp_v1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1A340090818AB1524492A56CBB50A9 /* Build configuration list for PBXNativeTarget "Pods-carpoolApp_v1.0Tests" */;
+			buildPhases = (
+				091BEAC5618EBF765B154EF41A9B23CB /* Sources */,
+				75570421E40CC493C34ADB892014F050 /* Frameworks */,
+				147617EDF5DB977752981954D9F1D8C8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-carpoolApp_v1.0Tests";
+			productName = "Pods-carpoolApp_v1.0Tests";
+			productReference = 226569FBE142BB49655B6D502DAE33AB /* Pods_carpoolApp_v1_0Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E564BFA7D43DF636DABB2D175138C0CB /* Pods-carpoolApp_v1.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41B6440C94238CA191A72B2D1011F32 /* Build configuration list for PBXNativeTarget "Pods-carpoolApp_v1.0UITests" */;
+			buildPhases = (
+				ADD507D14B600947F3E178EAE057CC0A /* Sources */,
+				D6A9571D6AA7A67B37B7BB25F6DB0370 /* Frameworks */,
+				6D17056FB38A8E86EDF705C529916D33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-carpoolApp_v1.0UITests";
+			productName = "Pods-carpoolApp_v1.0UITests";
+			productReference = 5114FC6BE60CB9A932FECB600E40BAC5 /* Pods_carpoolApp_v1_0UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B9F9CF67E659E30EA319D550EA60A644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201901964F3000F2761CB38D2DF72C8A /* Pods-carpoolApp_v1.0 */,
+				2F9CA11EF557BDEEC4E313A1F5A71919 /* Pods-carpoolApp_v1.0Tests */,
+				E564BFA7D43DF636DABB2D175138C0CB /* Pods-carpoolApp_v1.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091BEAC5618EBF765B154EF41A9B23CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A51F3FBFA3CBDD2A2872C810C1492A4 /* Pods-carpoolApp_v1.0Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD507D14B600947F3E178EAE057CC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E038E03CF480B8A42D76506AAC62280 /* Pods-carpoolApp_v1.0UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E134F332FE66EE7D220A107A1A0ABD6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6DCFD53A093A5C52E7F511C7E6F8E6 /* Pods-carpoolApp_v1.0-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0042D3E8E3CFE21C18F1539ED968DB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02F2211ECE498EBE00571E09776A70D /* Pods-carpoolApp_v1.0UITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-carpoolApp_v1.0UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-carpoolApp_v1.0UITests/Pods-carpoolApp_v1.0UITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_carpoolApp_v1_0UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		108F58FE0BAB26C93961EF8A0A3C218D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704B0BF75B2D73EADF6E72662B59EB01 /* Pods-carpoolApp_v1.0Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-carpoolApp_v1.0Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-carpoolApp_v1.0Tests/Pods-carpoolApp_v1.0Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_carpoolApp_v1_0Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CC2088FA0C09D23CE0C94EBB52B2A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1318C2E365C8A1ABAEA28300067D8F /* Pods-carpoolApp_v1.0.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-carpoolApp_v1.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-carpoolApp_v1.0/Pods-carpoolApp_v1.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_carpoolApp_v1_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54F4FA90AC06551666074454259AD85A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A960ADFCA3A02DB68B9130A7BB489EA /* Pods-carpoolApp_v1.0UITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-carpoolApp_v1.0UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-carpoolApp_v1.0UITests/Pods-carpoolApp_v1.0UITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_carpoolApp_v1_0UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6AA117EDB4A6C03E27AB4D9C32E260FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB50F0B3F54D0B23D7F3EEDA577F217D /* Pods-carpoolApp_v1.0.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-carpoolApp_v1.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-carpoolApp_v1.0/Pods-carpoolApp_v1.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_carpoolApp_v1_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84FD87D359382A37B07149A12641B965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F0CA9FFA1BFA78AC4A5CA25F8416D095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D54286903D736BAD05EF4535B62B483B /* Pods-carpoolApp_v1.0Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-carpoolApp_v1.0Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-carpoolApp_v1.0Tests/Pods-carpoolApp_v1.0Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_carpoolApp_v1_0Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F594C655D48020EC34B00AA63E001773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FD87D359382A37B07149A12641B965 /* Debug */,
+				F594C655D48020EC34B00AA63E001773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757F6B7779EDE4412F4B0551881F9420 /* Build configuration list for PBXNativeTarget "Pods-carpoolApp_v1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA117EDB4A6C03E27AB4D9C32E260FB /* Debug */,
+				1CC2088FA0C09D23CE0C94EBB52B2A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1A340090818AB1524492A56CBB50A9 /* Build configuration list for PBXNativeTarget "Pods-carpoolApp_v1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108F58FE0BAB26C93961EF8A0A3C218D /* Debug */,
+				F0CA9FFA1BFA78AC4A5CA25F8416D095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41B6440C94238CA191A72B2D1011F32 /* Build configuration list for PBXNativeTarget "Pods-carpoolApp_v1.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F4FA90AC06551666074454259AD85A /* Debug */,
+				0042D3E8E3CFE21C18F1539ED968DB2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

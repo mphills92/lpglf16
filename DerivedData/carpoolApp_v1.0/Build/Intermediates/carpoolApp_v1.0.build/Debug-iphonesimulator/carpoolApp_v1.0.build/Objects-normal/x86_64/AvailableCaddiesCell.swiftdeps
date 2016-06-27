@@ -1,0 +1,739 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AvailableCaddiesCell"
+provides-nominal:
+- "C15carpoolApp_v1_020AvailableCaddiesCell"
+provides-member:
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", ""]
+provides-dynamic-lookup:
+- "reserveCaddyButton"
+- "imageCoverView"
+- "applyLayoutAttributes"
+- "nameLabel"
+- "caddyHandicapLabel"
+- "imageView"
+- "roundsCaddiedLabel"
+depends-top-level:
+- "AvailableCaddiesCell"
+- "UIButton"
+- !private "UltravisualLayoutConstants"
+- !private "CGAffineTransformMakeScale"
+- !private "CGFloat"
+- "Caddies"
+- "UICollectionViewCell"
+- !private "*"
+- !private "/"
+- !private "UIImage"
+- "UICollectionViewLayoutAttributes"
+- !private "CGRectGetHeight"
+- "UIImageView"
+- !private "max"
+- "UIView"
+- !private "-"
+- !private "StringLiteralType"
+- "UILabel"
+depends-member:
+- !private ["Ps9AnyObject", "CGAffineTransformMakeScale"]
+- !private ["Ps9AnyObject", "CGRectGetHeight"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UltravisualLayoutConstants"]
+- !private ["Ps9AnyObject", "alpha"]
+- ["Ps9AnyObject", "applyLayoutAttributes"]
+- !private ["Ps9AnyObject", "bounds"]
+- ["Ps9AnyObject", "caddiesAvailable"]
+- ["Ps9AnyObject", "caddyHandicapLabel"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "frame"]
+- !private ["Ps9AnyObject", "handicap"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "imageCoverView"]
+- ["Ps9AnyObject", "imageView"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "max"]
+- !private ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "nameLabel"]
+- ["Ps9AnyObject", "reserveCaddyButton"]
+- !private ["Ps9AnyObject", "rounds"]
+- ["Ps9AnyObject", "roundsCaddiedLabel"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "transform"]
+- ["Ps9AnyObject", ""]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "CGAffineTransformMakeScale"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "CGFloat"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "CGRectGetHeight"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "Caddies"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "UIButton"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "UICollectionViewLayoutAttributes"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "UIImage"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "UIImageView"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "UILabel"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "UIView"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "UltravisualLayoutConstants"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "applyLayoutAttributes"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "caddiesAvailable"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "caddyHandicapLabel"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "deinit"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "frame"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "imageCoverView"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "imageView"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "init"]
+- !private ["C15carpoolApp_v1_020AvailableCaddiesCell", "max"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "nameLabel"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "reserveCaddyButton"]
+- ["C15carpoolApp_v1_020AvailableCaddiesCell", "roundsCaddiedLabel"]
+- !private ["Sb", "deinit"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "height"]
+- !private ["Ps11CVarArgType", "CGAffineTransformMakeScale"]
+- !private ["Ps11CVarArgType", "CGRectGetHeight"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UltravisualLayoutConstants"]
+- !private ["Ps11CVarArgType", "alpha"]
+- ["Ps11CVarArgType", "applyLayoutAttributes"]
+- !private ["Ps11CVarArgType", "bounds"]
+- ["Ps11CVarArgType", "caddiesAvailable"]
+- ["Ps11CVarArgType", "caddyHandicapLabel"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- !private ["Ps11CVarArgType", "frame"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "imageCoverView"]
+- ["Ps11CVarArgType", "imageView"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "layer"]
+- !private ["Ps11CVarArgType", "max"]
+- ["Ps11CVarArgType", "nameLabel"]
+- ["Ps11CVarArgType", "reserveCaddyButton"]
+- ["Ps11CVarArgType", "roundsCaddiedLabel"]
+- !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "transform"]
+- ["Ps11CVarArgType", ""]
+- !private ["C15carpoolApp_v1_07Caddies", "handicap"]
+- !private ["C15carpoolApp_v1_07Caddies", "name"]
+- !private ["C15carpoolApp_v1_07Caddies", "rounds"]
+- !private ["VV15carpoolApp_v1_026UltravisualLayoutConstants4Cell", "featuredHeight"]
+- !private ["VV15carpoolApp_v1_026UltravisualLayoutConstants4Cell", "standardHeight"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGAffineTransformMakeScale"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectGetHeight"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UltravisualLayoutConstants"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- ["Ps28CustomDebugStringConvertible", "applyLayoutAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- ["Ps28CustomDebugStringConvertible", "caddiesAvailable"]
+- ["Ps28CustomDebugStringConvertible", "caddyHandicapLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "imageCoverView"]
+- ["Ps28CustomDebugStringConvertible", "imageView"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "max"]
+- ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- ["Ps28CustomDebugStringConvertible", "reserveCaddyButton"]
+- ["Ps28CustomDebugStringConvertible", "roundsCaddiedLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "transform"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGAffineTransformMakeScale"]
+- !private ["Ps23CustomStringConvertible", "CGRectGetHeight"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UltravisualLayoutConstants"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
+- ["Ps23CustomStringConvertible", "applyLayoutAttributes"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- ["Ps23CustomStringConvertible", "caddiesAvailable"]
+- ["Ps23CustomStringConvertible", "caddyHandicapLabel"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "imageCoverView"]
+- ["Ps23CustomStringConvertible", "imageView"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "max"]
+- ["Ps23CustomStringConvertible", "nameLabel"]
+- ["Ps23CustomStringConvertible", "reserveCaddyButton"]
+- ["Ps23CustomStringConvertible", "roundsCaddiedLabel"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "transform"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGAffineTransformMakeScale"]
+- !private ["Ps9Equatable", "CGRectGetHeight"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UltravisualLayoutConstants"]
+- !private ["Ps9Equatable", "alpha"]
+- ["Ps9Equatable", "applyLayoutAttributes"]
+- !private ["Ps9Equatable", "bounds"]
+- ["Ps9Equatable", "caddiesAvailable"]
+- ["Ps9Equatable", "caddyHandicapLabel"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "imageCoverView"]
+- ["Ps9Equatable", "imageView"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "max"]
+- ["Ps9Equatable", "nameLabel"]
+- ["Ps9Equatable", "reserveCaddyButton"]
+- ["Ps9Equatable", "roundsCaddiedLabel"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "transform"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "CGAffineTransformMakeScale"]
+- !private ["Ps8Hashable", "CGRectGetHeight"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UltravisualLayoutConstants"]
+- !private ["Ps8Hashable", "alpha"]
+- ["Ps8Hashable", "applyLayoutAttributes"]
+- !private ["Ps8Hashable", "bounds"]
+- ["Ps8Hashable", "caddiesAvailable"]
+- ["Ps8Hashable", "caddyHandicapLabel"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "imageCoverView"]
+- ["Ps8Hashable", "imageView"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "max"]
+- ["Ps8Hashable", "nameLabel"]
+- ["Ps8Hashable", "reserveCaddyButton"]
+- ["Ps8Hashable", "roundsCaddiedLabel"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "transform"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "CGAffineTransformMakeScale"]
+- !private ["PSo8NSCoding", "CGRectGetHeight"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UltravisualLayoutConstants"]
+- !private ["PSo8NSCoding", "alpha"]
+- ["PSo8NSCoding", "applyLayoutAttributes"]
+- !private ["PSo8NSCoding", "bounds"]
+- ["PSo8NSCoding", "caddiesAvailable"]
+- ["PSo8NSCoding", "caddyHandicapLabel"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "imageCoverView"]
+- ["PSo8NSCoding", "imageView"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "max"]
+- ["PSo8NSCoding", "nameLabel"]
+- ["PSo8NSCoding", "reserveCaddyButton"]
+- ["PSo8NSCoding", "roundsCaddiedLabel"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "transform"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "CGAffineTransformMakeScale"]
+- !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGRectGetHeight"]
+- ["CSo8NSObject", "Caddies"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UICollectionViewLayoutAttributes"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "UltravisualLayoutConstants"]
+- !private ["CSo8NSObject", "alpha"]
+- ["CSo8NSObject", "applyLayoutAttributes"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "caddiesAvailable"]
+- ["CSo8NSObject", "caddyHandicapLabel"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "frame"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "imageCoverView"]
+- ["CSo8NSObject", "imageView"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "max"]
+- ["CSo8NSObject", "nameLabel"]
+- ["CSo8NSObject", "reserveCaddyButton"]
+- ["CSo8NSObject", "roundsCaddiedLabel"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "transform"]
+- !private ["PSo16NSObjectProtocol", "CGAffineTransformMakeScale"]
+- !private ["PSo16NSObjectProtocol", "CGRectGetHeight"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UltravisualLayoutConstants"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- ["PSo16NSObjectProtocol", "applyLayoutAttributes"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "caddiesAvailable"]
+- ["PSo16NSObjectProtocol", "caddyHandicapLabel"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "imageCoverView"]
+- ["PSo16NSObjectProtocol", "imageView"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "max"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- ["PSo16NSObjectProtocol", "reserveCaddyButton"]
+- ["PSo16NSObjectProtocol", "roundsCaddiedLabel"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "transform"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["C15carpoolApp_v1_07Session", "handicap"]
+- !private ["C15carpoolApp_v1_07Session", "name"]
+- !private ["C15carpoolApp_v1_07Session", "rounds"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "CGAffineTransformMakeScale"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectGetHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- !private ["PSo29UIAccessibilityIdentification", "UltravisualLayoutConstants"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- ["PSo29UIAccessibilityIdentification", "applyLayoutAttributes"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- ["PSo29UIAccessibilityIdentification", "caddiesAvailable"]
+- ["PSo29UIAccessibilityIdentification", "caddyHandicapLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "imageCoverView"]
+- ["PSo29UIAccessibilityIdentification", "imageView"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "max"]
+- ["PSo29UIAccessibilityIdentification", "nameLabel"]
+- ["PSo29UIAccessibilityIdentification", "reserveCaddyButton"]
+- ["PSo29UIAccessibilityIdentification", "roundsCaddiedLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "transform"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGAffineTransformMakeScale"]
+- !private ["PSo12UIAppearance", "CGRectGetHeight"]
+- !private ["PSo12UIAppearance", "UIImage"]
+- !private ["PSo12UIAppearance", "UltravisualLayoutConstants"]
+- !private ["PSo12UIAppearance", "alpha"]
+- ["PSo12UIAppearance", "applyLayoutAttributes"]
+- !private ["PSo12UIAppearance", "bounds"]
+- ["PSo12UIAppearance", "caddiesAvailable"]
+- ["PSo12UIAppearance", "caddyHandicapLabel"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "imageCoverView"]
+- ["PSo12UIAppearance", "imageView"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "max"]
+- ["PSo12UIAppearance", "nameLabel"]
+- ["PSo12UIAppearance", "reserveCaddyButton"]
+- ["PSo12UIAppearance", "roundsCaddiedLabel"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "transform"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGAffineTransformMakeScale"]
+- !private ["PSo21UIAppearanceContainer", "CGRectGetHeight"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UltravisualLayoutConstants"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- ["PSo21UIAppearanceContainer", "applyLayoutAttributes"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "caddiesAvailable"]
+- ["PSo21UIAppearanceContainer", "caddyHandicapLabel"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "imageCoverView"]
+- ["PSo21UIAppearanceContainer", "imageView"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "max"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- ["PSo21UIAppearanceContainer", "reserveCaddyButton"]
+- ["PSo21UIAppearanceContainer", "roundsCaddiedLabel"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "transform"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "alpha"]
+- !private ["CSo8UIButton", "bounds"]
+- !private ["CSo8UIButton", "layer"]
+- !private ["CSo24UICollectionReusableView", "CGAffineTransformMakeScale"]
+- !private ["CSo24UICollectionReusableView", "CGFloat"]
+- !private ["CSo24UICollectionReusableView", "CGRectGetHeight"]
+- ["CSo24UICollectionReusableView", "Caddies"]
+- ["CSo24UICollectionReusableView", "UIButton"]
+- ["CSo24UICollectionReusableView", "UICollectionViewLayoutAttributes"]
+- !private ["CSo24UICollectionReusableView", "UIImage"]
+- ["CSo24UICollectionReusableView", "UIImageView"]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "UIView"]
+- !private ["CSo24UICollectionReusableView", "UltravisualLayoutConstants"]
+- ["CSo24UICollectionReusableView", "applyLayoutAttributes"]
+- ["CSo24UICollectionReusableView", "caddiesAvailable"]
+- ["CSo24UICollectionReusableView", "caddyHandicapLabel"]
+- !private ["CSo24UICollectionReusableView", "frame"]
+- ["CSo24UICollectionReusableView", "imageCoverView"]
+- ["CSo24UICollectionReusableView", "imageView"]
+- ["CSo24UICollectionReusableView", "init"]
+- !private ["CSo24UICollectionReusableView", "max"]
+- ["CSo24UICollectionReusableView", "nameLabel"]
+- ["CSo24UICollectionReusableView", "reserveCaddyButton"]
+- ["CSo24UICollectionReusableView", "roundsCaddiedLabel"]
+- !private ["CSo20UICollectionViewCell", "CGAffineTransformMakeScale"]
+- !private ["CSo20UICollectionViewCell", "CGFloat"]
+- !private ["CSo20UICollectionViewCell", "CGRectGetHeight"]
+- ["CSo20UICollectionViewCell", "Caddies"]
+- ["CSo20UICollectionViewCell", "UIButton"]
+- ["CSo20UICollectionViewCell", "UICollectionViewLayoutAttributes"]
+- !private ["CSo20UICollectionViewCell", "UIImage"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "UIView"]
+- !private ["CSo20UICollectionViewCell", "UltravisualLayoutConstants"]
+- ["CSo20UICollectionViewCell", "applyLayoutAttributes"]
+- ["CSo20UICollectionViewCell", "caddiesAvailable"]
+- ["CSo20UICollectionViewCell", "caddyHandicapLabel"]
+- !private ["CSo20UICollectionViewCell", "frame"]
+- ["CSo20UICollectionViewCell", "imageCoverView"]
+- ["CSo20UICollectionViewCell", "imageView"]
+- ["CSo20UICollectionViewCell", "init"]
+- !private ["CSo20UICollectionViewCell", "max"]
+- ["CSo20UICollectionViewCell", "nameLabel"]
+- ["CSo20UICollectionViewCell", "reserveCaddyButton"]
+- ["CSo20UICollectionViewCell", "roundsCaddiedLabel"]
+- ["CSo20UICollectionViewCell", ""]
+- !private ["CSo9UIControl", "alpha"]
+- !private ["CSo9UIControl", "bounds"]
+- !private ["CSo9UIControl", "layer"]
+- !private ["PSo17UICoordinateSpace", "CGAffineTransformMakeScale"]
+- !private ["PSo17UICoordinateSpace", "CGRectGetHeight"]
+- !private ["PSo17UICoordinateSpace", "UIImage"]
+- !private ["PSo17UICoordinateSpace", "UltravisualLayoutConstants"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- ["PSo17UICoordinateSpace", "applyLayoutAttributes"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- ["PSo17UICoordinateSpace", "caddiesAvailable"]
+- ["PSo17UICoordinateSpace", "caddyHandicapLabel"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "imageCoverView"]
+- ["PSo17UICoordinateSpace", "imageView"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "max"]
+- ["PSo17UICoordinateSpace", "nameLabel"]
+- ["PSo17UICoordinateSpace", "reserveCaddyButton"]
+- ["PSo17UICoordinateSpace", "roundsCaddiedLabel"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "transform"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGAffineTransformMakeScale"]
+- !private ["PSo13UIDynamicItem", "CGRectGetHeight"]
+- !private ["PSo13UIDynamicItem", "UIImage"]
+- !private ["PSo13UIDynamicItem", "UltravisualLayoutConstants"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- ["PSo13UIDynamicItem", "applyLayoutAttributes"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- ["PSo13UIDynamicItem", "caddiesAvailable"]
+- ["PSo13UIDynamicItem", "caddyHandicapLabel"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "imageCoverView"]
+- ["PSo13UIDynamicItem", "imageView"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "max"]
+- ["PSo13UIDynamicItem", "nameLabel"]
+- ["PSo13UIDynamicItem", "reserveCaddyButton"]
+- ["PSo13UIDynamicItem", "roundsCaddiedLabel"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "transform"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CGAffineTransformMakeScale"]
+- !private ["PSo18UIFocusEnvironment", "CGRectGetHeight"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UltravisualLayoutConstants"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
+- ["PSo18UIFocusEnvironment", "applyLayoutAttributes"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "caddiesAvailable"]
+- ["PSo18UIFocusEnvironment", "caddyHandicapLabel"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "imageCoverView"]
+- ["PSo18UIFocusEnvironment", "imageView"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "max"]
+- ["PSo18UIFocusEnvironment", "nameLabel"]
+- ["PSo18UIFocusEnvironment", "reserveCaddyButton"]
+- ["PSo18UIFocusEnvironment", "roundsCaddiedLabel"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "transform"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "alpha"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo7UILabel", "transform"]
+- !private ["CSo11UIResponder", "CGAffineTransformMakeScale"]
+- !private ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "CGRectGetHeight"]
+- ["CSo11UIResponder", "Caddies"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UICollectionViewLayoutAttributes"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "UltravisualLayoutConstants"]
+- !private ["CSo11UIResponder", "alpha"]
+- ["CSo11UIResponder", "applyLayoutAttributes"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "caddiesAvailable"]
+- ["CSo11UIResponder", "caddyHandicapLabel"]
+- !private ["CSo11UIResponder", "frame"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "imageCoverView"]
+- ["CSo11UIResponder", "imageView"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "max"]
+- ["CSo11UIResponder", "nameLabel"]
+- ["CSo11UIResponder", "reserveCaddyButton"]
+- ["CSo11UIResponder", "roundsCaddiedLabel"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "transform"]
+- !private ["PSo18UITraitEnvironment", "CGAffineTransformMakeScale"]
+- !private ["PSo18UITraitEnvironment", "CGRectGetHeight"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UltravisualLayoutConstants"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- ["PSo18UITraitEnvironment", "applyLayoutAttributes"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "caddiesAvailable"]
+- ["PSo18UITraitEnvironment", "caddyHandicapLabel"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "imageCoverView"]
+- ["PSo18UITraitEnvironment", "imageView"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "max"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- ["PSo18UITraitEnvironment", "reserveCaddyButton"]
+- ["PSo18UITraitEnvironment", "roundsCaddiedLabel"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "transform"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "CGAffineTransformMakeScale"]
+- !private ["CSo6UIView", "CGFloat"]
+- !private ["CSo6UIView", "CGRectGetHeight"]
+- ["CSo6UIView", "Caddies"]
+- ["CSo6UIView", "UIButton"]
+- ["CSo6UIView", "UICollectionViewLayoutAttributes"]
+- !private ["CSo6UIView", "UIImage"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UIView"]
+- !private ["CSo6UIView", "UltravisualLayoutConstants"]
+- !private ["CSo6UIView", "alpha"]
+- ["CSo6UIView", "applyLayoutAttributes"]
+- !private ["CSo6UIView", "bounds"]
+- ["CSo6UIView", "caddiesAvailable"]
+- ["CSo6UIView", "caddyHandicapLabel"]
+- !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "imageCoverView"]
+- ["CSo6UIView", "imageView"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "max"]
+- ["CSo6UIView", "nameLabel"]
+- ["CSo6UIView", "reserveCaddyButton"]
+- ["CSo6UIView", "roundsCaddiedLabel"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "transform"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["V15carpoolApp_v1_026UltravisualLayoutConstants", "Cell"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "CGAffineTransformMakeScale"]
+- !private ["Ps12_Reflectable", "CGRectGetHeight"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "UIImage"]
+- !private ["Ps12_Reflectable", "UltravisualLayoutConstants"]
+- !private ["Ps12_Reflectable", "alpha"]
+- ["Ps12_Reflectable", "applyLayoutAttributes"]
+- !private ["Ps12_Reflectable", "bounds"]
+- ["Ps12_Reflectable", "caddiesAvailable"]
+- ["Ps12_Reflectable", "caddyHandicapLabel"]
+- !private ["Ps12_Reflectable", "frame"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "image"]
+- ["Ps12_Reflectable", "imageCoverView"]
+- ["Ps12_Reflectable", "imageView"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "layer"]
+- !private ["Ps12_Reflectable", "max"]
+- ["Ps12_Reflectable", "nameLabel"]
+- ["Ps12_Reflectable", "reserveCaddyButton"]
+- ["Ps12_Reflectable", "roundsCaddiedLabel"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "transform"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "C15carpoolApp_v1_020AvailableCaddiesCell"
+- !private "Sb"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "Ps11CVarArgType"
+- !private "C15carpoolApp_v1_07Caddies"
+- !private "VV15carpoolApp_v1_026UltravisualLayoutConstants4Cell"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "C15carpoolApp_v1_07Session"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- !private "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "V15carpoolApp_v1_026UltravisualLayoutConstants"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/karankhatter/Documents/lpglf16/carpoolApp_v1.0/carpoolApp_v1.0-Bridging-Header.h"
+- "/Users/karankhatter/Documents/lpglf16/carpoolApp_v1.0/SWRevealViewController.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/Firebase/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/Firebase/Headers/Firebase.h"
+interface-hash: "d7a78d493d07db8ad99a36d4a7bdecab"

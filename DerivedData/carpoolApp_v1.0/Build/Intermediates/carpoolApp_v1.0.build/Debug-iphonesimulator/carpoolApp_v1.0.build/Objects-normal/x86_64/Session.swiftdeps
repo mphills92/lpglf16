@@ -1,0 +1,124 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Session"
+provides-nominal:
+- "C15carpoolApp_v1_07Session"
+provides-member:
+- ["C15carpoolApp_v1_07Session", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Session"
+- "Int"
+- "NSDictionary"
+- "String"
+- !private "StringLiteralType"
+- "Float"
+depends-member:
+- !private ["Ps9AnyObject", "handicap"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "rating"]
+- !private ["Ps9AnyObject", "rounds"]
+- !private ["Ps9AnyObject", "subscript"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["PSo8NSCoding", "subscript"]
+- !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["CSo12NSDictionary", "subscript"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["PSo16NSMutableCopying", "subscript"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["Sq", "deinit"]
+- !private ["Ps12SequenceType", "subscript"]
+- ["C15carpoolApp_v1_07Session", "Float"]
+- ["C15carpoolApp_v1_07Session", "Int"]
+- ["C15carpoolApp_v1_07Session", "NSDictionary"]
+- ["C15carpoolApp_v1_07Session", "String"]
+- ["C15carpoolApp_v1_07Session", "deinit"]
+- ["C15carpoolApp_v1_07Session", "handicap"]
+- ["C15carpoolApp_v1_07Session", "init"]
+- ["C15carpoolApp_v1_07Session", "name"]
+- ["C15carpoolApp_v1_07Session", "rating"]
+- ["C15carpoolApp_v1_07Session", "rounds"]
+- !private ["SS", "deinit"]
+- !private ["Ps12_Reflectable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps11CVarArgType"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Sq"
+- !private "Ps12SequenceType"
+- "C15carpoolApp_v1_07Session"
+- !private "SS"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/karankhatter/Documents/lpglf16/carpoolApp_v1.0/carpoolApp_v1.0-Bridging-Header.h"
+- "/Users/karankhatter/Documents/lpglf16/carpoolApp_v1.0/SWRevealViewController.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/Firebase/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/karankhatter/Documents/lpglf16/Pods/Firebase/Headers/Firebase.h"
+interface-hash: "20e49689711248820525dc8cc870a10d"
