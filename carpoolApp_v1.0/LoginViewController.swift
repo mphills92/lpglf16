@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -17,7 +18,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var loginButtonTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginButtonCenterConstraint: NSLayoutConstraint!
-    
     var screenSize = UIScreen.mainScreen().bounds
     
     var emailToValidate = String()
@@ -30,6 +30,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        emailTextField.autocorrectionType = .No
+        passwordTextField.autocorrectionType = .No
+        passwordTextField.secureTextEntry = true
         
         backgroundView.layer.cornerRadius = 8
         loginButton.layer.cornerRadius = loginButton.bounds.height / 2
@@ -42,7 +45,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSForegroundColorAttributeName: UIColor.darkGrayColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string:"Password", attributes: [NSForegroundColorAttributeName: UIColor.darkGrayColor()])
-        
         self.loginButtonCenterConstraint.constant = screenSize.width
         
         emailTextField.tag = 1
@@ -69,14 +71,18 @@ extension LoginViewController {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         switch (textField.tag) {
         case 1:
-            emailToValidate = emailTextField.text!
-            // TO DO: We'll want to validate the email input here. Search DB for email address matching input. Display alert if no match. Move to password text field if email is found.
             passwordTextField.userInteractionEnabled = true
             passwordTextField.becomeFirstResponder()
         case 2:
-            // TO DO: We'll want to validate the password input here. Search DB for password that matches input AND matches email entered prior. Display login button.
-            passwordToValidate = passwordTextField.text!
-            loginButtonInView()
+            FIRAuth.auth()?.signInWithEmail(emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
+                
+                if error != nil {
+                    
+                }
+                else {
+                    self.loginButtonInView()
+                }
+            })
         default:
             break
         }

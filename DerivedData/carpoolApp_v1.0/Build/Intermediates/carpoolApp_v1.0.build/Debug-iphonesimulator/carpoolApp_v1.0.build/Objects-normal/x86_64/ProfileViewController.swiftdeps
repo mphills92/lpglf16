@@ -7,59 +7,65 @@ provides-member:
 - ["C15carpoolApp_v1_021ProfileViewController", ""]
 - ["C15carpoolApp_v1_021ProfileViewController", "scrollViewDidScroll"]
 provides-dynamic-lookup:
-- "scrollViewDidScroll"
-- "notificationsContainer"
-- "currentCreditLabel"
-- "selectedIndex"
-- "upcomingReservationsContainer"
-- "lifetimeRoundsLabel"
-- "constrainedStickyTabToNavBar"
-- "closeViewButtonPressed"
-- "screenSize"
-- "notifyWithSelectedIndex"
-- "userProfileImage"
-- "viewDidLoad"
-- "stickySegmentedTab"
-- "pastCaddiesContainer"
 - "userNameLabel"
+- "notifyWithSelectedIndex"
+- "selectedIndex"
+- "scrollViewDidScroll"
+- "upcomingReservationsContainer"
+- "userProfileImage"
+- "lifetimeRoundsLabel"
+- "viewDidLoad"
+- "screenSize"
+- "closeViewButtonPressed"
+- "constrainedStickyTabToNavBar"
+- "notificationsContainer"
+- "pastCaddiesContainer"
 - "scrollView"
+- "currentCreditLabel"
+- "stickySegmentedTab"
 depends-top-level:
-- "UIScrollViewDelegate"
-- "Int"
-- !private "NSForegroundColorAttributeName"
-- !private "=="
-- "UIImageView"
-- !private "UIFont"
-- !private "UIEdgeInsetsMake"
-- !private "UIBarStyle"
-- "UIScreen"
-- !private "-"
-- "UserName"
-- "ProfileViewController"
-- !private "Dictionary"
-- "UIScrollView"
-- !private "StringLiteralType"
 - "NSLayoutConstraint"
-- !private "/"
-- "AnyObject"
-- !private "+"
-- "UserAccount"
-- "UILabel"
 - !private "UIColor"
-- !private "CGSizeMake"
-- "UIView"
-- "CGRect"
-- !private "BooleanLiteralType"
-- "NSNotification"
+- !private "NSForegroundColorAttributeName"
+- "UILabel"
+- !private "-"
+- !private "UIEdgeInsetsMake"
+- !private "/"
+- "ProfileViewController"
 - !private "NSFontAttributeName"
-- !private "UnicodeScalarType"
-- !private "*"
-- !private "CGFloat"
-- !private "NSNotificationCenter"
-- !private ">="
 - "UIViewController"
+- !private "+"
+- !private ">="
+- "CGRect"
+- "UnicodeScalarType"
+- !private "FIRAuth"
+- !private "BooleanLiteralType"
+- !private "CGSizeMake"
+- !private "FIRDatabase"
+- "UIView"
+- !private "UIBarStyle"
+- !private "NSNotificationCenter"
+- "NSNotification"
+- "UserAccount"
+- !private "=="
+- "Int"
+- "UIImageView"
+- "UserName"
+- !private "CGFloat"
+- !private "UIFont"
+- "UIScrollView"
+- !private "Dictionary"
+- "UIScrollViewDelegate"
+- "AnyObject"
+- !private "StringLiteralType"
+- !private "print"
+- !private "*"
+- "UIScreen"
+- !private "String"
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
+- !private ["Ps9AnyObject", "FIRAuth"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
 - ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
@@ -72,9 +78,11 @@ depends-member:
 - ["Ps9AnyObject", "UserAccount"]
 - ["Ps9AnyObject", "UserName"]
 - !private ["Ps9AnyObject", "addObserver"]
+- !private ["Ps9AnyObject", "auth"]
 - !private ["Ps9AnyObject", "barStyle"]
 - !private ["Ps9AnyObject", "barTintColor"]
 - ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "child"]
 - ["Ps9AnyObject", "closeViewButtonPressed"]
 - !private ["Ps9AnyObject", "constant"]
 - ["Ps9AnyObject", "constrainedStickyTabToNavBar"]
@@ -82,25 +90,27 @@ depends-member:
 - !private ["Ps9AnyObject", "contentOffset"]
 - !private ["Ps9AnyObject", "contentSize"]
 - !private ["Ps9AnyObject", "cornerRadius"]
-- !private ["Ps9AnyObject", "currentCredit"]
 - ["Ps9AnyObject", "currentCreditLabel"]
+- !private ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "database"]
 - !private ["Ps9AnyObject", "defaultCenter"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
-- !private ["Ps9AnyObject", "firstName"]
 - !private ["Ps9AnyObject", "hidden"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "lastName"]
 - !private ["Ps9AnyObject", "layer"]
-- !private ["Ps9AnyObject", "lifetimeRounds"]
 - ["Ps9AnyObject", "lifetimeRoundsLabel"]
+- !private ["Ps9AnyObject", "localizedDescription"]
 - ["Ps9AnyObject", "mainScreen"]
 - !private ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "notificationsContainer"]
 - ["Ps9AnyObject", "notifyWithSelectedIndex"]
 - !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "observeSingleEventOfType"]
 - ["Ps9AnyObject", "pastCaddiesContainer"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "reference"]
 - ["Ps9AnyObject", "screenSize"]
 - ["Ps9AnyObject", "scrollView"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
@@ -119,13 +129,16 @@ depends-member:
 - !private ["Ps9AnyObject", "shadowOffset"]
 - !private ["Ps9AnyObject", "shadowOpacity"]
 - ["Ps9AnyObject", "stickySegmentedTab"]
+- !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "titleTextAttributes"]
+- !private ["Ps9AnyObject", "uid"]
 - ["Ps9AnyObject", "upcomingReservationsContainer"]
 - ["Ps9AnyObject", "userAccount"]
 - ["Ps9AnyObject", "userName"]
 - ["Ps9AnyObject", "userNameLabel"]
 - ["Ps9AnyObject", "userProfileImage"]
+- !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - !private ["Ps9AnyObject", "whiteColor"]
@@ -133,7 +146,6 @@ depends-member:
 - ["Ps22BidirectionalIndexType", "init"]
 - ["Ps21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "cornerRadius"]
@@ -147,6 +159,8 @@ depends-member:
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGSize", "height"]
 - !private ["Ps11CVarArgType", "CGSizeMake"]
+- !private ["Ps11CVarArgType", "FIRAuth"]
+- !private ["Ps11CVarArgType", "FIRDatabase"]
 - ["Ps11CVarArgType", "Int"]
 - !private ["Ps11CVarArgType", "NSFontAttributeName"]
 - !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
@@ -159,9 +173,11 @@ depends-member:
 - ["Ps11CVarArgType", "UserAccount"]
 - ["Ps11CVarArgType", "UserName"]
 - !private ["Ps11CVarArgType", "addObserver"]
+- !private ["Ps11CVarArgType", "auth"]
 - !private ["Ps11CVarArgType", "barStyle"]
 - !private ["Ps11CVarArgType", "barTintColor"]
 - ["Ps11CVarArgType", "bounds"]
+- !private ["Ps11CVarArgType", "child"]
 - ["Ps11CVarArgType", "closeViewButtonPressed"]
 - !private ["Ps11CVarArgType", "constant"]
 - ["Ps11CVarArgType", "constrainedStickyTabToNavBar"]
@@ -170,6 +186,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "contentSize"]
 - !private ["Ps11CVarArgType", "cornerRadius"]
 - ["Ps11CVarArgType", "currentCreditLabel"]
+- !private ["Ps11CVarArgType", "currentUser"]
+- !private ["Ps11CVarArgType", "database"]
 - !private ["Ps11CVarArgType", "defaultCenter"]
 - !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
@@ -177,13 +195,17 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "layer"]
 - ["Ps11CVarArgType", "lifetimeRoundsLabel"]
+- !private ["Ps11CVarArgType", "localizedDescription"]
 - ["Ps11CVarArgType", "mainScreen"]
 - !private ["Ps11CVarArgType", "navigationBar"]
 - !private ["Ps11CVarArgType", "navigationController"]
 - ["Ps11CVarArgType", "notificationsContainer"]
 - ["Ps11CVarArgType", "notifyWithSelectedIndex"]
 - !private ["Ps11CVarArgType", "object"]
+- !private ["Ps11CVarArgType", "observeSingleEventOfType"]
 - ["Ps11CVarArgType", "pastCaddiesContainer"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "reference"]
 - ["Ps11CVarArgType", "screenSize"]
 - ["Ps11CVarArgType", "scrollView"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
@@ -204,20 +226,23 @@ depends-member:
 - ["Ps11CVarArgType", "stickySegmentedTab"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "titleTextAttributes"]
+- !private ["Ps11CVarArgType", "uid"]
 - ["Ps11CVarArgType", "upcomingReservationsContainer"]
 - ["Ps11CVarArgType", "userAccount"]
 - ["Ps11CVarArgType", "userName"]
 - ["Ps11CVarArgType", "userNameLabel"]
 - ["Ps11CVarArgType", "userProfileImage"]
+- !private ["Ps11CVarArgType", "value"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "Value"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - ["Ps28CustomDebugStringConvertible", "Int"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
@@ -232,9 +257,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "UserName"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "addObserver"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
 - !private ["Ps28CustomDebugStringConvertible", "barStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
 - ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
 - ["Ps28CustomDebugStringConvertible", "closeViewButtonPressed"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - ["Ps28CustomDebugStringConvertible", "constrainedStickyTabToNavBar"]
@@ -243,6 +270,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "contentSize"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "currentCreditLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
@@ -250,13 +279,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - ["Ps28CustomDebugStringConvertible", "lifetimeRoundsLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
 - ["Ps28CustomDebugStringConvertible", "mainScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "notificationsContainer"]
 - ["Ps28CustomDebugStringConvertible", "notifyWithSelectedIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "observeSingleEventOfType"]
 - ["Ps28CustomDebugStringConvertible", "pastCaddiesContainer"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
 - ["Ps28CustomDebugStringConvertible", "screenSize"]
 - ["Ps28CustomDebugStringConvertible", "scrollView"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
@@ -277,16 +310,20 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "stickySegmentedTab"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
 - ["Ps28CustomDebugStringConvertible", "upcomingReservationsContainer"]
 - ["Ps28CustomDebugStringConvertible", "userAccount"]
 - ["Ps28CustomDebugStringConvertible", "userName"]
 - ["Ps28CustomDebugStringConvertible", "userNameLabel"]
 - ["Ps28CustomDebugStringConvertible", "userProfileImage"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGSizeMake"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
@@ -302,9 +339,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addObserver"]
+- !private ["Ps23CustomStringConvertible", "auth"]
 - !private ["Ps23CustomStringConvertible", "barStyle"]
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
 - ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "child"]
 - ["Ps23CustomStringConvertible", "closeViewButtonPressed"]
 - !private ["Ps23CustomStringConvertible", "constant"]
 - ["Ps23CustomStringConvertible", "constrainedStickyTabToNavBar"]
@@ -313,6 +352,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "contentSize"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "currentCreditLabel"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "defaultCenter"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
@@ -320,13 +361,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - ["Ps23CustomStringConvertible", "lifetimeRoundsLabel"]
+- !private ["Ps23CustomStringConvertible", "localizedDescription"]
 - ["Ps23CustomStringConvertible", "mainScreen"]
 - !private ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "notificationsContainer"]
 - ["Ps23CustomStringConvertible", "notifyWithSelectedIndex"]
 - !private ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "observeSingleEventOfType"]
 - ["Ps23CustomStringConvertible", "pastCaddiesContainer"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "reference"]
 - ["Ps23CustomStringConvertible", "screenSize"]
 - ["Ps23CustomStringConvertible", "scrollView"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -347,11 +392,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "stickySegmentedTab"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "uid"]
 - ["Ps23CustomStringConvertible", "upcomingReservationsContainer"]
 - ["Ps23CustomStringConvertible", "userAccount"]
 - ["Ps23CustomStringConvertible", "userName"]
 - ["Ps23CustomStringConvertible", "userNameLabel"]
 - ["Ps23CustomStringConvertible", "userProfileImage"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
@@ -360,9 +407,10 @@ depends-member:
 - !private ["Vs10Dictionary", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
-- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "BlackTranslucent"]
 - !private ["Ps9Equatable", "CGSizeMake"]
+- !private ["Ps9Equatable", "FIRAuth"]
+- !private ["Ps9Equatable", "FIRDatabase"]
 - ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
@@ -374,11 +422,14 @@ depends-member:
 - ["Ps9Equatable", "UIScreen"]
 - ["Ps9Equatable", "UserAccount"]
 - ["Ps9Equatable", "UserName"]
+- !private ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addObserver"]
+- !private ["Ps9Equatable", "auth"]
 - !private ["Ps9Equatable", "barStyle"]
 - !private ["Ps9Equatable", "barTintColor"]
 - ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "child"]
 - ["Ps9Equatable", "closeViewButtonPressed"]
 - !private ["Ps9Equatable", "constant"]
 - ["Ps9Equatable", "constrainedStickyTabToNavBar"]
@@ -387,6 +438,8 @@ depends-member:
 - !private ["Ps9Equatable", "contentSize"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "currentCreditLabel"]
+- !private ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "defaultCenter"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
@@ -395,13 +448,17 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layer"]
 - ["Ps9Equatable", "lifetimeRoundsLabel"]
+- !private ["Ps9Equatable", "localizedDescription"]
 - ["Ps9Equatable", "mainScreen"]
 - !private ["Ps9Equatable", "navigationBar"]
 - !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "notificationsContainer"]
 - ["Ps9Equatable", "notifyWithSelectedIndex"]
 - !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "observeSingleEventOfType"]
 - ["Ps9Equatable", "pastCaddiesContainer"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "reference"]
 - ["Ps9Equatable", "screenSize"]
 - ["Ps9Equatable", "scrollView"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
@@ -422,21 +479,36 @@ depends-member:
 - ["Ps9Equatable", "stickySegmentedTab"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "titleTextAttributes"]
+- !private ["Ps9Equatable", "uid"]
 - ["Ps9Equatable", "upcomingReservationsContainer"]
 - ["Ps9Equatable", "userAccount"]
 - ["Ps9Equatable", "userName"]
 - ["Ps9Equatable", "userNameLabel"]
 - ["Ps9Equatable", "userProfileImage"]
+- !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - !private ["Ps9Equatable", "whiteColor"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Sf", "deinit"]
+- !private ["Ps9ErrorType", "localizedDescription"]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
+- !private ["OSC16FIRDataEventType", "Value"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["CSo11FIRDatabase", "database"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "observeSingleEventOfType"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- !private ["CSo20FIRDatabaseReference", "observeSingleEventOfType"]
+- !private ["CSo7FIRUser", "uid"]
+- !private ["PSo11FIRUserInfo", "uid"]
 - ["Ps16ForwardIndexType", "init"]
 - !private ["Ps8Hashable", "BlackTranslucent"]
 - !private ["Ps8Hashable", "CGSizeMake"]
+- !private ["Ps8Hashable", "FIRAuth"]
+- !private ["Ps8Hashable", "FIRDatabase"]
 - ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
@@ -448,11 +520,14 @@ depends-member:
 - ["Ps8Hashable", "UIScreen"]
 - ["Ps8Hashable", "UserAccount"]
 - ["Ps8Hashable", "UserName"]
+- !private ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addObserver"]
+- !private ["Ps8Hashable", "auth"]
 - !private ["Ps8Hashable", "barStyle"]
 - !private ["Ps8Hashable", "barTintColor"]
 - ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "child"]
 - ["Ps8Hashable", "closeViewButtonPressed"]
 - !private ["Ps8Hashable", "constant"]
 - ["Ps8Hashable", "constrainedStickyTabToNavBar"]
@@ -461,6 +536,8 @@ depends-member:
 - !private ["Ps8Hashable", "contentSize"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "currentCreditLabel"]
+- !private ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "defaultCenter"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
@@ -468,13 +545,17 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "layer"]
 - ["Ps8Hashable", "lifetimeRoundsLabel"]
+- !private ["Ps8Hashable", "localizedDescription"]
 - ["Ps8Hashable", "mainScreen"]
 - !private ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "notificationsContainer"]
 - ["Ps8Hashable", "notifyWithSelectedIndex"]
 - !private ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "observeSingleEventOfType"]
 - ["Ps8Hashable", "pastCaddiesContainer"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "reference"]
 - ["Ps8Hashable", "screenSize"]
 - ["Ps8Hashable", "scrollView"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
@@ -495,28 +576,29 @@ depends-member:
 - ["Ps8Hashable", "stickySegmentedTab"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "titleTextAttributes"]
+- !private ["Ps8Hashable", "uid"]
 - ["Ps8Hashable", "upcomingReservationsContainer"]
 - ["Ps8Hashable", "userAccount"]
 - ["Ps8Hashable", "userName"]
 - ["Ps8Hashable", "userNameLabel"]
 - ["Ps8Hashable", "userProfileImage"]
+- !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - !private ["Ps8Hashable", "whiteColor"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
 - !private ["Si", "deinit"]
 - ["Si", "init"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - ["Ps21IntegerArithmeticType", "init"]
 - ["Ps25IntegerLiteralConvertible", "init"]
 - ["Ps11IntegerType", "init"]
 - ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "CGSizeMake"]
+- !private ["PSo8NSCoding", "FIRAuth"]
+- !private ["PSo8NSCoding", "FIRDatabase"]
 - ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
@@ -543,12 +625,14 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "lifetimeRoundsLabel"]
+- !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "notificationsContainer"]
 - ["PSo8NSCoding", "notifyWithSelectedIndex"]
 - !private ["PSo8NSCoding", "object"]
 - ["PSo8NSCoding", "pastCaddiesContainer"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "screenSize"]
 - ["PSo8NSCoding", "scrollView"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
@@ -578,10 +662,15 @@ depends-member:
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
 - !private ["PSo9NSCopying", "object"]
 - !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo7NSError", "localizedDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRDatabase"]
 - ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
@@ -604,6 +693,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "notificationsContainer"]
 - ["PSo26NSExtensionRequestHandling", "notifyWithSelectedIndex"]
 - ["PSo26NSExtensionRequestHandling", "pastCaddiesContainer"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "screenSize"]
 - ["PSo26NSExtensionRequestHandling", "scrollView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -629,7 +719,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo18NSLayoutConstraint", "constant"]
-- !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo14NSNotification", "object"]
 - !private ["CSo20NSNotificationCenter", "addObserver"]
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
@@ -637,12 +726,15 @@ depends-member:
 - !private ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGSizeMake"]
+- !private ["CSo8NSObject", "FIRAuth"]
+- !private ["CSo8NSObject", "FIRDatabase"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
 - ["CSo8NSObject", "NSNotification"]
 - !private ["CSo8NSObject", "NSNotificationCenter"]
+- !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIBarStyle"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIEdgeInsetsMake"]
@@ -655,9 +747,11 @@ depends-member:
 - ["CSo8NSObject", "UserAccount"]
 - ["CSo8NSObject", "UserName"]
 - !private ["CSo8NSObject", "addObserver"]
+- !private ["CSo8NSObject", "auth"]
 - !private ["CSo8NSObject", "barStyle"]
 - !private ["CSo8NSObject", "barTintColor"]
 - ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "child"]
 - ["CSo8NSObject", "closeViewButtonPressed"]
 - !private ["CSo8NSObject", "constant"]
 - ["CSo8NSObject", "constrainedStickyTabToNavBar"]
@@ -666,6 +760,8 @@ depends-member:
 - !private ["CSo8NSObject", "contentSize"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "currentCreditLabel"]
+- !private ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "database"]
 - !private ["CSo8NSObject", "defaultCenter"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
@@ -673,13 +769,17 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
 - ["CSo8NSObject", "lifetimeRoundsLabel"]
+- !private ["CSo8NSObject", "localizedDescription"]
 - ["CSo8NSObject", "mainScreen"]
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "notificationsContainer"]
 - ["CSo8NSObject", "notifyWithSelectedIndex"]
 - !private ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "observeSingleEventOfType"]
 - ["CSo8NSObject", "pastCaddiesContainer"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "reference"]
 - ["CSo8NSObject", "screenSize"]
 - ["CSo8NSObject", "scrollView"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
@@ -700,15 +800,19 @@ depends-member:
 - ["CSo8NSObject", "stickySegmentedTab"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
+- !private ["CSo8NSObject", "uid"]
 - ["CSo8NSObject", "upcomingReservationsContainer"]
 - ["CSo8NSObject", "userAccount"]
 - ["CSo8NSObject", "userName"]
 - ["CSo8NSObject", "userNameLabel"]
 - ["CSo8NSObject", "userProfileImage"]
+- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
@@ -721,9 +825,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "UserAccount"]
 - ["PSo16NSObjectProtocol", "UserName"]
 - !private ["PSo16NSObjectProtocol", "addObserver"]
+- !private ["PSo16NSObjectProtocol", "auth"]
 - !private ["PSo16NSObjectProtocol", "barStyle"]
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
 - ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "child"]
 - ["PSo16NSObjectProtocol", "closeViewButtonPressed"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - ["PSo16NSObjectProtocol", "constrainedStickyTabToNavBar"]
@@ -732,6 +838,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "contentSize"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "currentCreditLabel"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
@@ -739,13 +847,17 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - ["PSo16NSObjectProtocol", "lifetimeRoundsLabel"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - ["PSo16NSObjectProtocol", "mainScreen"]
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "notificationsContainer"]
 - ["PSo16NSObjectProtocol", "notifyWithSelectedIndex"]
 - !private ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "observeSingleEventOfType"]
 - ["PSo16NSObjectProtocol", "pastCaddiesContainer"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "reference"]
 - ["PSo16NSObjectProtocol", "screenSize"]
 - ["PSo16NSObjectProtocol", "scrollView"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
@@ -766,30 +878,34 @@ depends-member:
 - ["PSo16NSObjectProtocol", "stickySegmentedTab"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "uid"]
 - ["PSo16NSObjectProtocol", "upcomingReservationsContainer"]
 - ["PSo16NSObjectProtocol", "userAccount"]
 - ["PSo16NSObjectProtocol", "userName"]
 - ["PSo16NSObjectProtocol", "userNameLabel"]
 - ["PSo16NSObjectProtocol", "userProfileImage"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
-- !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
-- !private ["Ps16OutputStreamType", "init"]
 - ["C15carpoolApp_v1_021ProfileViewController", "AnyObject"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "CGFloat"]
 - ["C15carpoolApp_v1_021ProfileViewController", "CGRect"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "CGSizeMake"]
+- !private ["C15carpoolApp_v1_021ProfileViewController", "FIRAuth"]
+- !private ["C15carpoolApp_v1_021ProfileViewController", "FIRDatabase"]
 - ["C15carpoolApp_v1_021ProfileViewController", "Int"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "NSFontAttributeName"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "NSForegroundColorAttributeName"]
 - ["C15carpoolApp_v1_021ProfileViewController", "NSLayoutConstraint"]
 - ["C15carpoolApp_v1_021ProfileViewController", "NSNotification"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "NSNotificationCenter"]
+- !private ["C15carpoolApp_v1_021ProfileViewController", "String"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "UIBarStyle"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "UIColor"]
 - !private ["C15carpoolApp_v1_021ProfileViewController", "UIEdgeInsetsMake"]
@@ -812,6 +928,7 @@ depends-member:
 - ["C15carpoolApp_v1_021ProfileViewController", "notificationsContainer"]
 - ["C15carpoolApp_v1_021ProfileViewController", "notifyWithSelectedIndex"]
 - ["C15carpoolApp_v1_021ProfileViewController", "pastCaddiesContainer"]
+- !private ["C15carpoolApp_v1_021ProfileViewController", "print"]
 - ["C15carpoolApp_v1_021ProfileViewController", "screenSize"]
 - ["C15carpoolApp_v1_021ProfileViewController", "scrollView"]
 - ["C15carpoolApp_v1_021ProfileViewController", "scrollViewDidEndDecelerating"]
@@ -837,16 +954,14 @@ depends-member:
 - ["C15carpoolApp_v1_021ProfileViewController", "viewForZoomingInScrollView"]
 - ["Ps21RandomAccessIndexType", "init"]
 - !private ["Ps16RawRepresentable", "BlackTranslucent"]
+- !private ["Ps16RawRepresentable", "Value"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "Value"]
 - ["Ps17SignedIntegerType", "init"]
 - ["Ps16SignedNumberType", "init"]
-- !private ["Ps10Streamable", "init"]
 - ["Ps10Strideable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["SS", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "barStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "contentInset"]
@@ -868,6 +983,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
+- !private ["PSo21UIAppearanceContainer", "FIRAuth"]
+- !private ["PSo21UIAppearanceContainer", "FIRDatabase"]
 - ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
@@ -898,6 +1015,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "notificationsContainer"]
 - ["PSo21UIAppearanceContainer", "notifyWithSelectedIndex"]
 - ["PSo21UIAppearanceContainer", "pastCaddiesContainer"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "screenSize"]
 - ["PSo21UIAppearanceContainer", "scrollView"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
@@ -931,6 +1049,8 @@ depends-member:
 - !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CGSizeMake"]
+- !private ["PSo18UIContentContainer", "FIRAuth"]
+- !private ["PSo18UIContentContainer", "FIRDatabase"]
 - ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
@@ -953,6 +1073,7 @@ depends-member:
 - ["PSo18UIContentContainer", "notificationsContainer"]
 - ["PSo18UIContentContainer", "notifyWithSelectedIndex"]
 - ["PSo18UIContentContainer", "pastCaddiesContainer"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "screenSize"]
 - ["PSo18UIContentContainer", "scrollView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -998,6 +1119,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "CGSizeMake"]
+- !private ["PSo18UIFocusEnvironment", "FIRAuth"]
+- !private ["PSo18UIFocusEnvironment", "FIRDatabase"]
 - ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
@@ -1028,6 +1151,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "notificationsContainer"]
 - ["PSo18UIFocusEnvironment", "notifyWithSelectedIndex"]
 - ["PSo18UIFocusEnvironment", "pastCaddiesContainer"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "screenSize"]
 - ["PSo18UIFocusEnvironment", "scrollView"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
@@ -1065,12 +1189,15 @@ depends-member:
 - !private ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGSizeMake"]
+- !private ["CSo11UIResponder", "FIRAuth"]
+- !private ["CSo11UIResponder", "FIRDatabase"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
 - ["CSo11UIResponder", "NSNotification"]
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
+- !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIBarStyle"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIEdgeInsetsMake"]
@@ -1101,6 +1228,7 @@ depends-member:
 - ["CSo11UIResponder", "notificationsContainer"]
 - ["CSo11UIResponder", "notifyWithSelectedIndex"]
 - ["CSo11UIResponder", "pastCaddiesContainer"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "screenSize"]
 - ["CSo11UIResponder", "scrollView"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
@@ -1133,6 +1261,8 @@ depends-member:
 - !private ["CSo12UIScrollView", "contentSize"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["PSo20UIScrollViewDelegate", "CGSizeMake"]
+- !private ["PSo20UIScrollViewDelegate", "FIRAuth"]
+- !private ["PSo20UIScrollViewDelegate", "FIRDatabase"]
 - ["PSo20UIScrollViewDelegate", "Int"]
 - !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
@@ -1152,6 +1282,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "notificationsContainer"]
 - !private ["PSo20UIScrollViewDelegate", "notifyWithSelectedIndex"]
 - !private ["PSo20UIScrollViewDelegate", "pastCaddiesContainer"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "screenSize"]
 - !private ["PSo20UIScrollViewDelegate", "scrollView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1169,13 +1300,13 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "selectedIndex"]
 - !private ["PSo20UIScrollViewDelegate", "stickySegmentedTab"]
 - !private ["PSo20UIScrollViewDelegate", "upcomingReservationsContainer"]
-- !private ["PSo20UIScrollViewDelegate", "userAccount"]
-- !private ["PSo20UIScrollViewDelegate", "userName"]
 - !private ["PSo20UIScrollViewDelegate", "userNameLabel"]
 - !private ["PSo20UIScrollViewDelegate", "userProfileImage"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGSizeMake"]
+- !private ["PSo16UIStateRestoring", "FIRAuth"]
+- !private ["PSo16UIStateRestoring", "FIRDatabase"]
 - ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
@@ -1198,6 +1329,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "notificationsContainer"]
 - ["PSo16UIStateRestoring", "notifyWithSelectedIndex"]
 - ["PSo16UIStateRestoring", "pastCaddiesContainer"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "screenSize"]
 - ["PSo16UIStateRestoring", "scrollView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -1223,6 +1355,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CGSizeMake"]
+- !private ["PSo18UITraitEnvironment", "FIRAuth"]
+- !private ["PSo18UITraitEnvironment", "FIRDatabase"]
 - ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
@@ -1255,6 +1389,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "notificationsContainer"]
 - ["PSo18UITraitEnvironment", "notifyWithSelectedIndex"]
 - ["PSo18UITraitEnvironment", "pastCaddiesContainer"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "screenSize"]
 - ["PSo18UITraitEnvironment", "scrollView"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
@@ -1295,12 +1430,15 @@ depends-member:
 - !private ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "CGSizeMake"]
+- !private ["CSo16UIViewController", "FIRAuth"]
+- !private ["CSo16UIViewController", "FIRDatabase"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSLayoutConstraint"]
 - ["CSo16UIViewController", "NSNotification"]
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
+- !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIBarStyle"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIEdgeInsetsMake"]
@@ -1323,6 +1461,7 @@ depends-member:
 - ["CSo16UIViewController", "notificationsContainer"]
 - ["CSo16UIViewController", "notifyWithSelectedIndex"]
 - ["CSo16UIViewController", "pastCaddiesContainer"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "screenSize"]
 - ["CSo16UIViewController", "scrollView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -1347,25 +1486,10 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
-- !private ["C15carpoolApp_v1_011UserAccount", "currentCredit"]
 - ["C15carpoolApp_v1_011UserAccount", "init"]
-- !private ["C15carpoolApp_v1_011UserAccount", "lifetimeRounds"]
-- !private ["C15carpoolApp_v1_08UserName", "firstName"]
 - ["C15carpoolApp_v1_08UserName", "init"]
-- !private ["C15carpoolApp_v1_08UserName", "lastName"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
 - ["Ps14_Incrementable", "init"]
@@ -1407,42 +1531,42 @@ depends-nominal:
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps14CollectionType"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
-- !private "Sd"
 - "Ps9Equatable"
-- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
+- !private "Ps9ErrorType"
+- !private "CSo7FIRAuth"
+- !private "OSC16FIRDataEventType"
+- !private "CSo15FIRDataSnapshot"
+- !private "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- !private "CSo20FIRDatabaseReference"
+- !private "CSo7FIRUser"
+- !private "PSo11FIRUserInfo"
 - "Ps16ForwardIndexType"
 - "Ps8Hashable"
+- !private "SQ"
 - !private "Ps9Indexable"
 - "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - "Ps21IntegerArithmeticType"
 - "Ps25IntegerLiteralConvertible"
 - "Ps11IntegerType"
 - "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo18NSLayoutConstraint"
-- !private "PSo16NSMutableCopying"
 - !private "CSo14NSNotification"
 - !private "CSo20NSNotificationCenter"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - !private "Sq"
-- !private "Ps16OutputStreamType"
 - "C15carpoolApp_v1_021ProfileViewController"
 - "Ps21RandomAccessIndexType"
 - !private "Ps16RawRepresentable"
@@ -1450,11 +1574,8 @@ depends-nominal:
 - !private "Ps12SequenceType"
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
-- !private "Ps10Streamable"
 - "Ps10Strideable"
 - !private "SS"
-- !private "Ps30StringInterpolationConvertible"
-- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1478,21 +1599,10 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
-- !private "Ps31UnicodeScalarLiteralConvertible"
 - "C15carpoolApp_v1_011UserAccount"
 - "C15carpoolApp_v1_08UserName"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
-- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - "Ps33_BuiltinIntegerLiteralConvertible"
-- !private "Ps32_BuiltinStringLiteralConvertible"
-- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
-- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
 - "Ps14_Incrementable"
 - "Ps22_IntegerArithmeticType"
@@ -1502,6 +1612,7 @@ depends-nominal:
 - "Ps12_Reflectable"
 - "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
+- !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/karankhatter/Documents/lpglf16/carpoolApp_v1.0/carpoolApp_v1.0-Bridging-Header.h"
@@ -1551,4 +1662,4 @@ depends-external:
 - "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/karankhatter/Documents/lpglf16/Pods/Firebase/Headers/Firebase.h"
-interface-hash: "79346d3964b40bb0b4afd2be21db2c67"
+interface-hash: "3af9cb74b7649289aa9c08955a1e68d7"

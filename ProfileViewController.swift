@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController, UIScrollViewDelegate {
     
@@ -25,6 +26,7 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var lifetimeRoundsLabel: UILabel!
     @IBOutlet weak var currentCreditLabel: UILabel!
     
+    
     let userName = UserName()
     let userAccount = UserAccount()
     
@@ -36,15 +38,33 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         scrollView.delegate = self
         
+        let ref = FIRDatabase.database().reference()
+        
         navigationController?.navigationBar.barTintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
         navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name:"HelveticaNeue-Light", size: 20)!]
         
         self.userProfileImage.layer.cornerRadius = 8
-        userNameLabel.text = "\(userName.firstName)" + " " + "\(userName.lastName)"
-        lifetimeRoundsLabel.text = "\(userAccount.lifetimeRounds) Lifetime Rounds"
-        currentCreditLabel.text = "$\(userAccount.currentCredit) Loop Credit"
+        
+        let userID = FIRAuth.auth()?.currentUser?.uid
+        ref.child("Users").child(userID!).observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+            let firstName = snapshot.value!["First Name"] as! String
+            let lastName = snapshot.value!["Last Name"] as! String
+            let lifetimeRounds = snapshot.value!["Lifetime Rounds"] as! String
+            let currentCredits = snapshot.value!["Loop Credit"] as! String
+            
+            self.userNameLabel.text = firstName + " " + lastName
+            self.lifetimeRoundsLabel.text = lifetimeRounds + " Lifetime Rounds"
+            self.currentCreditLabel.text = "$" + currentCredits + " Loop Credit"
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
+        
         
         
         self.stickySegmentedTab.layer.shadowOpacity = 0.25

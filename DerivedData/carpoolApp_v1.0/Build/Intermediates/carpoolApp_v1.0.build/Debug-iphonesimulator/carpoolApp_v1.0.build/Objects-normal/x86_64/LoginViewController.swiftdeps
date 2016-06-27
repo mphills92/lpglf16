@@ -10,49 +10,52 @@ provides-member:
 - ["C15carpoolApp_v1_019LoginViewController", "loginButtonInView"]
 - ["C15carpoolApp_v1_019LoginViewController", "loginButtonOutOfView"]
 provides-dynamic-lookup:
-- "emailTextField"
-- "textFieldDidBeginEditing"
-- "screenSize"
-- "loginButton"
-- "passwordToValidate"
-- "textFieldShouldReturn"
-- "loginButtonCenterConstraint"
-- "backgroundView"
-- "passwordTextField"
-- "emailToValidate"
-- "viewDidLoad"
 - "loginButtonTopConstraint"
+- "textFieldDidBeginEditing"
+- "emailTextField"
+- "emailToValidate"
+- "passwordTextField"
+- "textFieldShouldReturn"
 - "loginButtonOutOfView"
+- "backgroundView"
+- "loginButtonCenterConstraint"
 - "loginButtonInView"
+- "screenSize"
+- "viewDidLoad"
+- "passwordToValidate"
+- "loginButton"
 depends-top-level:
-- "UIView"
-- "UIViewController"
 - "LoginViewController"
-- !private "CGRectMake"
-- !private "~="
-- !private "NSAttributedString"
-- !private "StringLiteralType"
-- !private "-="
-- !private "UIColor"
 - !private "UIImageView"
-- "String"
-- "UITextFieldDelegate"
-- "UIButton"
-- "UserPassword"
-- "UITextField"
+- !private "~="
+- !private "!="
 - !private "UIViewContentMode"
-- !private "UIViewAnimationOptions"
-- "UserEmail"
-- !private "/"
-- "NSLayoutConstraint"
-- !private "NSForegroundColorAttributeName"
-- "Bool"
+- !private "FIRAuth"
+- "UIView"
+- "UIButton"
+- !private "CGRectMake"
 - !private "UIImage"
-- !private "Dictionary"
-- "UIScreen"
+- !private "UIColor"
+- "UITextField"
+- "NSLayoutConstraint"
+- !private "StringLiteralType"
+- "UITextFieldDelegate"
+- "UserEmail"
+- !private "UIViewAnimationOptions"
+- "UserPassword"
+- "UIViewController"
+- "String"
+- "Bool"
+- !private "NSAttributedString"
+- !private "NSForegroundColorAttributeName"
 - !private "BooleanLiteralType"
+- "UIScreen"
+- !private "/"
+- !private "-="
+- !private "Dictionary"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps9AnyObject", "FIRAuth"]
 - !private ["Ps9AnyObject", "NSAttributedString"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - ["Ps9AnyObject", "String"]
@@ -68,6 +71,8 @@ depends-member:
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "animateWithDuration"]
 - !private ["Ps9AnyObject", "attributedPlaceholder"]
+- !private ["Ps9AnyObject", "auth"]
+- !private ["Ps9AnyObject", "autocorrectionType"]
 - ["Ps9AnyObject", "backgroundView"]
 - !private ["Ps9AnyObject", "becomeFirstResponder"]
 - ["Ps9AnyObject", "bounds"]
@@ -92,7 +97,9 @@ depends-member:
 - ["Ps9AnyObject", "passwordToValidate"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - ["Ps9AnyObject", "screenSize"]
+- !private ["Ps9AnyObject", "secureTextEntry"]
 - !private ["Ps9AnyObject", "sendSubviewToBack"]
+- !private ["Ps9AnyObject", "signInWithEmail"]
 - !private ["Ps9AnyObject", "tag"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textField"]
@@ -123,6 +130,7 @@ depends-member:
 - !private ["VSC6CGRect", "width"]
 - !private ["Ps11CVarArgType", "CGRectMake"]
 - !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "FIRAuth"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSAttributedString"]
 - !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
@@ -139,6 +147,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "animateWithDuration"]
 - !private ["Ps11CVarArgType", "attributedPlaceholder"]
+- !private ["Ps11CVarArgType", "auth"]
+- !private ["Ps11CVarArgType", "autocorrectionType"]
 - ["Ps11CVarArgType", "backgroundView"]
 - !private ["Ps11CVarArgType", "becomeFirstResponder"]
 - ["Ps11CVarArgType", "bounds"]
@@ -163,7 +173,9 @@ depends-member:
 - ["Ps11CVarArgType", "passwordToValidate"]
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
 - ["Ps11CVarArgType", "screenSize"]
+- !private ["Ps11CVarArgType", "secureTextEntry"]
 - !private ["Ps11CVarArgType", "sendSubviewToBack"]
+- !private ["Ps11CVarArgType", "signInWithEmail"]
 - !private ["Ps11CVarArgType", "tag"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "textField"]
@@ -185,6 +197,7 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSAttributedString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
@@ -202,6 +215,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
 - !private ["Ps28CustomDebugStringConvertible", "attributedPlaceholder"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
+- !private ["Ps28CustomDebugStringConvertible", "autocorrectionType"]
 - ["Ps28CustomDebugStringConvertible", "backgroundView"]
 - !private ["Ps28CustomDebugStringConvertible", "becomeFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "bounds"]
@@ -226,7 +241,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "passwordToValidate"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "screenSize"]
+- !private ["Ps28CustomDebugStringConvertible", "secureTextEntry"]
 - !private ["Ps28CustomDebugStringConvertible", "sendSubviewToBack"]
+- !private ["Ps28CustomDebugStringConvertible", "signInWithEmail"]
 - !private ["Ps28CustomDebugStringConvertible", "tag"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textField"]
@@ -244,6 +261,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSAttributedString"]
@@ -263,6 +281,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
 - !private ["Ps23CustomStringConvertible", "attributedPlaceholder"]
+- !private ["Ps23CustomStringConvertible", "auth"]
+- !private ["Ps23CustomStringConvertible", "autocorrectionType"]
 - ["Ps23CustomStringConvertible", "backgroundView"]
 - !private ["Ps23CustomStringConvertible", "becomeFirstResponder"]
 - ["Ps23CustomStringConvertible", "bounds"]
@@ -287,7 +307,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "passwordToValidate"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - ["Ps23CustomStringConvertible", "screenSize"]
+- !private ["Ps23CustomStringConvertible", "secureTextEntry"]
 - !private ["Ps23CustomStringConvertible", "sendSubviewToBack"]
+- !private ["Ps23CustomStringConvertible", "signInWithEmail"]
 - !private ["Ps23CustomStringConvertible", "tag"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textField"]
@@ -311,9 +333,11 @@ depends-member:
 - !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "CurveEaseIn"]
 - !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "FIRAuth"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSAttributedString"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
+- !private ["Ps9Equatable", "No"]
 - !private ["Ps9Equatable", "ScaleAspectFill"]
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -329,6 +353,8 @@ depends-member:
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "animateWithDuration"]
 - !private ["Ps9Equatable", "attributedPlaceholder"]
+- !private ["Ps9Equatable", "auth"]
+- !private ["Ps9Equatable", "autocorrectionType"]
 - ["Ps9Equatable", "backgroundView"]
 - !private ["Ps9Equatable", "becomeFirstResponder"]
 - ["Ps9Equatable", "bounds"]
@@ -354,7 +380,9 @@ depends-member:
 - ["Ps9Equatable", "passwordToValidate"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - ["Ps9Equatable", "screenSize"]
+- !private ["Ps9Equatable", "secureTextEntry"]
 - !private ["Ps9Equatable", "sendSubviewToBack"]
+- !private ["Ps9Equatable", "signInWithEmail"]
 - !private ["Ps9Equatable", "tag"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textField"]
@@ -372,13 +400,17 @@ depends-member:
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "signInWithEmail"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "FIRAuth"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSAttributedString"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps8Hashable", "No"]
 - !private ["Ps8Hashable", "ScaleAspectFill"]
 - ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -394,6 +426,8 @@ depends-member:
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "animateWithDuration"]
 - !private ["Ps8Hashable", "attributedPlaceholder"]
+- !private ["Ps8Hashable", "auth"]
+- !private ["Ps8Hashable", "autocorrectionType"]
 - ["Ps8Hashable", "backgroundView"]
 - !private ["Ps8Hashable", "becomeFirstResponder"]
 - ["Ps8Hashable", "bounds"]
@@ -418,7 +452,9 @@ depends-member:
 - ["Ps8Hashable", "passwordToValidate"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - ["Ps8Hashable", "screenSize"]
+- !private ["Ps8Hashable", "secureTextEntry"]
 - !private ["Ps8Hashable", "sendSubviewToBack"]
+- !private ["Ps8Hashable", "signInWithEmail"]
 - !private ["Ps8Hashable", "tag"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textField"]
@@ -447,6 +483,7 @@ depends-member:
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - ["C15carpoolApp_v1_019LoginViewController", "Bool"]
 - !private ["C15carpoolApp_v1_019LoginViewController", "CGRectMake"]
+- !private ["C15carpoolApp_v1_019LoginViewController", "FIRAuth"]
 - !private ["C15carpoolApp_v1_019LoginViewController", "NSAttributedString"]
 - !private ["C15carpoolApp_v1_019LoginViewController", "NSForegroundColorAttributeName"]
 - ["C15carpoolApp_v1_019LoginViewController", "NSLayoutConstraint"]
@@ -491,6 +528,7 @@ depends-member:
 - ["Ps14MirrorPathType", "init"]
 - !private ["CSo18NSAttributedString", "init"]
 - !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "FIRAuth"]
 - !private ["PSo8NSCoding", "NSAttributedString"]
 - !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - ["PSo8NSCoding", "String"]
@@ -506,6 +544,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
 - !private ["PSo8NSCoding", "attributedPlaceholder"]
+- !private ["PSo8NSCoding", "autocorrectionType"]
 - ["PSo8NSCoding", "backgroundView"]
 - !private ["PSo8NSCoding", "becomeFirstResponder"]
 - !private ["PSo8NSCoding", "bounds"]
@@ -528,6 +567,7 @@ depends-member:
 - ["PSo8NSCoding", "passwordToValidate"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "screenSize"]
+- !private ["PSo8NSCoding", "secureTextEntry"]
 - !private ["PSo8NSCoding", "sendSubviewToBack"]
 - !private ["PSo8NSCoding", "tag"]
 - !private ["PSo8NSCoding", "text"]
@@ -547,6 +587,7 @@ depends-member:
 - !private ["PSo9NSCopying", "darkGrayColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
 - !private ["PSo26NSExtensionRequestHandling", "NSAttributedString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - ["PSo26NSExtensionRequestHandling", "String"]
@@ -588,6 +629,7 @@ depends-member:
 - !private ["CSo8NSNumber", "deinit"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "FIRAuth"]
 - !private ["CSo8NSObject", "NSAttributedString"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
@@ -606,6 +648,8 @@ depends-member:
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "animateWithDuration"]
 - !private ["CSo8NSObject", "attributedPlaceholder"]
+- !private ["CSo8NSObject", "auth"]
+- !private ["CSo8NSObject", "autocorrectionType"]
 - ["CSo8NSObject", "backgroundView"]
 - !private ["CSo8NSObject", "becomeFirstResponder"]
 - ["CSo8NSObject", "bounds"]
@@ -631,7 +675,9 @@ depends-member:
 - ["CSo8NSObject", "passwordToValidate"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - ["CSo8NSObject", "screenSize"]
+- !private ["CSo8NSObject", "secureTextEntry"]
 - !private ["CSo8NSObject", "sendSubviewToBack"]
+- !private ["CSo8NSObject", "signInWithEmail"]
 - !private ["CSo8NSObject", "tag"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textField"]
@@ -647,6 +693,7 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
 - !private ["PSo16NSObjectProtocol", "NSAttributedString"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - ["PSo16NSObjectProtocol", "String"]
@@ -662,6 +709,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
 - !private ["PSo16NSObjectProtocol", "attributedPlaceholder"]
+- !private ["PSo16NSObjectProtocol", "auth"]
+- !private ["PSo16NSObjectProtocol", "autocorrectionType"]
 - ["PSo16NSObjectProtocol", "backgroundView"]
 - !private ["PSo16NSObjectProtocol", "becomeFirstResponder"]
 - ["PSo16NSObjectProtocol", "bounds"]
@@ -686,7 +735,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "passwordToValidate"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "screenSize"]
+- !private ["PSo16NSObjectProtocol", "secureTextEntry"]
 - !private ["PSo16NSObjectProtocol", "sendSubviewToBack"]
+- !private ["PSo16NSObjectProtocol", "signInWithEmail"]
 - !private ["PSo16NSObjectProtocol", "tag"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textField"]
@@ -712,6 +763,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Vs5Range", "deinit"]
 - !private ["Ps16RawRepresentable", "CurveEaseIn"]
+- !private ["Ps16RawRepresentable", "No"]
 - !private ["Ps16RawRepresentable", "ScaleAspectFill"]
 - !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "Value"]
@@ -729,6 +781,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "attributedPlaceholder"]
+- !private ["PSo29UIAccessibilityIdentification", "autocorrectionType"]
 - !private ["PSo29UIAccessibilityIdentification", "becomeFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
@@ -738,6 +791,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "layoutIfNeeded"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "secureTextEntry"]
 - !private ["PSo29UIAccessibilityIdentification", "sendSubviewToBack"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -745,6 +799,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "attributedPlaceholder"]
+- !private ["PSo12UIAppearance", "autocorrectionType"]
 - !private ["PSo12UIAppearance", "becomeFirstResponder"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "contentMode"]
@@ -754,11 +809,13 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "layoutIfNeeded"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
+- !private ["PSo12UIAppearance", "secureTextEntry"]
 - !private ["PSo12UIAppearance", "sendSubviewToBack"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "userInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "FIRAuth"]
 - !private ["PSo21UIAppearanceContainer", "NSAttributedString"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - ["PSo21UIAppearanceContainer", "String"]
@@ -774,6 +831,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
 - !private ["PSo21UIAppearanceContainer", "attributedPlaceholder"]
+- !private ["PSo21UIAppearanceContainer", "autocorrectionType"]
 - ["PSo21UIAppearanceContainer", "backgroundView"]
 - !private ["PSo21UIAppearanceContainer", "becomeFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
@@ -794,6 +852,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "passwordToValidate"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "screenSize"]
+- !private ["PSo21UIAppearanceContainer", "secureTextEntry"]
 - !private ["PSo21UIAppearanceContainer", "sendSubviewToBack"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -814,6 +873,7 @@ depends-member:
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo7UIColor", "darkGrayColor"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
+- !private ["PSo18UIContentContainer", "FIRAuth"]
 - !private ["PSo18UIContentContainer", "NSAttributedString"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - ["PSo18UIContentContainer", "String"]
@@ -851,17 +911,20 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "attributedPlaceholder"]
+- !private ["CSo9UIControl", "autocorrectionType"]
 - !private ["CSo9UIControl", "becomeFirstResponder"]
 - !private ["CSo9UIControl", "bounds"]
 - !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "layer"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
+- !private ["CSo9UIControl", "secureTextEntry"]
 - !private ["CSo9UIControl", "tag"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "userInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "attributedPlaceholder"]
+- !private ["PSo17UICoordinateSpace", "autocorrectionType"]
 - !private ["PSo17UICoordinateSpace", "becomeFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
@@ -871,6 +934,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "layoutIfNeeded"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "secureTextEntry"]
 - !private ["PSo17UICoordinateSpace", "sendSubviewToBack"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
@@ -878,6 +942,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "attributedPlaceholder"]
+- !private ["PSo13UIDynamicItem", "autocorrectionType"]
 - !private ["PSo13UIDynamicItem", "becomeFirstResponder"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
@@ -887,11 +952,13 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "layoutIfNeeded"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
+- !private ["PSo13UIDynamicItem", "secureTextEntry"]
 - !private ["PSo13UIDynamicItem", "sendSubviewToBack"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "userInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- !private ["PSo18UIFocusEnvironment", "FIRAuth"]
 - !private ["PSo18UIFocusEnvironment", "NSAttributedString"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - ["PSo18UIFocusEnvironment", "String"]
@@ -907,6 +974,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
 - !private ["PSo18UIFocusEnvironment", "attributedPlaceholder"]
+- !private ["PSo18UIFocusEnvironment", "autocorrectionType"]
 - ["PSo18UIFocusEnvironment", "backgroundView"]
 - !private ["PSo18UIFocusEnvironment", "becomeFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
@@ -927,6 +995,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "passwordToValidate"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "screenSize"]
+- !private ["PSo18UIFocusEnvironment", "secureTextEntry"]
 - !private ["PSo18UIFocusEnvironment", "sendSubviewToBack"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -948,14 +1017,17 @@ depends-member:
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "init"]
 - !private ["PSo10UIKeyInput", "attributedPlaceholder"]
+- !private ["PSo10UIKeyInput", "autocorrectionType"]
 - !private ["PSo10UIKeyInput", "becomeFirstResponder"]
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
+- !private ["PSo10UIKeyInput", "secureTextEntry"]
 - !private ["PSo10UIKeyInput", "tag"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["PSo10UIKeyInput", "userInteractionEnabled"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "FIRAuth"]
 - !private ["CSo11UIResponder", "NSAttributedString"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
@@ -974,6 +1046,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
 - !private ["CSo11UIResponder", "attributedPlaceholder"]
+- !private ["CSo11UIResponder", "autocorrectionType"]
 - ["CSo11UIResponder", "backgroundView"]
 - !private ["CSo11UIResponder", "becomeFirstResponder"]
 - !private ["CSo11UIResponder", "bounds"]
@@ -994,6 +1067,7 @@ depends-member:
 - ["CSo11UIResponder", "passwordToValidate"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "screenSize"]
+- !private ["CSo11UIResponder", "secureTextEntry"]
 - !private ["CSo11UIResponder", "sendSubviewToBack"]
 - !private ["CSo11UIResponder", "tag"]
 - !private ["CSo11UIResponder", "text"]
@@ -1012,6 +1086,7 @@ depends-member:
 - ["CSo8UIScreen", "bounds"]
 - ["CSo8UIScreen", "mainScreen"]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
+- !private ["PSo16UIStateRestoring", "FIRAuth"]
 - !private ["PSo16UIStateRestoring", "NSAttributedString"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - ["PSo16UIStateRestoring", "String"]
@@ -1048,14 +1123,18 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["OSC24UITextAutocorrectionType", "No"]
 - !private ["CSo11UITextField", "attributedPlaceholder"]
+- !private ["CSo11UITextField", "autocorrectionType"]
 - !private ["CSo11UITextField", "becomeFirstResponder"]
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
+- !private ["CSo11UITextField", "secureTextEntry"]
 - !private ["CSo11UITextField", "tag"]
 - !private ["CSo11UITextField", "text"]
 - !private ["CSo11UITextField", "userInteractionEnabled"]
 - !private ["PSo19UITextFieldDelegate", "CGRectMake"]
+- !private ["PSo19UITextFieldDelegate", "FIRAuth"]
 - !private ["PSo19UITextFieldDelegate", "NSAttributedString"]
 - !private ["PSo19UITextFieldDelegate", "NSForegroundColorAttributeName"]
 - ["PSo19UITextFieldDelegate", "String"]
@@ -1070,13 +1149,11 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "UserPassword"]
 - !private ["PSo19UITextFieldDelegate", "backgroundView"]
 - !private ["PSo19UITextFieldDelegate", "emailTextField"]
-- !private ["PSo19UITextFieldDelegate", "emailToValidate"]
 - !private ["PSo19UITextFieldDelegate", "loginButton"]
 - !private ["PSo19UITextFieldDelegate", "loginButtonCenterConstraint"]
 - !private ["PSo19UITextFieldDelegate", "loginButtonInView"]
 - !private ["PSo19UITextFieldDelegate", "loginButtonOutOfView"]
 - !private ["PSo19UITextFieldDelegate", "passwordTextField"]
-- !private ["PSo19UITextFieldDelegate", "passwordToValidate"]
 - !private ["PSo19UITextFieldDelegate", "screenSize"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
@@ -1088,20 +1165,25 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
 - !private ["PSo11UITextInput", "attributedPlaceholder"]
+- !private ["PSo11UITextInput", "autocorrectionType"]
 - !private ["PSo11UITextInput", "becomeFirstResponder"]
 - !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
+- !private ["PSo11UITextInput", "secureTextEntry"]
 - !private ["PSo11UITextInput", "tag"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo11UITextInput", "userInteractionEnabled"]
 - !private ["PSo17UITextInputTraits", "attributedPlaceholder"]
+- !private ["PSo17UITextInputTraits", "autocorrectionType"]
 - !private ["PSo17UITextInputTraits", "becomeFirstResponder"]
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
+- !private ["PSo17UITextInputTraits", "secureTextEntry"]
 - !private ["PSo17UITextInputTraits", "tag"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo17UITextInputTraits", "userInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "FIRAuth"]
 - !private ["PSo18UITraitEnvironment", "NSAttributedString"]
 - !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - ["PSo18UITraitEnvironment", "String"]
@@ -1117,6 +1199,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
 - !private ["PSo18UITraitEnvironment", "attributedPlaceholder"]
+- !private ["PSo18UITraitEnvironment", "autocorrectionType"]
 - ["PSo18UITraitEnvironment", "backgroundView"]
 - !private ["PSo18UITraitEnvironment", "becomeFirstResponder"]
 - ["PSo18UITraitEnvironment", "bounds"]
@@ -1138,6 +1221,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "passwordToValidate"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "screenSize"]
+- !private ["PSo18UITraitEnvironment", "secureTextEntry"]
 - !private ["PSo18UITraitEnvironment", "sendSubviewToBack"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -1157,6 +1241,7 @@ depends-member:
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "attributedPlaceholder"]
+- !private ["CSo6UIView", "autocorrectionType"]
 - !private ["CSo6UIView", "becomeFirstResponder"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "contentMode"]
@@ -1166,6 +1251,7 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "layoutIfNeeded"]
 - !private ["CSo6UIView", "resignFirstResponder"]
+- !private ["CSo6UIView", "secureTextEntry"]
 - !private ["CSo6UIView", "sendSubviewToBack"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
@@ -1174,6 +1260,7 @@ depends-member:
 - !private ["OSC17UIViewContentMode", "ScaleAspectFill"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "FIRAuth"]
 - !private ["CSo16UIViewController", "NSAttributedString"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSLayoutConstraint"]
@@ -1248,6 +1335,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "animateWithDuration"]
 - !private ["Ps12_Reflectable", "attributedPlaceholder"]
+- !private ["Ps12_Reflectable", "autocorrectionType"]
 - !private ["Ps12_Reflectable", "becomeFirstResponder"]
 - !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "contentMode"]
@@ -1258,6 +1346,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "layoutIfNeeded"]
 - !private ["Ps12_Reflectable", "resignFirstResponder"]
+- !private ["Ps12_Reflectable", "secureTextEntry"]
 - !private ["Ps12_Reflectable", "sendSubviewToBack"]
 - !private ["Ps12_Reflectable", "tag"]
 - !private ["Ps12_Reflectable", "text"]
@@ -1287,6 +1376,7 @@ depends-nominal:
 - !private "Sd"
 - "Ps9Equatable"
 - "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo7FIRAuth"
 - !private "Ps16ForwardIndexType"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
@@ -1338,6 +1428,7 @@ depends-nominal:
 - "CSo11UIResponder"
 - "CSo8UIScreen"
 - "PSo16UIStateRestoring"
+- !private "OSC24UITextAutocorrectionType"
 - !private "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"
@@ -1416,4 +1507,4 @@ depends-external:
 - "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/karankhatter/Documents/lpglf16/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/karankhatter/Documents/lpglf16/Pods/Firebase/Headers/Firebase.h"
-interface-hash: "560e26f2c5d06e699c647a5db7b873af"
+interface-hash: "dffb60d95325b97ac06a2acd18d8a9ab"
