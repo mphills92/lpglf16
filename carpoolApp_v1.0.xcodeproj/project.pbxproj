@@ -37,6 +37,7 @@
 		C990CFA31D20A175005E05F2 /* SignUpProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990CFA21D20A175005E05F2 /* SignUpProfilePictureViewController.swift */; };
 		C990CFA51D2168C0005E05F2 /* SignUpChooseAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990CFA41D2168BF005E05F2 /* SignUpChooseAuthenticationViewController.swift */; };
 		C990CFA71D219D93005E05F2 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990CFA61D219D93005E05F2 /* SignUpPasswordViewController.swift */; };
+		C990CFA91D21D2F2005E05F2 /* ReservationRecapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990CFA81D21D2F2005E05F2 /* ReservationRecapCell.swift */; };
 		C994B4C21D143CC9009848F2 /* NotificationsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */; };
 		C994B4C41D144417009848F2 /* PrivacySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */; };
 		C994B4C61D144A90009848F2 /* HelpAndSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */; };
@@ -113,6 +114,7 @@
 		C990CFA21D20A175005E05F2 /* SignUpProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpProfilePictureViewController.swift; sourceTree = "<group>"; };
 		C990CFA41D2168BF005E05F2 /* SignUpChooseAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpChooseAuthenticationViewController.swift; path = ../SignUpChooseAuthenticationViewController.swift; sourceTree = "<group>"; };
 		C990CFA61D219D93005E05F2 /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
+		C990CFA81D21D2F2005E05F2 /* ReservationRecapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationRecapCell.swift; sourceTree = "<group>"; };
 		C994B4C11D143CC9009848F2 /* NotificationsSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsViewController.swift; sourceTree = "<group>"; };
 		C994B4C31D144417009848F2 /* PrivacySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewController.swift; sourceTree = "<group>"; };
 		C994B4C51D144A90009848F2 /* HelpAndSupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpAndSupportViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				C95385CD1D0F5B9F007BCA15 /* AvailableCaddiesCell.swift */,
+				C990CFA81D21D2F2005E05F2 /* ReservationRecapCell.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -573,6 +576,7 @@
 				C9EE3F331D0A1FBC00F86EF2 /* BecomeCaddyViewController.swift in Sources */,
 				C994B4C81D145BDB009848F2 /* UpcomingReservationsViewController.swift in Sources */,
 				C990CFA11D209AFE005E05F2 /* SignUpContactInfoViewController.swift in Sources */,
+				C990CFA91D21D2F2005E05F2 /* ReservationRecapCell.swift in Sources */,
 				C990CF9C1D207615005E05F2 /* ForgotPasswordViewController.swift in Sources */,
 				C9EE3ED81D06643800F86EF2 /* SidebarMenuViewController.swift in Sources */,
 				C994B4CF1D15A67F009848F2 /* ChangeEmailViewController.swift in Sources */,

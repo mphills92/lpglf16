@@ -21,7 +21,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var screenSize = UIScreen.mainScreen().bounds
     
     var emailToValidate = String()
+    var emailExistsInDatabase = Bool()
     var passwordToValidate = String()
+    var passwordExistsInDatabase = Bool()
+    var passwordMatchesEmailAccount = Bool()
+    var passwordVerified = Bool()
     
     let userEmail = UserEmail()
     let userPassword = UserPassword()
@@ -70,13 +74,44 @@ extension LoginViewController {
         switch (textField.tag) {
         case 1:
             emailToValidate = emailTextField.text!
-            // TO DO: We'll want to validate the email input here. Search DB for email address matching input. Display alert if no match. Move to password text field if email is found.
-            passwordTextField.userInteractionEnabled = true
-            passwordTextField.becomeFirstResponder()
+            validateEmail(emailToValidate)
+            
+            if (emailExistsInDatabase == true) {
+                passwordTextField.userInteractionEnabled = true
+                passwordTextField.becomeFirstResponder()
+            } else {
+                let alertController = UIAlertController(title: "We don't recognize that email.", message:  "\n We can't find an account with that email. Please try again.", preferredStyle: .Alert)
+                alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+                let doneAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in }
+                alertController.addAction(doneAction)
+                
+                self.presentViewController(alertController, animated: true) {
+                    alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+                }
+            }
         case 2:
-            // TO DO: We'll want to validate the password input here. Search DB for password that matches input AND matches email entered prior. Display login button.
             passwordToValidate = passwordTextField.text!
-            loginButtonInView()
+            validatePassword(passwordToValidate)
+            if (passwordVerified == true) {
+                passwordTextField.resignFirstResponder()
+                loginButtonInView()
+            } else {
+                self.passwordTextField.resignFirstResponder()
+                let alertController = UIAlertController(title: "Trouble logging you in.", message:  "\n We can't find an account with the email and password combination that you entered. Please try again.", preferredStyle: .Alert)
+                alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+                let forgotPasswordAction = UIAlertAction(title: "Forgot your password?", style: .Default) { (action) in
+                    self.performSegueWithIdentifier("toForgotPasswordSegue", sender: self)
+                }
+                alertController.addAction(forgotPasswordAction)
+                let doneAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                    self.passwordTextField.becomeFirstResponder()
+                }
+                alertController.addAction(doneAction)
+                
+                self.presentViewController(alertController, animated: true) {
+                    alertController.view.tintColor = UIColor(red: 0/255, green: 51/255, blue: 0/255, alpha: 1.0)
+                }
+            }
         default:
             break
         }
@@ -97,5 +132,27 @@ extension LoginViewController {
             self.loginButtonCenterConstraint.constant = self.screenSize.width
             self.view.layoutIfNeeded()
             }, completion: nil)
+    }
+    
+    func validateEmail(emailToValidate: String) -> Bool {
+        // TO DO: Search DB for input email.
+        print("TO DO: Search DB for input email.")
+        emailExistsInDatabase = true
+        return emailExistsInDatabase
+    }
+    
+    func validatePassword(passwordToValidate: String) -> Bool {
+        // TO DO: Search DB for input password. Ensure password matches email.
+        print("TO DO: Search DB for input password. Ensure password matches email.")
+        passwordExistsInDatabase = true
+        passwordMatchesEmailAccount = true
+        
+        if (passwordExistsInDatabase == true && passwordMatchesEmailAccount == true) {
+            passwordVerified = true
+            return passwordVerified
+        } else {
+            passwordVerified = false
+            return passwordVerified
+        }
     }
 }
